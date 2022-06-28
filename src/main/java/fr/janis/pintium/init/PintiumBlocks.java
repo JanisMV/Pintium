@@ -1,0 +1,46 @@
+package fr.janis.pintium.init;
+import fr.janis.pintium.blocks.*;
+import fr.janis.pintium.main;
+
+import fr.janis.pintium.utils.PintiumItemGroup;
+import net.minecraft.block.*;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntityType;
+import net.minecraftforge.common.ToolType;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.function.Supplier;
+
+public class PintiumBlocks {
+
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, main.MODID);
+    private static final DeferredRegister<TileEntityType<?>> TILES = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, main.MODID);
+
+    public static final RegistryObject<Block> PINTIUM_BLOCK = createBlock("pintium_block", PintiumBlock::new);
+
+    public static final RegistryObject<Block> BANANA_BLOCK = createBlock("banana_block", BananaBlock::new);
+
+    public static final RegistryObject<Block> PINTIUM_OVERWORLD_ORE = createBlock("pintium_overworld_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(4f, 15f).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> PINTIUM_NETHER_ORE = createBlock("pintium_nether_ore", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(4f, 15f).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.STONE)));
+    
+    public static final RegistryObject<Block> PINTIUM_CROP =
+            BLOCKS.register("pintium_crop", () -> new PintiumCrop(AbstractBlock.Properties.of(Blocks.WHEAT.defaultBlockState().getMaterial()).noCollission().noOcclusion()));
+
+    public static final RegistryObject<Block> CANNABIS_CROP =
+            BLOCKS.register("cannabis_crop", () -> new CannabisCrop(AbstractBlock.Properties.of(Blocks.WHEAT.defaultBlockState().getMaterial()).noCollission().noOcclusion()));
+
+    public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier)
+    {
+        RegistryObject<Block> block = BLOCKS.register(name, supplier);
+
+        PintiumItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
+
+
+        return block;
+    }
+
+}

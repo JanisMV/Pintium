@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "pintium:pintium_seeds"
+    }
+  },
+  "result": {
+    "item": "pintium:pintium_nugget",
+    "count": 1
+  }
+}
