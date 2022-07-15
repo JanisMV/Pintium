@@ -6,6 +6,7 @@ import fr.janis.pintium.main;
 import fr.janis.pintium.utils.CustomPintiumArmorMaterials;
 import fr.janis.pintium.utils.CustomPintiumTiers;
 import fr.janis.pintium.utils.PintiumItemGroup;
+import fr.janis.pintium.utils.SoundEvents;
 import net.minecraft.entity.EntityType;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.Fluids;
@@ -52,7 +53,7 @@ public class PintiumItems {
                     new Food.Builder()
                             .nutrition(3)
                             .saturationMod(1.4F)
-                    .effect(() -> new EffectInstance(Effects.CONFUSION, 20*30, 0), 1.0F)
+                    .effect(() -> new EffectInstance(Effects.CONFUSION, 20*17, 0), 1.0F)
                     .build()
             )));
 
@@ -60,7 +61,7 @@ public class PintiumItems {
 
     public static final RegistryObject<Item> PINTIUM_STICK = ITEMS.register("pintium_stick", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
 
-    public static final RegistryObject<StickOfGod> STICK_OF_GOD = ITEMS.register("stick_of_god",  () -> new StickOfGod(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(80).defaultDurability(80)));
+    public static final RegistryObject<StickOfGod> STICK_OF_GOD = ITEMS.register("stick_of_god",  () -> new StickOfGod(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(800).defaultDurability(800)));
     public static final RegistryObject<JumpStick> JUMP_STICK = ITEMS.register("jump_stick",  () -> new JumpStick(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(80).defaultDurability(80)));
     public static final RegistryObject<SpeedStick> SPEED_STICK = ITEMS.register("speed_stick",  () -> new SpeedStick(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(80).defaultDurability(80)));
     public static final RegistryObject<StrengthStick> STRENGTH_STICK = ITEMS.register("strength_stick",  () -> new StrengthStick(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(80).defaultDurability(80)));
@@ -126,4 +127,7 @@ public class PintiumItems {
 
     public static final RegistryObject<Item> LIFE_STICK = ITEMS.register("life_stick", () -> new LifeStick(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(80).defaultDurability(80)));
 
+    public static final RegistryObject<Item> SYNTHWAVE_VIBE_MUSIC_DISC = ITEMS.register("synthwave_vibe_music_disc", () -> new MusicDiscItem(1, () -> SoundEvents.SYNTHWAVE_VIBE.get(),new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> TP_OBJECT = ITEMS.register("tp_object", () -> new TPObject(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(80).defaultDurability(80)));
 }

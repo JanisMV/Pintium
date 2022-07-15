@@ -1,0 +1,16 @@
+{
+  "synthwave_vibe": {
+    "sounds": [
+      {
+        "name": "pintium:synthwave_vibe",
+        "stream": true
+      }
+    ]
+  },
+  "boing": {
+    "subtitle": "pintium.boing",
+    "sounds": [
+      "pintium:boing"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "pintium:pintium_stick"
+    },
+    "title": {
+      "translate": "advancements.pintium.pintium_stick.title"
+    },
+    "description": {
+      "translate": "advancements.pintium.pintium_stick.desc"
+    }
+  },
+  "parent": "pintium:main/root",
+  "criteria": {
+    "craft_pintium_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pintium:pintium_stick"
+          }
+        ]
+      }
+    }
+  }
+}

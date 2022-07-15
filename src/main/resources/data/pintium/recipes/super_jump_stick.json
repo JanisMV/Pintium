@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    " # ",
+    " M "
+  ],
+  "key": {
+    "#": {
+      "item": "pintium:pintium_stick"
+    },
+    "X": {
+      "item": "pintium:jump_orb"
+    },
+    "M": {
+      "item": "pintium:jump_stick"
+    }
+  },
+  "result": {
+    "item": "pintium:super_jump_stick"
+  }
+}

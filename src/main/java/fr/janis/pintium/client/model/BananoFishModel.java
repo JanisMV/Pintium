@@ -108,7 +108,14 @@ public class BananoFishModel<T extends BananoFishEntity> extends EntityModel<Ban
 
     @Override
     public void setupAnim(BananoFishEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
-        //previously the render function, render code was moved to a method below
+        float f = 1.0F;
+        float f1 = 1.0F;
+        if (!entity.isInWater()) {
+            f = 1.3F;
+            f1 = 1.7F;
+        }
+
+        this.tail.yRot = -f * 0.25F * MathHelper.sin(f1 * 0.6F * ageInTicks);
     }
 
     @Override

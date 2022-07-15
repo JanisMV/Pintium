@@ -12,24 +12,19 @@ public class onEntityDeathEvent {
     @SubscribeEvent
     public void onDeathEvent(net.minecraftforge.event.entity.living.LivingDeathEvent e){
         String name = e.getEntityLiving().getName().getString();
-        // getTrueSource - getEntity
         if (e.getSource().getEntity() instanceof PlayerEntity){
             PlayerEntity p = (PlayerEntity) e.getSource().getEntity();
             if (e.getEntityLiving() instanceof RatelEntity)
             {
                 p.getCapability(CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY).ifPresent(h -> {
                     h.setName(name);
-                    main.LOGGER.debug(h.getName());
                 });
-
-                main.LOGGER.debug("Name set");
             }
 
             else if (e.getEntityLiving() instanceof ZombieEntity)
             {
                 p.getCapability(CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY).ifPresent(h -> {
                     h.setName(name);
-                    main.LOGGER.debug(h.getName());
                 });
             }
 
@@ -37,7 +32,6 @@ public class onEntityDeathEvent {
             {
                 p.getCapability(CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY).ifPresent(h -> {
                     h.setName(name);
-                    main.LOGGER.debug(h.getName());
                 });
             }
 
@@ -45,7 +39,6 @@ public class onEntityDeathEvent {
             {
                 p.getCapability(CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY).ifPresent(h -> {
                     h.setName(name);
-                    main.LOGGER.debug(h.getName());
                 });
             }
         }

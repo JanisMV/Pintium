@@ -6,6 +6,7 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 import fr.janis.pintium.entities.BananosaurEntity;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.util.math.MathHelper;
 
 public class BananosaurModel<T extends BananosaurEntity> extends EntityModel<BananosaurEntity> {
     private final ModelRenderer body;
@@ -86,7 +87,12 @@ public class BananosaurModel<T extends BananosaurEntity> extends EntityModel<Ban
 
     @Override
     public void setupAnim(BananosaurEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
-        //previously the render function, render code was moved to a method below
+        this.head.xRot = headPitch * ((float)Math.PI / 180F);
+        this.head.yRot = netHeadYaw * ((float)Math.PI / 180F);
+        this.leg1.xRot = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+        this.leg2.xRot = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.leg3.xRot = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.leg4.xRot = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
     }
 
     @Override

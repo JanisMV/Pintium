@@ -17,11 +17,14 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IServerWorld;
+import net.minecraft.world.LightType;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nullable;
+import java.util.Random;
 
 public class RatelEntity extends MonsterEntity {
 
@@ -38,6 +41,13 @@ public class RatelEntity extends MonsterEntity {
                 .add(Attributes.ATTACK_SPEED, 0.5)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 0);
     }
+
+    public static boolean isDarkEnoughToSpawn(IServerWorld p_223323_0_, BlockPos p_223323_1_, Random p_223323_2_) {
+        return true;
+    }
+
+    @Override
+    protected boolean shouldDespawnInPeaceful() {return false;}
 
     @Override
     protected void registerGoals() {

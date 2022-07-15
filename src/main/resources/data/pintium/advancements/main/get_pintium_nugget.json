@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "pintium:pintium_nugget"
+    },
+    "title": {
+      "translate": "advancements.pintium.get_pintium_nugget.title"
+    },
+    "description": {
+      "translate": "advancements.pintium.get_pintium_nugget.desc"
+    }
+  },
+  "parent": "pintium:main/drop_pintium_seed",
+  "criteria": {
+    "craft_pintium_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pintium:pintium_nugget"
+          }
+        ]
+      }
+    }
+  }
+}

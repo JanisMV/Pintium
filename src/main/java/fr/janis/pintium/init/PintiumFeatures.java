@@ -24,12 +24,12 @@ public class PintiumFeatures {
         PINTIUM_OVERWORLD_ORE = register("pintium_overworld_ore", Feature.ORE.configured(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, PintiumBlocks.PINTIUM_OVERWORLD_ORE.get().defaultBlockState(), 6))
                 .squared()
         .range(12) //Couche ou l'on le trouve
-        .count(2)); // Nombre de filons par chunk
+        .count(1)); // Nombre de filons par chunk
 
         PINTIUM_NETHER_ORE = register("pintium_nether_ore", Feature.ORE.configured(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHERRACK, PintiumBlocks.PINTIUM_NETHER_ORE.get().defaultBlockState(), 6))
         .squared()
         .range(20)
-        .count(2));
+        .count(1));
     }
 
     public <FC extends IFeatureConfig>ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> feature){
@@ -55,7 +55,7 @@ public class PintiumFeatures {
 
         else {
             if (e.getCategory() != Biome.Category.OCEAN && e.getCategory() != Biome.Category.RIVER){
-                e.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(PintiumEntities.RATEL.get(), 3, 5, 5));
+                e.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(PintiumEntities.RATEL.get(), 100, 5, 5));
                 e.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(PintiumEntities.BANANOSAUR.get(), 1, 1, 5));
             }
             else {

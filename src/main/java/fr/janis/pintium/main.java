@@ -9,6 +9,7 @@ import fr.janis.pintium.init.*;
 
 import fr.janis.pintium.keybind.KeyBinds;
 import fr.janis.pintium.network.Network;
+import fr.janis.pintium.utils.SoundEvents;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
@@ -22,8 +23,13 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-// Prochaine Maj : Plus de Mobs Tameable + recettes sticks
-// Créer un disque avec des musiques
+/* Prochaine Maj : Plus de Mobs Tameable
+Succès : https://misode.github.io/advancement/
+1.16 -> 1.17 https://www.youtube.com/watch?v=9aJjI7UDHeI, https://www.youtube.com/watch?v=G-eQ8e4zJ8U
+1.17 -> 1.18 https://www.youtube.com/watch?v=O8l5ANZSXnM
+Y aussi l'OG :
+1.17 -> 1.18 https://www.youtube.com/watch?v=5leVDDzU_0U
+*/
 
 @Mod(main.MODID)
 public class main
@@ -41,21 +47,11 @@ public class main
         PintiumItems.ITEMS.register(bus);
         PintiumBlocks.BLOCKS.register(bus);
         PintiumEntities.ENTITY_TYPES.register(bus);
+        SoundEvents.SOUND_EVENTS.register(bus);
     }
 
     private void setup(FMLCommonSetupEvent e){
         PintiumFeatures features = new PintiumFeatures();
-
-        DeferredWorkQueue.runLater(() -> {
-            GlobalEntityTypeAttributes.put(PintiumEntities.RATEL.get(), RatelEntity.setCustomAttributes().build());
-            GlobalEntityTypeAttributes.put(PintiumEntities.RATEL_BODY_GUARD.get(), RatelBodyGuardEntity.setCustomAttributes().build());
-            GlobalEntityTypeAttributes.put(PintiumEntities.ZOMBIE_BODY_GUARD.get(), ZombieBodyGuardEntity.setCustomAttributes().build());
-            GlobalEntityTypeAttributes.put(PintiumEntities.SKELETON_BODY_GUARD.get(), SkeletonBodyGuardEntity.setCustomAttributes().build());
-            GlobalEntityTypeAttributes.put(PintiumEntities.CREEPER_BODY_GUARD.get(), CreeperBodyGuardEntity.setCustomAttributes().build());
-            GlobalEntityTypeAttributes.put(PintiumEntities.BANANOSAUR.get(), BananosaurEntity.setCustomAttributes().build());
-            GlobalEntityTypeAttributes.put(PintiumEntities.TUNA.get(), TunaEntity.setCustomAttributes().build());
-            GlobalEntityTypeAttributes.put(PintiumEntities.BANANOFISH.get(), BananoFishEntity.setCustomAttributes().build());
-        });
 
         Network.registerNetworkPackets();
         CapabilityEntityKilled.register();

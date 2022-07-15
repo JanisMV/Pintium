@@ -1,5 +1,6 @@
 package fr.janis.pintium.items;
 
+import fr.janis.pintium.utils.SoundEvents;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.util.InputMappings;
@@ -11,6 +12,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
@@ -43,9 +45,11 @@ public class JumpStick extends Item {
             playerIn.addEffect(new EffectInstance(Effects.JUMP, 1, 5));
             playerIn.jumpFromGround();
 
+            worldIn.playSound(null, playerIn.getX(), playerIn.getY(), playerIn.getZ(), SoundEvents.BOING.get(), SoundCategory.BLOCKS, 1,1);
+
             playerIn.getPersistentData().putBoolean("using_jump_stick", true);
 
-            playerIn.getMainHandItem().setDamageValue(8);
+            playerIn.getMainHandItem().hurtAndBreak(8, playerIn, player -> player.broadcastBreakEvent(playerIn.getUsedItemHand()));
 
             playerIn.getCooldowns().addCooldown(this, 20*10);
 

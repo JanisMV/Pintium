@@ -1,6 +1,7 @@
 package fr.janis.pintium.event;
 
 import fr.janis.pintium.gui.SpellsGui;
+import fr.janis.pintium.gui.TPObjectGUI;
 import fr.janis.pintium.keybind.KeyBinds;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.event.InputEvent;

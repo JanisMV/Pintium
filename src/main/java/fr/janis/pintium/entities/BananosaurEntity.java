@@ -1,6 +1,7 @@
 package fr.janis.pintium.entities;
 
 import fr.janis.pintium.init.PintiumEntities;
+import fr.janis.pintium.init.PintiumItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -21,7 +22,7 @@ import javax.annotation.Nullable;
 
 public class BananosaurEntity extends AnimalEntity {
 
-    public static final Ingredient TEMPTATION_ITEMS = Ingredient.of(Items.APPLE);
+    public static final Ingredient TEMPTATION_ITEMS = Ingredient.of(PintiumItems.BANANA.get());
 
     public BananosaurEntity(EntityType<? extends AnimalEntity> type, World worldIn) {
         super(type, worldIn);
@@ -42,7 +43,7 @@ public class BananosaurEntity extends AnimalEntity {
         super.registerGoals();
         this.goalSelector.addGoal(0, new SwimGoal(this));
         this.goalSelector.addGoal(1, new FollowParentGoal(this, 0.50D));
-        this.goalSelector.addGoal(2, new PanicGoal(this, 0.75D));
+        this.goalSelector.addGoal(2, new PanicGoal(this, 1.25D));
         this.goalSelector.addGoal(3, new BreedGoal(this, 1D));
         this.goalSelector.addGoal(4, new TemptGoal(this, 1D, TEMPTATION_ITEMS, false));
         this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 0.75D));

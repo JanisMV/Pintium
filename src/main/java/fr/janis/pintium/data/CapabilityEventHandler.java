@@ -12,13 +12,9 @@ public class CapabilityEventHandler {
     public void onAttachCapabilitiesEvent(AttachCapabilitiesEvent<Entity> e){
         if (e.getObject() instanceof PlayerEntity){
 
-            main.LOGGER.debug("He's a player");
-
             EntityKilledProvider provider = new EntityKilledProvider();
             e.addCapability(new ResourceLocation(main.MODID, "name"), provider);
             e.addListener(provider::invalidate);
-
-            main.LOGGER.debug("First Cap Ready");
         }
     }
 }

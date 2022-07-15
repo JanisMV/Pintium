@@ -16,7 +16,6 @@ public class FallingEvent {
             {
                 e.setCanceled(true);
                 player.getPersistentData().putBoolean("using_jump_stick", false);
-                player.getPersistentData().remove("using_jump_stick");
             }
         }
     }

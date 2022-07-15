@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "pintium:stick_of_god"
+    },
+    "title": {
+      "translate": "advancements.pintium.stick_of_god.title"
+    },
+    "description": {
+      "translate": "advancements.pintium.stick_of_god.desc"
+    }
+  },
+  "parent": "pintium:main/pintium_stick",
+  "criteria": {
+    "craft_speed_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pintium:stick_of_god"
+          }
+        ]
+      }
+    }
+  }
+}

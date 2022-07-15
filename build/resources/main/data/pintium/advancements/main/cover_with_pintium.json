@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "pintium:pintium_chestplate"
+    },
+    "title": {
+      "translate": "advancements.pintium.cover_with_pintium.title"
+    },
+    "description": {
+      "translate": "advancements.pintium.cover_with_pintium.desc"
+    }
+  },
+  "parent": "pintium:main/root",
+  "criteria": {
+    "craft_pintium_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pintium:pintium_helmet"
+          },
+          {
+            "item": "pintium:pintium_chestplate"
+          },
+          {
+            "item": "pintium:pintium_leggings"
+          },
+          {
+            "item": "pintium:pintium_boots"
+          }
+        ]
+      }
+    }
+  }
+}

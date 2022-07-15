@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "pintium:pintium_stick"
+    },
+    "X": {
+      "item": "pintium:compressed_pintium"
+    }
+  },
+  "result": {
+    "item": "pintium:stick_of_god"
+  }
+}

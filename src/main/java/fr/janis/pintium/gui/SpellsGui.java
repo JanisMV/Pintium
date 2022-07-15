@@ -10,6 +10,7 @@ import fr.janis.pintium.network.packet.TransformToABlockPacket;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.ClientPlayerEntity;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TranslationTextComponent;
@@ -28,6 +29,7 @@ public class SpellsGui extends Screen {
     public SpellsGui() {
         super(new TranslationTextComponent("pintium.guispells.title"));
         this.player = Minecraft.getInstance().player;
+        assert Minecraft.getInstance().player != null;
         this.world = Minecraft.getInstance().player.clientLevel;
     }
 

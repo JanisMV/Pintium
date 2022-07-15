@@ -41,7 +41,7 @@ public class SpeedStick extends Item {
 
             playerIn.addEffect(new EffectInstance(Effects.MOVEMENT_SPEED, 20*30, 2));
 
-            playerIn.getMainHandItem().setDamageValue(8);
+            playerIn.getMainHandItem().hurtAndBreak(8, playerIn, player -> player.broadcastBreakEvent(playerIn.getUsedItemHand()));
 
             playerIn.getCooldowns().addCooldown(this, 20*120);
 

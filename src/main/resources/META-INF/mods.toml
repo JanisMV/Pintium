@@ -27,9 +27,27 @@ displayURL="" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="pintium.png" #optional
 # A text field displayed in the mod UI
-credits="Me" #optional
+credits='''
+Textures :
+
+MATMADFOOT (Matteo#4847) created the textures of :
+- Speed Stick
+
+Endium Shovel Texture : https://minecraft.novaskin.me/skin/1479053164/pelle-en-endium
+Endium Hoe Texture : https://minecraft.novaskin.me/skin/2029503116/endium-hoe
+
+Music Disc :
+Title:  Synthwave Vibe
+Author: Meydän
+Source: https://meydan.bandcamp.com
+License: https://creativecommons.org/licenses/by/3.0/deed.fr
+Download (5MB): https://auboutdufil.com/?id=504
+
+Additional Sounds : Joseph SARDIN - LaSonotheque.org
+
+''' #optional
 # A text field displayed in the mod UI
-authors="Janis" #optional
+authors="Janis, MATMADFOOT" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 This mod is a mod which add a new ore with lots of new items like

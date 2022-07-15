@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "pintium:pintium_ingot"
+    },
+    "title": {
+      "translate": "advancements.pintium.root.title"
+    },
+    "description": {
+      "translate": "advancements.pintium.root.desc"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "ore_discovered": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pintium:pintium_overworld_ore"
+          }
+        ]
+      }
+    }
+  }
+}

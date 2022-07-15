@@ -17,6 +17,7 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.fml.network.NetworkEvent;
 
 import java.time.Instant;
+import java.util.Objects;
 import java.util.function.Supplier;
 
 public class TransformToABlockPacket {
@@ -35,47 +36,45 @@ public class TransformToABlockPacket {
     public static void handle(TransformToABlockPacket packet, Supplier<NetworkEvent.Context> ctxProvider) {
 
         ServerPlayerEntity p = ctxProvider.get().getSender();
-        ServerWorld world = ctxProvider.get().getSender().getLevel();
+        ServerWorld world = Objects.requireNonNull(ctxProvider.get().getSender()).getLevel();
+        assert p != null;
         CompoundNBT dataP = p.getPersistentData();
 
-        if (world != null && p != null){
-            p.getPersistentData().putLong("inertium_use", Instant.now().getEpochSecond());
+        p.getPersistentData().putLong("inertium_use", Instant.now().getEpochSecond());
 
-            if (p.getPersistentData().getLong("inertium_cooldown") <= p.getPersistentData().getLong("inertium_use")) {
-                if (p.getMainHandItem().getItem() instanceof BlockItem){
-                    main.LOGGER.debug(p.getItemBySlot(EquipmentSlotType.HEAD).getItem().getDescription().getString());
-                    if (p.getItemBySlot(EquipmentSlotType.HEAD).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlotType.CHEST).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlotType.LEGS).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlotType.FEET).getItem().getDescription().getString().equals("Air")) {
-                        dataP.putLong("inertium_cooldown", Instant.now().getEpochSecond() + 30);
-                        dataP.putBoolean("inertium_is_used", true);
-                        BlockPos posBlock = new BlockPos(p.getX() + 1, p.getY(), p.getZ() + 1);
-                        dataP.putDouble("posX", p.getX());
-                        dataP.putDouble("posY", p.getY());
-                        dataP.putDouble("posZ", p.getZ());
-                        dataP.putInt("ItemIDMH", BlockItem.getId(p.getMainHandItem().getItem()));
-                        dataP.putInt("number_of_block", p.getMainHandItem().getCount());
-                        world.setBlockAndUpdate(posBlock, ((BlockItem) p.getMainHandItem().getItem()).getBlock().defaultBlockState());
+        if (p.getPersistentData().getLong("inertium_cooldown") <= p.getPersistentData().getLong("inertium_use")) {
+            if (p.getMainHandItem().getItem() instanceof BlockItem){
+                if (p.getItemBySlot(EquipmentSlotType.HEAD).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlotType.CHEST).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlotType.LEGS).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlotType.FEET).getItem().getDescription().getString().equals("Air")) {
+                    dataP.putLong("inertium_cooldown", Instant.now().getEpochSecond() + 30);
+                    dataP.putBoolean("inertium_is_used", true);
+                    BlockPos posBlock = new BlockPos(p.getX() + 1, p.getY(), p.getZ() + 1);
+                    dataP.putDouble("posX", p.getX());
+                    dataP.putDouble("posY", p.getY());
+                    dataP.putDouble("posZ", p.getZ());
+                    dataP.putInt("ItemIDMH", BlockItem.getId(p.getMainHandItem().getItem()));
+                    dataP.putInt("number_of_block", p.getMainHandItem().getCount());
+                    world.setBlockAndUpdate(posBlock, ((BlockItem) p.getMainHandItem().getItem()).getBlock().defaultBlockState());
 
-                        p.inventory.removeItem(p.getMainHandItem().getStack());
+                    p.inventory.removeItem(p.getMainHandItem().getStack());
 
-                        p.addEffect(new EffectInstance(Effects.INVISIBILITY, 20 * 99999999, 1, true, false));
+                    p.addEffect(new EffectInstance(Effects.INVISIBILITY, 20 * 99999999, 1, true, false));
 
-                        ctxProvider.get().setPacketHandled(true);
-                    }
-                    else{
-                        String text = new TranslationTextComponent("pintium.guispells.inertium.has_armor").getString();
-                        p.displayClientMessage(ITextComponent.nullToEmpty((text)), true);
-                    }
+                    ctxProvider.get().setPacketHandled(true);
                 }
-                else {
-                    String text = new TranslationTextComponent("pintium.guispells.inertium.no_block_in_hand").getString();
+                else{
+                    String text = new TranslationTextComponent("pintium.guispells.inertium.has_armor").getString();
                     p.displayClientMessage(ITextComponent.nullToEmpty((text)), true);
                 }
             }
             else {
-                String text = new TranslationTextComponent("pintium.guispells.cooldown_not_finished1").getString() + (p.getPersistentData().getLong("inertium_cooldown") - p.getPersistentData().getLong("inertium_use")) + new TranslationTextComponent("pintium.guispells.cooldown_not_finished2").getString();
+                String text = new TranslationTextComponent("pintium.guispells.inertium.no_block_in_hand").getString();
                 p.displayClientMessage(ITextComponent.nullToEmpty((text)), true);
             }
-        ctxProvider.get().setPacketHandled(true);
         }
+        else {
+            String text = new TranslationTextComponent("pintium.guispells.cooldown_not_finished1").getString() + (p.getPersistentData().getLong("inertium_cooldown") - p.getPersistentData().getLong("inertium_use")) + new TranslationTextComponent("pintium.guispells.cooldown_not_finished2").getString();
+            p.displayClientMessage(ITextComponent.nullToEmpty((text)), true);
+        }
+        ctxProvider.get().setPacketHandled(true);
     }
 }

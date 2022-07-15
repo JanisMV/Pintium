@@ -18,7 +18,6 @@ import java.util.function.Supplier;
 public class PintiumBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, main.MODID);
-    private static final DeferredRegister<TileEntityType<?>> TILES = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, main.MODID);
 
     public static final RegistryObject<Block> PINTIUM_BLOCK = createBlock("pintium_block", PintiumBlock::new);
 

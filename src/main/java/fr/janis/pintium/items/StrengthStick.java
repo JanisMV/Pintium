@@ -41,7 +41,7 @@ public class StrengthStick extends Item {
 
             playerIn.addEffect(new EffectInstance(Effects.DAMAGE_BOOST, 20*30, 1));
 
-            playerIn.getMainHandItem().setDamageValue(8);
+            playerIn.getMainHandItem().hurtAndBreak(8, playerIn, player -> player.broadcastBreakEvent(playerIn.getUsedItemHand()));
 
             playerIn.getCooldowns().addCooldown(this, 20*120);
 

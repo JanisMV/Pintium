@@ -44,9 +44,7 @@ public class LifeStick extends Item {
     @Override
     public ActionResult<ItemStack> use(World worldIn, PlayerEntity playerIn, Hand handIn) {
         playerIn.getCapability(CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY).ifPresent(h -> {
-            main.LOGGER.debug(h.getName());
             if (h.getName() != null){
-                main.LOGGER.debug(h.getName() + "n'est pas null");
                 if (h.getName().equals(PintiumEntities.RATEL.get().getDescription().getString()))
                 {
                     if (playerIn.inventory.contains(new ItemStack(PintiumItems.HEAL_ORB.get()))) {

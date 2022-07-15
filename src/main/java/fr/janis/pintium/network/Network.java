@@ -62,5 +62,10 @@ public class Network {
                 .decoder(TameCreeperPacket::decode)
                 .consumer(TameCreeperPacket::handle)
                 .add();
+        CHANNEL.messageBuilder(TPlayerPacket.class, 9)
+                .encoder(TPlayerPacket::encode)
+                .decoder(TPlayerPacket::decode)
+                .consumer(TPlayerPacket::handle)
+                .add();
     }
 }

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "pintium:strength_stick"
+    },
+    "title": {
+      "translate": "advancements.pintium.strength_stick.title"
+    },
+    "description": {
+      "translate": "advancements.pintium.strength_stick.desc"
+    }
+  },
+  "parent": "pintium:main/pintium_stick",
+  "criteria": {
+    "craft_speed_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pintium:strength_stick"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -45,14 +45,10 @@ public class HealStick extends Item {
 
             playerIn.getCooldowns().addCooldown(this, 20*120);
 
-            playerIn.getMainHandItem().setDamageValue(8);
+            playerIn.getMainHandItem().hurtAndBreak(8, playerIn, player -> player.broadcastBreakEvent(playerIn.getUsedItemHand()));
 
             return ActionResult.pass(playerIn.getMainHandItem());
         }
-
-        //ZombieEntity entity = new ZombieEntity(worldIn);
-        //entity.setPosition(playerIn.getPosX(), playerIn.getPosY(), playerIn.getPosZ());
-        //worldIn.addEntity(entity);
 
         return ActionResult.fail(playerIn.getMainHandItem());
     }

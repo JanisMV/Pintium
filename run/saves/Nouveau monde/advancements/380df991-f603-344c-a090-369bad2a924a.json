@@ -1,0 +1,63 @@
+{
+  "pintium:main/jump_stick": {
+    "criteria": {
+      "craft_speed_stick": "2022-07-15 15:57:20 +0100"
+    },
+    "done": true
+  },
+  "pintium:main/strength_stick": {
+    "criteria": {
+      "craft_speed_stick": "2022-07-15 15:57:23 +0100"
+    },
+    "done": true
+  },
+  "pintium:main/cover_with_pintium": {
+    "criteria": {
+      "craft_pintium_armor": "2022-07-15 15:57:11 +0100"
+    },
+    "done": true
+  },
+  "pintium:main/stick_of_god": {
+    "criteria": {
+      "craft_speed_stick": "2022-07-15 15:57:18 +0100"
+    },
+    "done": true
+  },
+  "pintium:main/pintium_stick": {
+    "criteria": {
+      "craft_pintium_stick": "2022-07-15 15:57:12 +0100"
+    },
+    "done": true
+  },
+  "pintium:main/speed_stick": {
+    "criteria": {
+      "craft_speed_stick": "2022-07-15 15:57:22 +0100"
+    },
+    "done": true
+  },
+  "pintium:main/super_jump_stick": {
+    "criteria": {
+      "craft_speed_stick": "2022-07-15 15:57:27 +0100"
+    },
+    "done": true
+  },
+  "pintium:main/root": {
+    "criteria": {
+      "ore_discovered": "2022-07-15 15:57:03 +0100"
+    },
+    "done": true
+  },
+  "pintium:main/heal_stick": {
+    "criteria": {
+      "craft_heal_stick": "2022-07-15 16:01:46 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2022-07-15 15:56:44 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}
