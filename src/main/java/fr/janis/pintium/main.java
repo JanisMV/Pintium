@@ -3,7 +3,6 @@ package fr.janis.pintium;
 import fr.janis.pintium.data.CapabilityEntityKilled;
 import fr.janis.pintium.data.CapabilityEventHandler;
 import fr.janis.pintium.data.onEntityDeathEvent;
-import fr.janis.pintium.entities.*;
 import fr.janis.pintium.event.*;
 import fr.janis.pintium.init.*;
 
@@ -11,11 +10,9 @@ import fr.janis.pintium.keybind.KeyBinds;
 import fr.janis.pintium.network.Network;
 import fr.janis.pintium.utils.SoundEvents;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -73,7 +70,7 @@ public class main
     }
 
     private void clientSetup(FMLClientSetupEvent e){
-        RenderTypeLookup.setRenderLayer(PintiumBlocks.PINTIUM_CROP.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(PintiumBlocks.CANNABIS_CROP.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(PintiumBlocks.PINTIUM_CROP.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(PintiumBlocks.CANNABIS_CROP.get(), RenderType.cutout());
     }
 }

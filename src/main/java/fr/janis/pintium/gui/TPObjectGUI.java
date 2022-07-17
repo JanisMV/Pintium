@@ -1,22 +1,22 @@
 package fr.janis.pintium.gui;
 
-import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import fr.janis.pintium.main;
 import fr.janis.pintium.network.Network;
 import fr.janis.pintium.network.packet.*;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.player.ClientPlayerEntity;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.gui.FontRenderer;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.widget.TextFieldWidget;
-import net.minecraft.client.gui.widget.button.Button;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.StringUtils;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.world.World;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.StringUtil;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.server.ServerWorld;
 import sun.nio.ch.Net;
 
@@ -28,26 +28,26 @@ public class TPObjectGUI extends Screen {
     private final ResourceLocation GUI_TEXTURE_LOCATION = new ResourceLocation(main.MODID, "textures/gui/gui_base.png");
     private final int xSize = 256;
     private final int ySize = 202;
-    private final ClientPlayerEntity player;
-    private final World world;
+    private final LocalPlayer player;
+    private final Level world;
 
     private int guiLeft;
     private int guiTop;
 
-    private TextFieldWidget xbox;
-    private TextFieldWidget ybox;
-    private TextFieldWidget zbox;
+    private EditBox xbox;
+    private EditBox ybox;
+    private EditBox zbox;
 
-    private final TranslationTextComponent xbox_label = new TranslationTextComponent("pintium.tpobjectgui.field.x.title");
-    private final TranslationTextComponent ybox_label = new TranslationTextComponent("pintium.tpobjectgui.field.y.title");
-    private final TranslationTextComponent zbox_label = new TranslationTextComponent("pintium.tpobjectgui.field.z.title");
+    private final TranslatableComponent xbox_label = new TranslatableComponent("pintium.tpobjectgui.field.x.title");
+    private final TranslatableComponent ybox_label = new TranslatableComponent("pintium.tpobjectgui.field.y.title");
+    private final TranslatableComponent zbox_label = new TranslatableComponent("pintium.tpobjectgui.field.z.title");
 
     private String x;
     private String y;
     private String z;
 
     private final Predicate<String> filter = (p_210141_0_) -> {
-        if (StringUtils.isNullOrEmpty(p_210141_0_)) {
+        if (StringUtil.isNullOrEmpty(p_210141_0_)) {
             return true;
         } else {
             String[] astring = p_210141_0_.split(":");
@@ -65,7 +65,7 @@ public class TPObjectGUI extends Screen {
     };
 
     public TPObjectGUI() {
-        super(new TranslationTextComponent("pintium.TPObjectGUI.title"));
+        super(new TranslatableComponent("pintium.TPObjectGUI.title"));
         this.player = Minecraft.getInstance().player;
         assert Minecraft.getInstance().player != null;
         this.world = Minecraft.getInstance().player.level;
@@ -79,9 +79,9 @@ public class TPObjectGUI extends Screen {
     protected void init() {
         this.guiLeft = (this.width - this.xSize) / 2;
         this.guiTop = (this.height - this.ySize) / 2;
-        xbox = new TextFieldWidget(Minecraft.getInstance().font, guiLeft  + (xSize/2) - 70, guiTop + (ySize/2) - 90 + 20, 150, 20, xbox_label);
-        ybox = new TextFieldWidget(Minecraft.getInstance().font, guiLeft  + (xSize/2) - 70, guiTop + (ySize/2) - 35 + 20, 150, 20, ybox_label);
-        zbox = new TextFieldWidget(Minecraft.getInstance().font, guiLeft  + (xSize/2) - 70, guiTop + (ySize/2) + 20 + 20, 150, 20, zbox_label);
+        xbox = new EditBox(Minecraft.getInstance().font, guiLeft  + (xSize/2) - 70, guiTop + (ySize/2) - 90 + 20, 150, 20, xbox_label);
+        ybox = new EditBox(Minecraft.getInstance().font, guiLeft  + (xSize/2) - 70, guiTop + (ySize/2) - 35 + 20, 150, 20, ybox_label);
+        zbox = new EditBox(Minecraft.getInstance().font, guiLeft  + (xSize/2) - 70, guiTop + (ySize/2) + 20 + 20, 150, 20, zbox_label);
         this.xbox.setMaxLength(128);
         this.ybox.setMaxLength(128);
         this.zbox.setMaxLength(128);
@@ -94,13 +94,13 @@ public class TPObjectGUI extends Screen {
         this.children.add(this.xbox);
         this.children.add(this.ybox);
         this.children.add(this.zbox);
-        this.addButton(new Button(this.width / 2 - 100, guiTop + (ySize/2) + 20 + 20 + 30, 200, 20, new TranslationTextComponent("addServer.add"), (p_213030_1_) -> {
+        this.addWidget(new Button(this.width / 2 - 100, guiTop + (ySize/2) + 20 + 20 + 30, 200, 20, new TranslatableComponent("addServer.add"), (p_213030_1_) -> {
             this.onAdd();
         }));
     }
 
     @Override
-    public void render(MatrixStack matrixStack, int mouseX, int mouseY, float partialTicks) {
+    public void render(PoseStack matrixStack, int mouseX, int mouseY, float partialTicks) {
         drawBackGround(matrixStack);
         drawString(matrixStack, this.font, xbox_label, this.width / 2 - 100, guiTop + (ySize/2) - 90 + 20 - 15, 10526880);
         drawString(matrixStack, this.font, ybox_label, this.width / 2 - 100, guiTop + (ySize/2) - 35 + 20 - 15, 10526880);
@@ -111,9 +111,9 @@ public class TPObjectGUI extends Screen {
         super.render(matrixStack, mouseX, mouseY, partialTicks);
     }
 
-    private void drawBackGround(MatrixStack matrixStack) {
+    private void drawBackGround(PoseStack matrixStack) {
         assert this.minecraft != null;
-        this.minecraft.getTextureManager().bind(GUI_TEXTURE_LOCATION);
+        this.minecraft.getTextureManager().bindForSetup(GUI_TEXTURE_LOCATION);
         this.blit(matrixStack, guiLeft, guiTop, 0, 0, this.xSize, this.ySize);
     }
 
@@ -157,7 +157,7 @@ public class TPObjectGUI extends Screen {
             Network.CHANNEL.sendToServer(new TPlayerPacket(tx,ty,tz));
         }
         catch (Exception e) {
-            player.displayClientMessage(ITextComponent.nullToEmpty(new TranslationTextComponent("pintium.TPObjectGUI.error").getString()), true);
+            player.displayClientMessage(Component.nullToEmpty(new TranslatableComponent("pintium.TPObjectGUI.error").getString()), true);
         }
         this.onClose();
     }

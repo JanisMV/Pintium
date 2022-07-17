@@ -1,8 +1,8 @@
 package fr.janis.pintium.data;
 
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.nbt.INBT;
-import net.minecraft.util.Direction;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.Tag;
+import net.minecraft.core.Direction;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.CapabilityInject;
 import net.minecraftforge.common.capabilities.CapabilityManager;
@@ -21,8 +21,8 @@ public class CapabilityEntityKilled {
 
         @Nullable
         @Override
-        public INBT writeNBT(Capability<IEntityKilled> capability, IEntityKilled instance, Direction side) {
-            CompoundNBT tag = new CompoundNBT();
+        public Tag writeNBT(Capability<IEntityKilled> capability, IEntityKilled instance, Direction side) {
+            CompoundTag tag = new CompoundTag();
             if (instance.getName() != null){
                 tag.putString("name", instance.getName());
             }
@@ -30,8 +30,8 @@ public class CapabilityEntityKilled {
         }
 
         @Override
-        public void readNBT(Capability<IEntityKilled> capability, IEntityKilled instance, Direction side, INBT nbt) {
-            String name = ((CompoundNBT) nbt).getString("name");
+        public void readNBT(Capability<IEntityKilled> capability, IEntityKilled instance, Direction side, Tag nbt) {
+            String name = ((CompoundTag) nbt).getString("name");
             if (!name.isEmpty()){
                 instance.setName(name);
             }

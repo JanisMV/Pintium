@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "pintium:heal_stick"
+    },
+    "title": {
+      "translate": "advancements.pintium.heal_stick.title"
+    },
+    "description": {
+      "translate": "advancements.pintium.heal_stick.desc"
+    }
+  },
+  "parent": "pintium:main/pintium_stick",
+  "criteria": {
+    "craft_heal_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "pintium:heal_stick"
+          }
+        ]
+      }
+    }
+  }
+}

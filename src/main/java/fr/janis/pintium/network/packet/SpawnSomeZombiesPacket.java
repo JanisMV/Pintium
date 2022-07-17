@@ -2,16 +2,11 @@ package fr.janis.pintium.network.packet;
 
 import fr.janis.pintium.entities.ZombieBodyGuardEntity;
 import fr.janis.pintium.init.PintiumEntities;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.monster.ZombieEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.network.PacketBuffer;
-import net.minecraft.potion.Effect;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraftforge.fmllegacy.network.NetworkEvent;
 
 import java.time.Instant;
 import java.util.function.Supplier;
@@ -22,18 +17,18 @@ public class SpawnSomeZombiesPacket {
     {
     }
 
-    public static void encode(SpawnSomeZombiesPacket packet, PacketBuffer buffer)
+    public static void encode(SpawnSomeZombiesPacket packet, FriendlyByteBuf buffer)
     {
     }
 
-    public static SpawnSomeZombiesPacket decode(PacketBuffer buffer)
+    public static SpawnSomeZombiesPacket decode(FriendlyByteBuf buffer)
     {
         return new SpawnSomeZombiesPacket();
     }
 
     public static void handle(SpawnSomeZombiesPacket packet, Supplier<NetworkEvent.Context> ctxProvider) {
 
-        ServerPlayerEntity p = ctxProvider.get().getSender();
+        ServerPlayer p = ctxProvider.get().getSender();
         p.getPersistentData().putLong("zombium_use", Instant.now().getEpochSecond());
 
         if (p.getPersistentData().getLong("zombium_cooldown") <= p.getPersistentData().getLong("zombium_use")) {
@@ -45,7 +40,7 @@ public class SpawnSomeZombiesPacket {
 
                 ZombieBodyGuardEntity entity = new ZombieBodyGuardEntity(PintiumEntities.ZOMBIE_BODY_GUARD.get(), p.getLevel());
                 entity.setPos(p.getX(), p.getY(), p.getZ());
-                entity.setCustomName(new TranslationTextComponent("pintium.guispells.zombium.zombieName"));
+                entity.setCustomName(new TranslatableComponent("pintium.guispells.zombium.zombieName"));
                 entity.setBaby(true);
                 entity.setTarget(p.getLastHurtMob());
                 p.getLevel().addFreshEntity(entity);
@@ -53,8 +48,8 @@ public class SpawnSomeZombiesPacket {
             ctxProvider.get().setPacketHandled(true);
         }
         else {
-            String text = new TranslationTextComponent("pintium.guispells.cooldown_not_finished1").getString() + (p.getPersistentData().getLong("zombium_cooldown") - p.getPersistentData().getLong("zombium_use")) + new TranslationTextComponent("pintium.guispells.cooldown_not_finished2").getString();
-            p.displayClientMessage(ITextComponent.nullToEmpty((text)), true);
+            String text = new TranslatableComponent("pintium.guispells.cooldown_not_finished1").getString() + (p.getPersistentData().getLong("zombium_cooldown") - p.getPersistentData().getLong("zombium_use")) + new TranslatableComponent("pintium.guispells.cooldown_not_finished2").getString();
+            p.displayClientMessage(Component.nullToEmpty((text)), true);
         }
         ctxProvider.get().setPacketHandled(true);
     }

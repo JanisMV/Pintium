@@ -2,17 +2,17 @@ package fr.janis.pintium.utils;
 
 import fr.janis.pintium.init.PintiumItems;
 import fr.janis.pintium.main;
-import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyValue;
-import net.minecraft.util.SoundEvent;
-import net.minecraft.util.SoundEvents;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.util.LazyLoadedValue;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 
 import java.util.function.Supplier;
 
-public enum CustomPintiumArmorMaterials implements IArmorMaterial {
+public enum CustomPintiumArmorMaterials implements ArmorMaterial {
     PINTIUM_ARMOR(main.MODID + ":pintium", 42, new int[]{5, 8, 10, 5}, 25, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5f, 0.2f, () -> {
         return Ingredient.of(PintiumItems.PINTIUM_INGOT.get());
     });
@@ -25,7 +25,7 @@ public enum CustomPintiumArmorMaterials implements IArmorMaterial {
     private final SoundEvent soundEvent;
     private final float toughness;
     private final float field_234660_o_;
-    private final LazyValue<Ingredient> repairMaterial;
+    private final LazyLoadedValue<Ingredient> repairMaterial;
 
     CustomPintiumArmorMaterials(String p_i231593_3_, int p_i231593_4_, int[] p_i231593_5_, int p_i231593_6_, SoundEvent p_i231593_7_, float p_i231593_8_, float p_i231593_9_, Supplier<Ingredient> p_i231593_10_) {
         this.name = p_i231593_3_;
@@ -35,16 +35,16 @@ public enum CustomPintiumArmorMaterials implements IArmorMaterial {
         this.soundEvent = p_i231593_7_;
         this.toughness = p_i231593_8_;
         this.field_234660_o_ = p_i231593_9_;
-        this.repairMaterial = new LazyValue<>(p_i231593_10_);
+        this.repairMaterial = new LazyLoadedValue<>(p_i231593_10_);
     }
 
     @Override
-    public int getDurabilityForSlot(EquipmentSlotType slotIn) {
+    public int getDurabilityForSlot(EquipmentSlot slotIn) {
         return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.maxDamageFactor;
     }
 
     @Override
-    public int getDefenseForSlot(EquipmentSlotType slotIn) {
+    public int getDefenseForSlot(EquipmentSlot slotIn) {
         return this.damageReductionAmountArray[slotIn.getIndex()];
     }
 

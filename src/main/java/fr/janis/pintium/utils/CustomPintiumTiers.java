@@ -1,13 +1,13 @@
 package fr.janis.pintium.utils;
 
 import fr.janis.pintium.init.PintiumItems;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyValue;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.util.LazyLoadedValue;
 
 
-public enum CustomPintiumTiers implements IItemTier {
-    PINTIUM(5, 3000, 14.0F, 5.0F, 22, new LazyValue<>(() -> {
+public enum CustomPintiumTiers implements Tier {
+    PINTIUM(5, 3000, 14.0F, 5.0F, 22, new LazyLoadedValue<>(() -> {
         return Ingredient.of(PintiumItems.PINTIUM_INGOT.get());
     }));
 
@@ -16,9 +16,9 @@ public enum CustomPintiumTiers implements IItemTier {
     private final float efficiency;
     private final float attackDamage;
     private final int enchantability;
-    private final LazyValue<Ingredient> repairMaterial;
+    private final LazyLoadedValue<Ingredient> repairMaterial;
 
-    CustomPintiumTiers(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, LazyValue<Ingredient> repairMaterial) {
+    CustomPintiumTiers(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, LazyLoadedValue<Ingredient> repairMaterial) {
         this.harvestLevel = harvestLevel;
         this.maxUses = maxUses;
         this.efficiency = efficiency;

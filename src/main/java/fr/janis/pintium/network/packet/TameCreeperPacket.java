@@ -1,12 +1,9 @@
 package fr.janis.pintium.network.packet;
 
 import fr.janis.pintium.entities.CreeperBodyGuardEntity;
-import fr.janis.pintium.entities.RatelBodyGuardEntity;
-import fr.janis.pintium.entities.SkeletonBodyGuardEntity;
-import fr.janis.pintium.entities.ZombieBodyGuardEntity;
 import fr.janis.pintium.init.PintiumEntities;
-import net.minecraft.network.PacketBuffer;
-import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraftforge.fmllegacy.network.NetworkEvent;
 
 import java.util.function.Supplier;
 
@@ -16,11 +13,11 @@ public class TameCreeperPacket {
     {
     }
 
-    public static void encode(TameCreeperPacket packet, PacketBuffer buffer)
+    public static void encode(TameCreeperPacket packet, FriendlyByteBuf buffer)
     {
     }
 
-    public static TameCreeperPacket decode(PacketBuffer buffer)
+    public static TameCreeperPacket decode(FriendlyByteBuf buffer)
     {
         return new TameCreeperPacket();
     }

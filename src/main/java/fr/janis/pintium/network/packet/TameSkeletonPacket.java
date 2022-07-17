@@ -1,11 +1,9 @@
 package fr.janis.pintium.network.packet;
 
-import fr.janis.pintium.entities.RatelBodyGuardEntity;
 import fr.janis.pintium.entities.SkeletonBodyGuardEntity;
-import fr.janis.pintium.entities.ZombieBodyGuardEntity;
 import fr.janis.pintium.init.PintiumEntities;
-import net.minecraft.network.PacketBuffer;
-import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraftforge.fmllegacy.network.NetworkEvent;
 
 import java.util.function.Supplier;
 
@@ -15,11 +13,11 @@ public class TameSkeletonPacket {
     {
     }
 
-    public static void encode(TameSkeletonPacket packet, PacketBuffer buffer)
+    public static void encode(TameSkeletonPacket packet, FriendlyByteBuf buffer)
     {
     }
 
-    public static TameSkeletonPacket decode(PacketBuffer buffer)
+    public static TameSkeletonPacket decode(FriendlyByteBuf buffer)
     {
         return new TameSkeletonPacket();
     }

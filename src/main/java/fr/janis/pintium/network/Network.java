@@ -2,9 +2,9 @@ package fr.janis.pintium.network;
 
 import fr.janis.pintium.main;
 import fr.janis.pintium.network.packet.*;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.network.NetworkRegistry;
-import net.minecraftforge.fml.network.simple.SimpleChannel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.fmllegacy.network.NetworkRegistry;
+import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
 
 public class Network {
     public static final String PROTOCOL_VERSION = String.valueOf(1);

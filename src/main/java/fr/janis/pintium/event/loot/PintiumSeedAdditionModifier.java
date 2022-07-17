@@ -1,12 +1,12 @@
 package fr.janis.pintium.event.loot;
 
 import com.google.gson.JsonObject;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.loot.LootContext;
-import net.minecraft.loot.conditions.ILootCondition;
-import net.minecraft.util.JSONUtils;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.util.GsonHelper;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -17,7 +17,7 @@ import java.util.List;
 public class PintiumSeedAdditionModifier extends LootModifier {
     private final Item addition;
 
-    protected PintiumSeedAdditionModifier(ILootCondition[] conditionsIn, Item addition) {
+    protected PintiumSeedAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
         super(conditionsIn);
         this.addition = addition;
     }
@@ -36,9 +36,9 @@ public class PintiumSeedAdditionModifier extends LootModifier {
     public static class Serializer extends GlobalLootModifierSerializer<PintiumSeedAdditionModifier> {
 
         @Override
-        public PintiumSeedAdditionModifier read(ResourceLocation name, JsonObject object, ILootCondition[] conditionsIn) {
+        public PintiumSeedAdditionModifier read(ResourceLocation name, JsonObject object, LootItemCondition[] conditionsIn) {
             Item addition = ForgeRegistries.ITEMS.getValue(
-                    new ResourceLocation(JSONUtils.getAsString(object, "addition")));
+                    new ResourceLocation(GsonHelper.getAsString(object, "addition")));
             return new PintiumSeedAdditionModifier(conditionsIn, addition);
         }
 

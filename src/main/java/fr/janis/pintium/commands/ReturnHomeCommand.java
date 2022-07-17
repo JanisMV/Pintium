@@ -3,20 +3,20 @@ package fr.janis.pintium.commands;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import fr.janis.pintium.main;
-import net.minecraft.command.CommandSource;
-import net.minecraft.command.Commands;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.TextComponent;
 
 public class ReturnHomeCommand {
-    public ReturnHomeCommand(CommandDispatcher<CommandSource> dispatcher){
+    public ReturnHomeCommand(CommandDispatcher<CommandSourceStack> dispatcher){
         dispatcher.register(Commands.literal("home").executes((command) -> {
             return returnHome(command.getSource());
         }));
     }
 
-    private int returnHome(CommandSource s) throws CommandSyntaxException{
-        ServerPlayerEntity p = s.getPlayerOrException();
+    private int returnHome(CommandSourceStack s) throws CommandSyntaxException{
+        ServerPlayer p = s.getPlayerOrException();
         boolean hasHome = p.getPersistentData().getIntArray(main.MODID + "homepos").length != 0;
         double x;
         double z;
@@ -41,10 +41,10 @@ public class ReturnHomeCommand {
 
             p.teleportTo(x, ppos[1], z);
 
-            s.sendSuccess(new StringTextComponent( "You returned home"), true);
+            s.sendSuccess(new TextComponent( "You returned home"), true);
             return 1;
         }else {
-            s.sendSuccess(new StringTextComponent("No home set"), true);
+            s.sendSuccess(new TextComponent("No home set"), true);
             return -1;
         }
 

@@ -2,8 +2,8 @@ package fr.janis.pintium.network.packet;
 
 import fr.janis.pintium.entities.RatelBodyGuardEntity;
 import fr.janis.pintium.init.PintiumEntities;
-import net.minecraft.network.PacketBuffer;
-import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraftforge.fmllegacy.network.NetworkEvent;
 
 import java.util.function.Supplier;
 
@@ -13,11 +13,11 @@ public class TameRatelPacket {
     {
     }
 
-    public static void encode(TameRatelPacket packet, PacketBuffer buffer)
+    public static void encode(TameRatelPacket packet, FriendlyByteBuf buffer)
     {
     }
 
-    public static TameRatelPacket decode(PacketBuffer buffer)
+    public static TameRatelPacket decode(FriendlyByteBuf buffer)
     {
         return new TameRatelPacket();
     }

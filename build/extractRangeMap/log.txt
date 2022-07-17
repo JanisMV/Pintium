@@ -1,0 +1,300 @@
+Java Launcher: C:\Users\Win10\.gradle\jdks\jdk-11.0.15+10\bin\java.exe
+Arguments: '--extract, --source-compatibility, 1.8, --output, C:\Users\Win10\Desktop\Pintium-1.16.5\build\extractRangeMap\output.txt, --lib, C:\Users\Win10\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.2.34_mapped_official_1.16.5\forge-1.16.5-36.2.34_mapped_official_1.16.5-recomp.jar, --lib, C:\Users\Win10\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.2.34_mapped_official_1.16.5\forge-1.16.5-36.2.34_mapped_official_1.16.5-launcher.jar, --lib, C:\Users\Win10\.gradle\caches\forge_gradle\minecraft_repo\versions\1.16.5\client-extra.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.0.9\d1e1ba354a40b5703340b5cb02fdca489cff3646\mergetool-1.0.9-api.jar, --lib, C:\Users\Win10\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.16.5\mapping-1.16.5-mapping.zip, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\cpw.mods\modlauncher\8.1.3\6d0bfd78e025a87d43985e30907aa9ecbc51b2d6\modlauncher-8.1.3.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-commons\9.1\8b971b182eb5cf100b9e8d4119152d83e00e0fdd\asm-commons-9.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\9.1\36464a45d871779f3383a8a9aba2b26562a86729\asm-util-9.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\9.1\4f61b83b81d8b659958f4bcc48907e93ecea55a0\asm-analysis-9.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\9.1\c333f2a855069cb8eb17a40a3eb8b1b67755d0eb\asm-tree-9.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.1\a99500cf6eea30535eeac6be73899d048f8d12a8\asm-9.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\cpw.mods\grossjava9hacks\1.3.3\e49222512ea6cabdd8b49761cef1d5a207b1f0d9\grossjava9hacks-1.3.3.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\accesstransformers\3.0.1\6d23c1b9cb0607fddc38d09730796f68db96f546\accesstransformers-3.0.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4-runtime\4.9.1\428664f05d2b7f7b7610204b5aa7c1763f62011a\antlr4-runtime-4.9.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\eventbus\4.0.0\260e34800723e4c098c4e247cf2b900535e01b6d\eventbus-4.0.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\forgespi\3.2.0\c6ca4e4e4a0343701407c760e642537b613b543\forgespi-3.2.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\coremods\4.0.6\d6d761379c841e2610abebcbf70ed20b65f728f0\coremods-4.0.6.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\unsafe\0.2.0\54d7a0a5e8fdb71b973025caa46f341ae5904f39\unsafe-0.2.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\toml\3.6.3\2b05b4d606c517da4d1a7b6d2b97d751c92887d7\toml-3.6.3.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\core\3.6.3\c601bfeaeb2c0abe7aaa901b0bbe6d1beff49281\core-3.6.3.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.jline\jline\3.12.1\de2bd909cb9f8eaa741bd03df4a1bd3f6eb593c7\jline-3.12.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.6.3\f8ff8032903882376e8d000c51e3e16d20fc7df7\maven-artifact-3.6.3.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.jodah\typetools\0.8.3\98f84f353457629e81cc6827224871b1a8faa7af\typetools-0.8.3.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecrell\terminalconsoleappender\1.2.0\96d02cd3b384ff015a8fef4223bcb4ccf1717c95\terminalconsoleappender-1.2.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.15.0\ba55c13d7ac2fd44df9cc8074455719a33f375b9\log4j-core-2.15.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-slf4j18-impl\2.15.0\88f72ad364bfc3a7cf43186fc17212f2b4bb8d97\log4j-slf4j18-impl-2.15.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.15.0\4a5aa7e55a29391c6f66e0b259d5189aa11e45d0\log4j-api-2.15.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\5.0.4\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\jopt-simple-5.0.4.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.spongepowered\mixin\0.8.4\4ec7d77d9ab32596ca0b78bb123956734767e3a\mixin-0.8.4.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\nashorn-core-compat\15.1.1.1\1817deb38a5a8811148dca0d23161d92bdbd6184\nashorn-core-compat-15.1.1.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\1.3.9\eb8bb7b66fa0e2152b1b40b3856e82f7619439ee\patchy-1.3.9.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.4.0\cb208278274bf12ebdb56c61bd7407e6f774d65a\jna-4.4.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\platform\3.4.0\e3f70017be8100d3d6923f50b3d2ee17714e9c13\platform-3.4.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j\66.1\72c7519b6d91f7a1f993bd44a99fe95d67211b27\icu4j-66.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\javabridge\1.0.22\6aa6453aa99a52a5cd91749da1af6ab70e082ab3\javabridge-1.0.22.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.1.25.Final\d0626cd3108294d1d58c05859add27b4ef21f83b\netty-all-4.1.25.Final.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\21.0\3a3d111be1be1b745edfa7d91678a12d7ed38709\guava-21.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.8.1\6505a72a097d9270f7a9e7bf42c4238283247755\commons-lang3-3.8.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10\4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\brigadier\1.0.17\c6b7dc51dd44379cc751b7504816006e9be4b1e6\brigadier-1.0.17.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\datafixerupper\4.0.26\ebd6690f33871ccee9b6132c6480668ee2e35020\datafixerupper-4.0.26.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\2.1.28\ad54da276bf59983d02d5ed16fc14541354c71fd\authlib-2.1.28.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\8.2.1\5ad88f325e424f8dbc2be5459e21ea5cab3864e9\fastutil-8.2.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.2.2\ee8e57a79300f78294576d87c4a587f8c99402e2\lwjgl-jemalloc-3.2.2.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.2.2\2b772a102b0a11ee5f2109a5b136f4dc7c630827\lwjgl-openal-3.2.2.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.2.2\6ac5bb88b44c43ea195a570aab059f63da004cd8\lwjgl-opengl-3.2.2.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.2\d3ad4df38e400b8afba1de63f84338809399df5b\lwjgl-glfw-3.2.2.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.2.2\3b8e6ebc5851dd3d17e37e5cadce2eff2a429f0f\lwjgl-stb-3.2.2.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.2.2\fcbe606c8f8da6f8f9a05e2c540eb1ee8632b0e9\lwjgl-tinyfd-3.2.2.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.2.2\8ad6294407e15780b43e84929c40e4c5e997972e\lwjgl-3.2.2.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.11.3\f378f889797edd7df8d32272c06ca80a1b6b0f58\text2speech-1.11.3.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.2.1\13b015768e0d04849d2794e4c47eb02d01a0de32\plexus-utils-3.2.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.8.0-beta4\83b0359d847ee053d745be7ec0d8e9e8a44304b4\slf4j-api-1.8.0-beta4.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.jline\jline-reader\3.12.1\4382ab1382c7b6f379377ed5f665dc2f6e1218bc\jline-reader-3.12.1.jar, --lib, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.jline\jline-terminal\3.12.1\c777448314e050d980a6b697c140f3bfe9eb7416\jline-terminal-3.12.1.jar, --input, C:\Users\Win10\Desktop\Pintium-1.16.5\src\main\java, --batch, true'
+Classpath:
+ - C:\Users\Win10\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\Srg2Source\8.0.8\Srg2Source-8.0.8-fatjar.jar
+Working directory: C:\Users\Win10\Desktop\Pintium-1.16.5\build\extractRangeMap
+Main class: net.minecraftforge.srg2source.ConsoleTool
+====================================
+Compat: JAVA_1_8
+Output: C:\Users\Win10\Desktop\Pintium-1.16.5\build\extractRangeMap\output.txt
+Batch:  true
+Mixins: false
+Fatal:  false
+Lib:    C:\Users\Win10\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.2.34_mapped_official_1.16.5\forge-1.16.5-36.2.34_mapped_official_1.16.5-recomp.jar
+Lib:    C:\Users\Win10\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.2.34_mapped_official_1.16.5\forge-1.16.5-36.2.34_mapped_official_1.16.5-launcher.jar
+Lib:    C:\Users\Win10\.gradle\caches\forge_gradle\minecraft_repo\versions\1.16.5\client-extra.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.0.9\d1e1ba354a40b5703340b5cb02fdca489cff3646\mergetool-1.0.9-api.jar
+Lib:    C:\Users\Win10\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.16.5\mapping-1.16.5-mapping.zip
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\cpw.mods\modlauncher\8.1.3\6d0bfd78e025a87d43985e30907aa9ecbc51b2d6\modlauncher-8.1.3.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-commons\9.1\8b971b182eb5cf100b9e8d4119152d83e00e0fdd\asm-commons-9.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\9.1\36464a45d871779f3383a8a9aba2b26562a86729\asm-util-9.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\9.1\4f61b83b81d8b659958f4bcc48907e93ecea55a0\asm-analysis-9.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\9.1\c333f2a855069cb8eb17a40a3eb8b1b67755d0eb\asm-tree-9.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.1\a99500cf6eea30535eeac6be73899d048f8d12a8\asm-9.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\cpw.mods\grossjava9hacks\1.3.3\e49222512ea6cabdd8b49761cef1d5a207b1f0d9\grossjava9hacks-1.3.3.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\accesstransformers\3.0.1\6d23c1b9cb0607fddc38d09730796f68db96f546\accesstransformers-3.0.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4-runtime\4.9.1\428664f05d2b7f7b7610204b5aa7c1763f62011a\antlr4-runtime-4.9.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\eventbus\4.0.0\260e34800723e4c098c4e247cf2b900535e01b6d\eventbus-4.0.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\forgespi\3.2.0\c6ca4e4e4a0343701407c760e642537b613b543\forgespi-3.2.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\coremods\4.0.6\d6d761379c841e2610abebcbf70ed20b65f728f0\coremods-4.0.6.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\unsafe\0.2.0\54d7a0a5e8fdb71b973025caa46f341ae5904f39\unsafe-0.2.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\toml\3.6.3\2b05b4d606c517da4d1a7b6d2b97d751c92887d7\toml-3.6.3.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\core\3.6.3\c601bfeaeb2c0abe7aaa901b0bbe6d1beff49281\core-3.6.3.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.jline\jline\3.12.1\de2bd909cb9f8eaa741bd03df4a1bd3f6eb593c7\jline-3.12.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.6.3\f8ff8032903882376e8d000c51e3e16d20fc7df7\maven-artifact-3.6.3.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.jodah\typetools\0.8.3\98f84f353457629e81cc6827224871b1a8faa7af\typetools-0.8.3.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecrell\terminalconsoleappender\1.2.0\96d02cd3b384ff015a8fef4223bcb4ccf1717c95\terminalconsoleappender-1.2.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.15.0\ba55c13d7ac2fd44df9cc8074455719a33f375b9\log4j-core-2.15.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-slf4j18-impl\2.15.0\88f72ad364bfc3a7cf43186fc17212f2b4bb8d97\log4j-slf4j18-impl-2.15.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.15.0\4a5aa7e55a29391c6f66e0b259d5189aa11e45d0\log4j-api-2.15.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\5.0.4\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\jopt-simple-5.0.4.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.spongepowered\mixin\0.8.4\4ec7d77d9ab32596ca0b78bb123956734767e3a\mixin-0.8.4.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.minecraftforge\nashorn-core-compat\15.1.1.1\1817deb38a5a8811148dca0d23161d92bdbd6184\nashorn-core-compat-15.1.1.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\1.3.9\eb8bb7b66fa0e2152b1b40b3856e82f7619439ee\patchy-1.3.9.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.4.0\cb208278274bf12ebdb56c61bd7407e6f774d65a\jna-4.4.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\platform\3.4.0\e3f70017be8100d3d6923f50b3d2ee17714e9c13\platform-3.4.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j\66.1\72c7519b6d91f7a1f993bd44a99fe95d67211b27\icu4j-66.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\javabridge\1.0.22\6aa6453aa99a52a5cd91749da1af6ab70e082ab3\javabridge-1.0.22.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.1.25.Final\d0626cd3108294d1d58c05859add27b4ef21f83b\netty-all-4.1.25.Final.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\21.0\3a3d111be1be1b745edfa7d91678a12d7ed38709\guava-21.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.8.1\6505a72a097d9270f7a9e7bf42c4238283247755\commons-lang3-3.8.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10\4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\brigadier\1.0.17\c6b7dc51dd44379cc751b7504816006e9be4b1e6\brigadier-1.0.17.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\datafixerupper\4.0.26\ebd6690f33871ccee9b6132c6480668ee2e35020\datafixerupper-4.0.26.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\2.1.28\ad54da276bf59983d02d5ed16fc14541354c71fd\authlib-2.1.28.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\8.2.1\5ad88f325e424f8dbc2be5459e21ea5cab3864e9\fastutil-8.2.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-jemalloc\3.2.2\ee8e57a79300f78294576d87c4a587f8c99402e2\lwjgl-jemalloc-3.2.2.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.2.2\2b772a102b0a11ee5f2109a5b136f4dc7c630827\lwjgl-openal-3.2.2.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-opengl\3.2.2\6ac5bb88b44c43ea195a570aab059f63da004cd8\lwjgl-opengl-3.2.2.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.2\d3ad4df38e400b8afba1de63f84338809399df5b\lwjgl-glfw-3.2.2.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-stb\3.2.2\3b8e6ebc5851dd3d17e37e5cadce2eff2a429f0f\lwjgl-stb-3.2.2.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-tinyfd\3.2.2\fcbe606c8f8da6f8f9a05e2c540eb1ee8632b0e9\lwjgl-tinyfd-3.2.2.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.2.2\8ad6294407e15780b43e84929c40e4c5e997972e\lwjgl-3.2.2.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.11.3\f378f889797edd7df8d32272c06ca80a1b6b0f58\text2speech-1.11.3.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.2.1\13b015768e0d04849d2794e4c47eb02d01a0de32\plexus-utils-3.2.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.8.0-beta4\83b0359d847ee053d745be7ec0d8e9e8a44304b4\slf4j-api-1.8.0-beta4.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.jline\jline-reader\3.12.1\4382ab1382c7b6f379377ed5f665dc2f6e1218bc\jline-reader-3.12.1.jar
+Lib:    C:\Users\Win10\.gradle\caches\modules-2\files-2.1\org.jline\jline-terminal\3.12.1\c777448314e050d980a6b697c140f3bfe9eb7416\jline-terminal-3.12.1.jar
+Input:  C:\Users\Win10\Desktop\Pintium-1.16.5\src\main\java
+# Unsupposrted library path: C:\Users\Win10\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.16.5\mapping-1.16.5-mapping.zip
+# Symbol range map extraction starting
+# Processing 73 files
+# startProcessing "fr/janis/pintium/blocks/BananaBlock.java" md5: ed6d55b93f15e9b04c6dcebb3ea01b42
+# endProcessing "fr/janis/pintium/blocks/BananaBlock.java"
+# 
+# startProcessing "fr/janis/pintium/blocks/PintiumBlock.java" md5: ba522f0d11ea0bd86e74b8928af88a55
+# endProcessing "fr/janis/pintium/blocks/PintiumBlock.java"
+# 
+# startProcessing "fr/janis/pintium/client/model/BananoFishModel.java" md5: e5495f81104982604f72bf5242c1005f
+# endProcessing "fr/janis/pintium/client/model/BananoFishModel.java"
+# 
+# startProcessing "fr/janis/pintium/client/model/BananosaurModel.java" md5: 608a601b6292c2ab454a7e979c03b7b3
+# endProcessing "fr/janis/pintium/client/model/BananosaurModel.java"
+# 
+# startProcessing "fr/janis/pintium/client/model/RatelModel.java" md5: bbf2172e603abaa5f8cdca2884faa9fb
+# endProcessing "fr/janis/pintium/client/model/RatelModel.java"
+# 
+# startProcessing "fr/janis/pintium/client/model/TunaModel.java" md5: cd974950012f7f094b40ae71609711b0
+# endProcessing "fr/janis/pintium/client/model/TunaModel.java"
+# 
+# startProcessing "fr/janis/pintium/client/render/BananoFishRenderer.java" md5: d8771a8fc9686115af61f8bb362d552d
+# endProcessing "fr/janis/pintium/client/render/BananoFishRenderer.java"
+# 
+# startProcessing "fr/janis/pintium/client/render/BananosaurRenderer.java" md5: 0379f4b60503c607a88fcfa0d5c7ca85
+# endProcessing "fr/janis/pintium/client/render/BananosaurRenderer.java"
+# 
+# startProcessing "fr/janis/pintium/client/render/RatelRenderer.java" md5: 2e16a9040cdc65b1062f6d4df635ecb4
+# endProcessing "fr/janis/pintium/client/render/RatelRenderer.java"
+# 
+# startProcessing "fr/janis/pintium/client/render/TunaRenderer.java" md5: 0c0edb3c93f495bd656df27c19ea229d
+# endProcessing "fr/janis/pintium/client/render/TunaRenderer.java"
+# 
+# startProcessing "fr/janis/pintium/commands/DelHomeCommand.java" md5: 454974ea07cdffbcd6d870a6858f0d37
+# endProcessing "fr/janis/pintium/commands/DelHomeCommand.java"
+# 
+# startProcessing "fr/janis/pintium/commands/ListHomesCommand.java" md5: 3939a634beced170c594b341b6c07f78
+# endProcessing "fr/janis/pintium/commands/ListHomesCommand.java"
+# 
+# startProcessing "fr/janis/pintium/commands/ReturnHomeCommand.java" md5: b0078e56fc671451d3fd4bc8898e5977
+# endProcessing "fr/janis/pintium/commands/ReturnHomeCommand.java"
+# 
+# startProcessing "fr/janis/pintium/commands/SetHomeCommand.java" md5: 03d103941f923a4c5588c21bad02cb84
+# endProcessing "fr/janis/pintium/commands/SetHomeCommand.java"
+# 
+# startProcessing "fr/janis/pintium/data/CapabilityEntityKilled.java" md5: 6e0c2a8e9e2f55439d639f7c72d24efe
+# endProcessing "fr/janis/pintium/data/CapabilityEntityKilled.java"
+# 
+# startProcessing "fr/janis/pintium/data/CapabilityEventHandler.java" md5: 77a81fa1bedb68f134d624b542573665
+# endProcessing "fr/janis/pintium/data/CapabilityEventHandler.java"
+# 
+# startProcessing "fr/janis/pintium/data/EntityKilled.java" md5: dfd662d02da8aa0acc170847fc77eb01
+# endProcessing "fr/janis/pintium/data/EntityKilled.java"
+# 
+# startProcessing "fr/janis/pintium/data/EntityKilledProvider.java" md5: c78f17bde511fcbeca5b44715f96504b
+# endProcessing "fr/janis/pintium/data/EntityKilledProvider.java"
+# 
+# startProcessing "fr/janis/pintium/data/ICapabilitySerializable.java" md5: 96488b56588165c4a39d26ff0ec28bb6
+# endProcessing "fr/janis/pintium/data/ICapabilitySerializable.java"
+# 
+# startProcessing "fr/janis/pintium/data/IEntityKilled.java" md5: 128fca411bacabd0dcc8aca4a86d566b
+# endProcessing "fr/janis/pintium/data/IEntityKilled.java"
+# 
+# startProcessing "fr/janis/pintium/data/onEntityDeathEvent.java" md5: 0c081c716816c4538c6a27caba06de5f
+# endProcessing "fr/janis/pintium/data/onEntityDeathEvent.java"
+# 
+# startProcessing "fr/janis/pintium/entities/BananoFishEntity.java" md5: d21d3998751a305ab3692aa06912a50c
+# endProcessing "fr/janis/pintium/entities/BananoFishEntity.java"
+# 
+# startProcessing "fr/janis/pintium/entities/BananosaurEntity.java" md5: 4b258a15792733944b34d6498b02c4ea
+# endProcessing "fr/janis/pintium/entities/BananosaurEntity.java"
+# 
+# startProcessing "fr/janis/pintium/entities/CreeperBodyGuardEntity.java" md5: 13cefccc0196d6594fd50a720f7aaa3b
+# endProcessing "fr/janis/pintium/entities/CreeperBodyGuardEntity.java"
+# 
+# startProcessing "fr/janis/pintium/entities/RatelBodyGuardEntity.java" md5: c4912016df7411055cdf31964151e1b2
+# endProcessing "fr/janis/pintium/entities/RatelBodyGuardEntity.java"
+# 
+# startProcessing "fr/janis/pintium/entities/RatelEntity.java" md5: 213144c3ad294a2579bd0c3a8806b3ad
+# endProcessing "fr/janis/pintium/entities/RatelEntity.java"
+# 
+# startProcessing "fr/janis/pintium/entities/SkeletonBodyGuardEntity.java" md5: a843c1eceac67110ba1f00790f65cc45
+# endProcessing "fr/janis/pintium/entities/SkeletonBodyGuardEntity.java"
+# 
+# startProcessing "fr/janis/pintium/entities/TunaEntity.java" md5: 44b43465681f32320c99535e5b014fb5
+# endProcessing "fr/janis/pintium/entities/TunaEntity.java"
+# 
+# startProcessing "fr/janis/pintium/entities/ZombieBodyGuardEntity.java" md5: 81b2da858c6f78e148bdaaa9c39ef7c4
+# endProcessing "fr/janis/pintium/entities/ZombieBodyGuardEntity.java"
+# 
+# startProcessing "fr/janis/pintium/event/ArmorEvents.java" md5: 61e56d566028bce91fb1ce9976638b2d
+# endProcessing "fr/janis/pintium/event/ArmorEvents.java"
+# 
+# startProcessing "fr/janis/pintium/event/FallingEvent.java" md5: 48ab1b035c89590e086384c891e37f80
+# endProcessing "fr/janis/pintium/event/FallingEvent.java"
+# 
+# startProcessing "fr/janis/pintium/event/KeyBindEvent.java" md5: f177131ac6e8f74f519ce111c0badf2f
+# endProcessing "fr/janis/pintium/event/KeyBindEvent.java"
+# 
+# startProcessing "fr/janis/pintium/event/PintiumEvents.java" md5: 663c58e651e0d6f18174de54d84a20af
+# endProcessing "fr/janis/pintium/event/PintiumEvents.java"
+# 
+# startProcessing "fr/janis/pintium/event/ServerTickEvent.java" md5: 8655b901f67a806e7b2185c9b0bcfc1c
+# endProcessing "fr/janis/pintium/event/ServerTickEvent.java"
+# 
+# startProcessing "fr/janis/pintium/event/TickEvent.java" md5: cd5bc7ee317d4802d680506eca9f1826
+# endProcessing "fr/janis/pintium/event/TickEvent.java"
+# 
+# startProcessing "fr/janis/pintium/event/UsedItemEvent.java" md5: e15b288aa871c2440616691e874597a2
+# endProcessing "fr/janis/pintium/event/UsedItemEvent.java"
+# 
+# startProcessing "fr/janis/pintium/event/loot/PintiumSeedAdditionModifier.java" md5: 0b733feeeae0d561cf89fca77ff34fef
+# endProcessing "fr/janis/pintium/event/loot/PintiumSeedAdditionModifier.java"
+# 
+# startProcessing "fr/janis/pintium/gui/SpellsGui.java" md5: b138ca7fb4542e2e9ad24bde1d27b975
+# endProcessing "fr/janis/pintium/gui/SpellsGui.java"
+# 
+# startProcessing "fr/janis/pintium/gui/TPObjectGUI.java" md5: 0134e5a43ac033aa468b86b3cdab4c20
+# endProcessing "fr/janis/pintium/gui/TPObjectGUI.java"
+# 
+# startProcessing "fr/janis/pintium/init/CannabisCrop.java" md5: 78de8b4140ea58f8425362a368a21e4f
+# endProcessing "fr/janis/pintium/init/CannabisCrop.java"
+# 
+# startProcessing "fr/janis/pintium/init/PintiumBlocks.java" md5: 9ddf12dbc5526b4cdff8c2ef246835f0
+# endProcessing "fr/janis/pintium/init/PintiumBlocks.java"
+# 
+# startProcessing "fr/janis/pintium/init/PintiumCrop.java" md5: 7e1d26269b69bf7e7d7ed50c853feda7
+# endProcessing "fr/janis/pintium/init/PintiumCrop.java"
+# 
+# startProcessing "fr/janis/pintium/init/PintiumEntities.java" md5: 63ac004c86ecf95b73b5637c929eea40
+# endProcessing "fr/janis/pintium/init/PintiumEntities.java"
+# 
+# startProcessing "fr/janis/pintium/init/PintiumFeatures.java" md5: 8cdd825ac965225387d22b3964be3e61
+# endProcessing "fr/janis/pintium/init/PintiumFeatures.java"
+# 
+# startProcessing "fr/janis/pintium/init/PintiumItems.java" md5: e651609dcdf9a40e054e10a998e25942
+# endProcessing "fr/janis/pintium/init/PintiumItems.java"
+# 
+# startProcessing "fr/janis/pintium/items/HealStick.java" md5: b3a00c1597bd1f86a58bf1c5fdef5486
+# endProcessing "fr/janis/pintium/items/HealStick.java"
+# 
+# startProcessing "fr/janis/pintium/items/JumpStick.java" md5: f8c0c7a7d09341a0b25205ed6e6bc3e2
+# endProcessing "fr/janis/pintium/items/JumpStick.java"
+# 
+# startProcessing "fr/janis/pintium/items/LifeStick.java" md5: 85afd409addaf70bad9f07e24a31d2ba
+# endProcessing "fr/janis/pintium/items/LifeStick.java"
+# 
+# startProcessing "fr/janis/pintium/items/PintiumHammer.java" md5: acbe28a5e327a3172b7480e7f1385661
+# endProcessing "fr/janis/pintium/items/PintiumHammer.java"
+# 
+# startProcessing "fr/janis/pintium/items/PintiumSpawnEggItem.java" md5: f71f40e3b3570aabb5419275e8d8832a
+# endProcessing "fr/janis/pintium/items/PintiumSpawnEggItem.java"
+# 
+# startProcessing "fr/janis/pintium/items/SpeedStick.java" md5: f55b75c66ec8bdddff3e151492ebe0b2
+# endProcessing "fr/janis/pintium/items/SpeedStick.java"
+# 
+# startProcessing "fr/janis/pintium/items/StickOfGod.java" md5: 48c6567d67cc6ed8051d81a65d05b397
+# endProcessing "fr/janis/pintium/items/StickOfGod.java"
+# 
+# startProcessing "fr/janis/pintium/items/StrengthStick.java" md5: 597be136c9f2c8f3230e7d2a3602adab
+# endProcessing "fr/janis/pintium/items/StrengthStick.java"
+# 
+# startProcessing "fr/janis/pintium/items/SuperJumpStick.java" md5: df9925c8fe11349597743b66e8fcdec2
+# endProcessing "fr/janis/pintium/items/SuperJumpStick.java"
+# 
+# startProcessing "fr/janis/pintium/items/TPObject.java" md5: 67ca5128e4464289da23212d90b9bbae
+# endProcessing "fr/janis/pintium/items/TPObject.java"
+# 
+# startProcessing "fr/janis/pintium/keybind/KeyBinds.java" md5: fb440cb7fb5066793c3f40d8e29b3749
+# endProcessing "fr/janis/pintium/keybind/KeyBinds.java"
+# 
+# startProcessing "fr/janis/pintium/main.java" md5: e25a12c8de66ac2341e15096f2bea93d
+# endProcessing "fr/janis/pintium/main.java"
+# 
+# startProcessing "fr/janis/pintium/network/Network.java" md5: 5bdd00fc7d78c6e6e3b54b526224e2d6
+# endProcessing "fr/janis/pintium/network/Network.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/CannabisPacket.java" md5: 55f157f10a9a56415fd9c10e775280b0
+# endProcessing "fr/janis/pintium/network/packet/CannabisPacket.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/LaunchFireBall.java" md5: 3326c48ff21ec3234811429f16997c98
+# endProcessing "fr/janis/pintium/network/packet/LaunchFireBall.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/SpawnABoatPacket.java" md5: f9b0f0df5513ef30f8c212aef6057b40
+# endProcessing "fr/janis/pintium/network/packet/SpawnABoatPacket.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/SpawnSomeZombiesPacket.java" md5: 044b7945e41ff05f903cac0263162c14
+# endProcessing "fr/janis/pintium/network/packet/SpawnSomeZombiesPacket.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/TPlayerPacket.java" md5: 4740730f9c2cdf3bea89aa72a2874fb3
+# endProcessing "fr/janis/pintium/network/packet/TPlayerPacket.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/TameCreeperPacket.java" md5: d8246dcb75ad3d6c62e0217a05d0753c
+# endProcessing "fr/janis/pintium/network/packet/TameCreeperPacket.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/TameRatelPacket.java" md5: ff6c3350365c36f942b71147d114bdf2
+# endProcessing "fr/janis/pintium/network/packet/TameRatelPacket.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/TameSkeletonPacket.java" md5: 78fac12603fa0e89564e62ba895eda7b
+# endProcessing "fr/janis/pintium/network/packet/TameSkeletonPacket.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/TameZombiePacket.java" md5: 4048b07fa20bf026cb24a54207059c8e
+# endProcessing "fr/janis/pintium/network/packet/TameZombiePacket.java"
+# 
+# startProcessing "fr/janis/pintium/network/packet/TransformToABlockPacket.java" md5: 8ef3fbde9ede3c2ed0e036705be6c132
+# endProcessing "fr/janis/pintium/network/packet/TransformToABlockPacket.java"
+# 
+# startProcessing "fr/janis/pintium/utils/ClientEventBusSubscriber.java" md5: 7ba3fc03c3f1a0a3555e8eb00fb62bb8
+# endProcessing "fr/janis/pintium/utils/ClientEventBusSubscriber.java"
+# 
+# startProcessing "fr/janis/pintium/utils/CustomPintiumArmorMaterials.java" md5: fc08d298cef880b23ae26f19b47c0c9d
+# endProcessing "fr/janis/pintium/utils/CustomPintiumArmorMaterials.java"
+# 
+# startProcessing "fr/janis/pintium/utils/CustomPintiumTiers.java" md5: 6a59325b9f006b71aa39abf85e5180e0
+# endProcessing "fr/janis/pintium/utils/CustomPintiumTiers.java"
+# 
+# startProcessing "fr/janis/pintium/utils/PintiumItemGroup.java" md5: e001c30de70f1d0d5498efb8af05163f
+# endProcessing "fr/janis/pintium/utils/PintiumItemGroup.java"
+# 
+# startProcessing "fr/janis/pintium/utils/SoundEvents.java" md5: 610f12395296b5ef576e3d221c3ec100
+# endProcessing "fr/janis/pintium/utils/SoundEvents.java"
+# 

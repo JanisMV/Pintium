@@ -1,6 +1,6 @@
 package fr.janis.pintium.event;
 
-import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.entity.living.LivingFallEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -9,9 +9,9 @@ public class FallingEvent {
     @SubscribeEvent
     public void onPlayerFall(final LivingFallEvent e)
     {
-        if( e.getEntityLiving() instanceof PlayerEntity )
+        if( e.getEntityLiving() instanceof Player )
         {
-            PlayerEntity player = ((PlayerEntity) e.getEntityLiving());
+            Player player = ((Player) e.getEntityLiving());
             if(player.getPersistentData().getBoolean("using_jump_stick") )
             {
                 e.setCanceled(true);

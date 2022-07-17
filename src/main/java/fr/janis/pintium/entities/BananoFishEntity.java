@@ -1,30 +1,33 @@
 package fr.janis.pintium.entities;
 
 import fr.janis.pintium.init.PintiumItems;
-import net.minecraft.entity.*;
-import net.minecraft.entity.ai.attributes.AttributeModifierMap;
-import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.passive.fish.AbstractFishEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.SoundEvent;
-import net.minecraft.util.SoundEvents;
-import net.minecraft.world.World;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.animal.AbstractFish;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 
-public class BananoFishEntity extends AbstractFishEntity {
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.ai.goal.PanicGoal;
+import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
 
-    public BananoFishEntity(EntityType<? extends AbstractFishEntity> type, World worldIn) {
+public class BananoFishEntity extends AbstractFish {
+
+    public BananoFishEntity(EntityType<? extends AbstractFish> type, Level worldIn) {
         super(type, worldIn);
         //EntitySpawnPlacementRegistry.register(PintiumEntities.RATEL.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::canAnimalSpawn);
     }
 
     // registerAttributes
-    public static AttributeModifierMap.MutableAttribute setCustomAttributes(){ //  func_233666_p_ - createMobAttributes et createMutableAttribute - add
-        return MobEntity.createMobAttributes()
+    public static AttributeSupplier.Builder setCustomAttributes(){ //  func_233666_p_ - createMobAttributes et createMutableAttribute - add
+        return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 40.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.50D);
     }
@@ -38,7 +41,7 @@ public class BananoFishEntity extends AbstractFishEntity {
 
     @Override
     protected ItemStack getBucketItemStack() {
-        return PintiumItems.BANANOFISH_BUCKET.get().getDefaultInstance();
+        return new ItemStack(PintiumItems.BANANOFISH_BUCKET);
     }
 
     @Override
@@ -47,7 +50,7 @@ public class BananoFishEntity extends AbstractFishEntity {
     }
 
     @Override
-    protected int getExperienceReward(PlayerEntity player){
+    protected int getExperienceReward(Player player){
         return 1 + this.level.random.nextInt(4);
     }
 

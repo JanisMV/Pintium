@@ -1,7 +1,7 @@
 package fr.janis.pintium.data;
 
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.util.Direction;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.Direction;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.common.capabilities.ICapabilitySerializable;
@@ -10,7 +10,7 @@ import net.minecraftforge.common.util.LazyOptional;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-public class EntityKilledProvider implements ICapabilitySerializable<CompoundNBT> {
+public class EntityKilledProvider implements ICapabilitySerializable<CompoundTag> {
 
     private final EntityKilled name = new EntityKilled();
     private final LazyOptional<IEntityKilled> nameOptional = LazyOptional.of(() -> name);
@@ -26,17 +26,17 @@ public class EntityKilledProvider implements ICapabilitySerializable<CompoundNBT
     }
 
     @Override
-    public CompoundNBT serializeNBT() {
+    public CompoundTag serializeNBT() {
         if (CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY == null){
-            return new CompoundNBT();
+            return new CompoundTag();
         }
         else {
-            return (CompoundNBT) CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY.writeNBT(name, null);
+            return (CompoundTag) CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY.writeNBT(name, null);
         }
     }
 
     @Override
-    public void deserializeNBT(CompoundNBT nbt) {
+    public void deserializeNBT(CompoundTag nbt) {
         if (CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY != null){
             CapabilityEntityKilled.ENTITY_KILLED_CAPABILITY.readNBT(name, null, nbt);
         }

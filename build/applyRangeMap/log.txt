@@ -1,0 +1,1216 @@
+Java Launcher: C:\Users\Win10\.gradle\jdks\jdk-11.0.15+10\bin\java.exe
+Arguments: '--apply, --input, C:\Users\Win10\Desktop\Pintium-1.16.5\src\main\java, --range, C:\Users\Win10\Desktop\Pintium-1.16.5\build\extractRangeMap\output.txt, --srg, C:\Users\Win10\Desktop\Pintium-1.16.5\build\chainClassnames\chainedmappings.tsrg, --output, C:\Users\Win10\Desktop\Pintium-1.16.5\build\applyRangeMap\output.zip, --keepImports, true'
+Classpath:
+ - C:\Users\Win10\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\Srg2Source\8.0.8\Srg2Source-8.0.8-fatjar.jar
+Working directory: C:\Users\Win10\Desktop\Pintium-1.16.5\build\applyRangeMap
+Main class: net.minecraftforge.srg2source.ConsoleTool
+====================================
+Range:   C:\Users\Win10\Desktop\Pintium-1.16.5\build\extractRangeMap\output.txt
+Output:  C:\Users\Win10\Desktop\Pintium-1.16.5\build\applyRangeMap\output.zip
+Imports: true
+Sort:    false
+Lambdas: false
+Locals:  false
+Map:     C:\Users\Win10\Desktop\Pintium-1.16.5\build\chainClassnames\chainedmappings.tsrg
+Input:   C:\Users\Win10\Desktop\Pintium-1.16.5\src\main\java
+Processing 73 files
+Start Processing: fr/janis/pintium/blocks/BananaBlock.java
+Rename ClassReference[659:13, "AbstractBlock", Internal: net/minecraft/block/AbstractBlock, Qualified: false] Shift[0] AbstractBlock -> BlockBehaviour
+Rename ClassReference[809:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[1] World -> Level
+End  Processing: fr/janis/pintium/blocks/BananaBlock.java
+
+Start Processing: fr/janis/pintium/blocks/PintiumBlock.java
+Rename ClassReference[371:13, "AbstractBlock", Internal: net/minecraft/block/AbstractBlock, Qualified: false] Shift[0] AbstractBlock -> BlockBehaviour
+End  Processing: fr/janis/pintium/blocks/PintiumBlock.java
+
+Start Processing: fr/janis/pintium/client/model/BananoFishModel.java
+Rename ClassReference[620:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[0] ModelRenderer -> ModelPart
+Rename ClassReference[659:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-4] ModelRenderer -> ModelPart
+Rename ClassReference[701:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-8] ModelRenderer -> ModelPart
+Rename ClassReference[746:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-12] ModelRenderer -> ModelPart
+Rename ClassReference[791:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-16] ModelRenderer -> ModelPart
+Rename ClassReference[835:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-20] ModelRenderer -> ModelPart
+Rename ClassReference[878:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-24] ModelRenderer -> ModelPart
+Rename ClassReference[917:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-28] ModelRenderer -> ModelPart
+Rename ClassReference[956:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-32] ModelRenderer -> ModelPart
+Rename ClassReference[999:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-36] ModelRenderer -> ModelPart
+Rename ClassReference[1043:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-40] ModelRenderer -> ModelPart
+Rename ClassReference[1082:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-44] ModelRenderer -> ModelPart
+Rename ClassReference[1128:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-48] ModelRenderer -> ModelPart
+Rename ClassReference[1166:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-52] ModelRenderer -> ModelPart
+Rename ClassReference[1205:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-56] ModelRenderer -> ModelPart
+Rename ClassReference[1330:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-60] ModelRenderer -> ModelPart
+Rename ClassReference[1504:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-64] ModelRenderer -> ModelPart
+Rename ClassReference[1690:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-68] ModelRenderer -> ModelPart
+Rename ClassReference[1917:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-72] ModelRenderer -> ModelPart
+Rename ClassReference[2200:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-76] ModelRenderer -> ModelPart
+Rename ClassReference[2481:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-80] ModelRenderer -> ModelPart
+Rename ClassReference[2571:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-84] ModelRenderer -> ModelPart
+Rename ClassReference[2744:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-88] ModelRenderer -> ModelPart
+Rename ClassReference[2921:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-92] ModelRenderer -> ModelPart
+Rename ClassReference[3016:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-96] ModelRenderer -> ModelPart
+Rename ClassReference[3107:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-100] ModelRenderer -> ModelPart
+Rename ClassReference[3285:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-104] ModelRenderer -> ModelPart
+Rename ClassReference[3533:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-108] ModelRenderer -> ModelPart
+Rename ClassReference[3845:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-112] ModelRenderer -> ModelPart
+Rename ClassReference[4079:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-116] ModelRenderer -> ModelPart
+Rename ClassReference[4648:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-120] MathHelper -> Mth
+Rename ClassReference[4744:11, "MatrixStack", Internal: com/mojang/blaze3d/matrix/MatrixStack, Qualified: false] Shift[-127] MatrixStack -> PoseStack
+Rename ClassReference[4769:14, "IVertexBuilder", Internal: com/mojang/blaze3d/vertex/IVertexBuilder, Qualified: false] Shift[-129] IVertexBuilder -> VertexConsumer
+Rename ClassReference[5996:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-129] ModelRenderer -> ModelPart
+End  Processing: fr/janis/pintium/client/model/BananoFishModel.java
+
+Start Processing: fr/janis/pintium/client/model/BananosaurModel.java
+Rename ClassReference[478:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[0] ModelRenderer -> ModelPart
+Rename ClassReference[517:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-4] ModelRenderer -> ModelPart
+Rename ClassReference[560:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-8] ModelRenderer -> ModelPart
+Rename ClassReference[599:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-12] ModelRenderer -> ModelPart
+Rename ClassReference[638:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-16] ModelRenderer -> ModelPart
+Rename ClassReference[677:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-20] ModelRenderer -> ModelPart
+Rename ClassReference[716:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-24] ModelRenderer -> ModelPart
+Rename ClassReference[755:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-28] ModelRenderer -> ModelPart
+Rename ClassReference[795:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-32] ModelRenderer -> ModelPart
+Rename ClassReference[834:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-36] ModelRenderer -> ModelPart
+Rename ClassReference[893:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-40] ModelRenderer -> ModelPart
+Rename ClassReference[952:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-44] ModelRenderer -> ModelPart
+Rename ClassReference[1097:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-48] ModelRenderer -> ModelPart
+Rename ClassReference[1186:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-52] ModelRenderer -> ModelPart
+Rename ClassReference[1463:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-56] ModelRenderer -> ModelPart
+Rename ClassReference[1636:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-60] ModelRenderer -> ModelPart
+Rename ClassReference[1809:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-64] ModelRenderer -> ModelPart
+Rename ClassReference[1983:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-68] ModelRenderer -> ModelPart
+Rename ClassReference[2157:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-72] ModelRenderer -> ModelPart
+Rename ClassReference[2333:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-76] ModelRenderer -> ModelPart
+Rename ClassReference[2509:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-80] ModelRenderer -> ModelPart
+Rename ClassReference[3108:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-84] ModelRenderer -> ModelPart
+Rename ClassReference[3416:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-88] ModelRenderer -> ModelPart
+Rename ClassReference[3722:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-92] ModelRenderer -> ModelPart
+Rename ClassReference[4311:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-96] MathHelper -> Mth
+Rename ClassReference[4399:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-103] MathHelper -> Mth
+Rename ClassReference[4504:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-110] MathHelper -> Mth
+Rename ClassReference[4609:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-117] MathHelper -> Mth
+Rename ClassReference[4727:11, "MatrixStack", Internal: com/mojang/blaze3d/matrix/MatrixStack, Qualified: false] Shift[-124] MatrixStack -> PoseStack
+Rename ClassReference[4752:14, "IVertexBuilder", Internal: com/mojang/blaze3d/vertex/IVertexBuilder, Qualified: false] Shift[-126] IVertexBuilder -> VertexConsumer
+Rename ClassReference[6021:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-126] ModelRenderer -> ModelPart
+End  Processing: fr/janis/pintium/client/model/BananosaurModel.java
+
+Start Processing: fr/janis/pintium/client/model/RatelModel.java
+Rename ClassReference[456:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[0] ModelRenderer -> ModelPart
+Rename ClassReference[495:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-4] ModelRenderer -> ModelPart
+Rename ClassReference[534:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-8] ModelRenderer -> ModelPart
+Rename ClassReference[582:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-12] ModelRenderer -> ModelPart
+Rename ClassReference[621:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-16] ModelRenderer -> ModelPart
+Rename ClassReference[660:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-20] ModelRenderer -> ModelPart
+Rename ClassReference[699:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-24] ModelRenderer -> ModelPart
+Rename ClassReference[738:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-28] ModelRenderer -> ModelPart
+Rename ClassReference[777:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-32] ModelRenderer -> ModelPart
+Rename ClassReference[906:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-36] ModelRenderer -> ModelPart
+Rename ClassReference[1168:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-40] ModelRenderer -> ModelPart
+Rename ClassReference[1262:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-44] ModelRenderer -> ModelPart
+Rename ClassReference[1556:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-48] ModelRenderer -> ModelPart
+Rename ClassReference[1730:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-52] ModelRenderer -> ModelPart
+Rename ClassReference[1903:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-56] ModelRenderer -> ModelPart
+Rename ClassReference[2078:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-60] ModelRenderer -> ModelPart
+Rename ClassReference[2252:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-64] ModelRenderer -> ModelPart
+Rename ClassReference[2348:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-68] ModelRenderer -> ModelPart
+Rename ClassReference[2949:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-72] MathHelper -> Mth
+Rename ClassReference[3035:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-79] MathHelper -> Mth
+Rename ClassReference[3138:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-86] MathHelper -> Mth
+Rename ClassReference[3241:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-93] MathHelper -> Mth
+Rename ClassReference[3357:11, "MatrixStack", Internal: com/mojang/blaze3d/matrix/MatrixStack, Qualified: false] Shift[-100] MatrixStack -> PoseStack
+Rename ClassReference[3382:14, "IVertexBuilder", Internal: com/mojang/blaze3d/vertex/IVertexBuilder, Qualified: false] Shift[-102] IVertexBuilder -> VertexConsumer
+Rename ClassReference[4206:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-102] ModelRenderer -> ModelPart
+End  Processing: fr/janis/pintium/client/model/RatelModel.java
+
+Start Processing: fr/janis/pintium/client/model/TunaModel.java
+Rename ClassReference[631:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[0] ModelRenderer -> ModelPart
+Rename ClassReference[676:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-4] ModelRenderer -> ModelPart
+Rename ClassReference[715:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-8] ModelRenderer -> ModelPart
+Rename ClassReference[755:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-12] ModelRenderer -> ModelPart
+Rename ClassReference[799:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-16] ModelRenderer -> ModelPart
+Rename ClassReference[838:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-20] ModelRenderer -> ModelPart
+Rename ClassReference[877:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-24] ModelRenderer -> ModelPart
+Rename ClassReference[916:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-28] ModelRenderer -> ModelPart
+Rename ClassReference[961:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-32] ModelRenderer -> ModelPart
+Rename ClassReference[1006:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-36] ModelRenderer -> ModelPart
+Rename ClassReference[1049:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-40] ModelRenderer -> ModelPart
+Rename ClassReference[1179:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-44] ModelRenderer -> ModelPart
+Rename ClassReference[1363:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-48] ModelRenderer -> ModelPart
+Rename ClassReference[1630:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-52] ModelRenderer -> ModelPart
+Rename ClassReference[1902:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-56] ModelRenderer -> ModelPart
+Rename ClassReference[2084:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-60] ModelRenderer -> ModelPart
+Rename ClassReference[2551:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-64] ModelRenderer -> ModelPart
+Rename ClassReference[2757:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-68] ModelRenderer -> ModelPart
+Rename ClassReference[2937:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-72] ModelRenderer -> ModelPart
+Rename ClassReference[3124:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-76] ModelRenderer -> ModelPart
+Rename ClassReference[3309:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-80] ModelRenderer -> ModelPart
+Rename ClassReference[3404:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-84] ModelRenderer -> ModelPart
+Rename ClassReference[3828:10, "MathHelper", Internal: net/minecraft/util/math/MathHelper, Qualified: false] Shift[-88] MathHelper -> Mth
+Rename ClassReference[3924:11, "MatrixStack", Internal: com/mojang/blaze3d/matrix/MatrixStack, Qualified: false] Shift[-95] MatrixStack -> PoseStack
+Rename ClassReference[3949:14, "IVertexBuilder", Internal: com/mojang/blaze3d/vertex/IVertexBuilder, Qualified: false] Shift[-97] IVertexBuilder -> VertexConsumer
+Rename ClassReference[4805:13, "ModelRenderer", Internal: net/minecraft/client/renderer/model/ModelRenderer, Qualified: false] Shift[-97] ModelRenderer -> ModelPart
+End  Processing: fr/janis/pintium/client/model/TunaModel.java
+
+Start Processing: fr/janis/pintium/client/render/BananoFishRenderer.java
+Rename ClassReference[619:21, "EntityRendererManager", Internal: net/minecraft/client/renderer/entity/EntityRendererManager, Qualified: false] Shift[0] EntityRendererManager -> EntityRenderDispatcher
+End  Processing: fr/janis/pintium/client/render/BananoFishRenderer.java
+
+Start Processing: fr/janis/pintium/client/render/BananosaurRenderer.java
+Rename ClassReference[619:21, "EntityRendererManager", Internal: net/minecraft/client/renderer/entity/EntityRendererManager, Qualified: false] Shift[0] EntityRendererManager -> EntityRenderDispatcher
+End  Processing: fr/janis/pintium/client/render/BananosaurRenderer.java
+
+Start Processing: fr/janis/pintium/client/render/RatelRenderer.java
+Rename ClassReference[579:21, "EntityRendererManager", Internal: net/minecraft/client/renderer/entity/EntityRendererManager, Qualified: false] Shift[0] EntityRendererManager -> EntityRenderDispatcher
+End  Processing: fr/janis/pintium/client/render/RatelRenderer.java
+
+Start Processing: fr/janis/pintium/client/render/TunaRenderer.java
+Rename ClassReference[571:21, "EntityRendererManager", Internal: net/minecraft/client/renderer/entity/EntityRendererManager, Qualified: false] Shift[0] EntityRendererManager -> EntityRenderDispatcher
+End  Processing: fr/janis/pintium/client/render/TunaRenderer.java
+
+Start Processing: fr/janis/pintium/commands/DelHomeCommand.java
+Rename ClassReference[452:13, "CommandSource", Internal: net/minecraft/command/CommandSource, Qualified: false] Shift[0] CommandSource -> CommandSourceStack
+Rename ClassReference[659:13, "CommandSource", Internal: net/minecraft/command/CommandSource, Qualified: false] Shift[5] CommandSource -> CommandSourceStack
+Rename ClassReference[717:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[10] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1006:19, "StringTextComponent", Internal: net/minecraft/util/text/StringTextComponent, Qualified: false] Shift[4] StringTextComponent -> TextComponent
+Rename ClassReference[1121:19, "StringTextComponent", Internal: net/minecraft/util/text/StringTextComponent, Qualified: false] Shift[-2] StringTextComponent -> TextComponent
+End  Processing: fr/janis/pintium/commands/DelHomeCommand.java
+
+Start Processing: fr/janis/pintium/commands/ListHomesCommand.java
+Rename ClassReference[456:13, "CommandSource", Internal: net/minecraft/command/CommandSource, Qualified: false] Shift[0] CommandSource -> CommandSourceStack
+Rename ClassReference[665:13, "CommandSource", Internal: net/minecraft/command/CommandSource, Qualified: false] Shift[5] CommandSource -> CommandSourceStack
+Rename ClassReference[723:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[10] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1097:19, "StringTextComponent", Internal: net/minecraft/util/text/StringTextComponent, Qualified: false] Shift[4] StringTextComponent -> TextComponent
+Rename ClassReference[1222:19, "StringTextComponent", Internal: net/minecraft/util/text/StringTextComponent, Qualified: false] Shift[-2] StringTextComponent -> TextComponent
+End  Processing: fr/janis/pintium/commands/ListHomesCommand.java
+
+Start Processing: fr/janis/pintium/commands/ReturnHomeCommand.java
+Rename ClassReference[458:13, "CommandSource", Internal: net/minecraft/command/CommandSource, Qualified: false] Shift[0] CommandSource -> CommandSourceStack
+Rename ClassReference[668:13, "CommandSource", Internal: net/minecraft/command/CommandSource, Qualified: false] Shift[5] CommandSource -> CommandSourceStack
+Rename ClassReference[725:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[10] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1435:19, "StringTextComponent", Internal: net/minecraft/util/text/StringTextComponent, Qualified: false] Shift[4] StringTextComponent -> TextComponent
+Rename ClassReference[1556:19, "StringTextComponent", Internal: net/minecraft/util/text/StringTextComponent, Qualified: false] Shift[-2] StringTextComponent -> TextComponent
+End  Processing: fr/janis/pintium/commands/ReturnHomeCommand.java
+
+Start Processing: fr/janis/pintium/commands/SetHomeCommand.java
+Rename ClassReference[496:13, "CommandSource", Internal: net/minecraft/command/CommandSource, Qualified: false] Shift[0] CommandSource -> CommandSourceStack
+Rename ClassReference[730:13, "CommandSource", Internal: net/minecraft/command/CommandSource, Qualified: false] Shift[5] CommandSource -> CommandSourceStack
+Rename ClassReference[788:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[10] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1134:19, "StringTextComponent", Internal: net/minecraft/util/text/StringTextComponent, Qualified: false] Shift[4] StringTextComponent -> TextComponent
+End  Processing: fr/janis/pintium/commands/SetHomeCommand.java
+
+Start Processing: fr/janis/pintium/data/CapabilityEntityKilled.java
+Rename ClassReference[817:4, "INBT", Internal: net/minecraft/nbt/INBT, Qualified: false] Shift[0] INBT -> Tag
+Rename ClassReference[924:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[-1] CompoundNBT -> CompoundTag
+Rename ClassReference[946:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[-1] CompoundNBT -> CompoundTag
+Rename ClassReference[1246:4, "INBT", Internal: net/minecraft/nbt/INBT, Qualified: false] Shift[-1] INBT -> Tag
+Rename ClassReference[1287:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[-2] CompoundNBT -> CompoundTag
+End  Processing: fr/janis/pintium/data/CapabilityEntityKilled.java
+
+Start Processing: fr/janis/pintium/data/CapabilityEventHandler.java
+Rename ClassReference[489:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+End  Processing: fr/janis/pintium/data/CapabilityEventHandler.java
+
+Start Processing: fr/janis/pintium/data/EntityKilled.java
+End  Processing: fr/janis/pintium/data/EntityKilled.java
+
+Start Processing: fr/janis/pintium/data/EntityKilledProvider.java
+Rename ClassReference[505:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[0] CompoundNBT -> CompoundTag
+Rename ClassReference[955:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[0] CompoundNBT -> CompoundTag
+Rename ClassReference[1079:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[0] CompoundNBT -> CompoundTag
+Rename ClassReference[1142:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[0] CompoundNBT -> CompoundTag
+Rename ClassReference[1292:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[0] CompoundNBT -> CompoundTag
+End  Processing: fr/janis/pintium/data/EntityKilledProvider.java
+
+Start Processing: fr/janis/pintium/data/ICapabilitySerializable.java
+Rename ClassReference[244:4, "INBT", Internal: net/minecraft/nbt/INBT, Qualified: false] Shift[0] INBT -> Tag
+End  Processing: fr/janis/pintium/data/ICapabilitySerializable.java
+
+Start Processing: fr/janis/pintium/data/IEntityKilled.java
+End  Processing: fr/janis/pintium/data/IEntityKilled.java
+
+Start Processing: fr/janis/pintium/data/onEntityDeathEvent.java
+Rename ClassReference[637:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[665:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-6] PlayerEntity -> Player
+Rename ClassReference[683:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-12] PlayerEntity -> Player
+Rename ClassReference[1028:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[-18] ZombieEntity -> Zombie
+Rename ClassReference[1285:14, "SkeletonEntity", Internal: net/minecraft/entity/monster/SkeletonEntity, Qualified: false] Shift[-24] SkeletonEntity -> Skeleton
+Rename ClassReference[1544:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-30] CreeperEntity -> Creeper
+End  Processing: fr/janis/pintium/data/onEntityDeathEvent.java
+
+Start Processing: fr/janis/pintium/entities/BananoFishEntity.java
+Rename ClassReference[656:18, "AbstractFishEntity", Internal: net/minecraft/entity/passive/fish/AbstractFishEntity, Qualified: false] Shift[0] AbstractFishEntity -> AbstractFish
+Rename ClassReference[729:18, "AbstractFishEntity", Internal: net/minecraft/entity/passive/fish/AbstractFishEntity, Qualified: false] Shift[-6] AbstractFishEntity -> AbstractFish
+Rename ClassReference[755:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[-12] World -> Level
+Rename ClassReference[1063:20, "AttributeModifierMap", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap, Qualified: false] Shift[-12] AttributeModifierMap -> AttributeSupplier
+Rename ClassReference[1084:16, "MutableAttribute", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap$MutableAttribute, Qualified: true] Shift[-15] MutableAttribute -> Builder
+Rename ClassReference[1213:9, "MobEntity", Internal: net/minecraft/entity/MobEntity, Qualified: false] Shift[-24] MobEntity -> Mob
+Rename ClassReference[1909:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-30] PlayerEntity -> Player
+Adding 4 imports
+        net.minecraft.world.entity.EntityType
+        net.minecraft.world.entity.Mob
+        net.minecraft.world.entity.ai.goal.PanicGoal
+        net.minecraft.world.entity.ai.goal.RandomSwimmingGoal
+End  Processing: fr/janis/pintium/entities/BananoFishEntity.java
+
+Start Processing: fr/janis/pintium/entities/BananosaurEntity.java
+Rename ClassReference[866:12, "AnimalEntity", Internal: net/minecraft/entity/passive/AnimalEntity, Qualified: false] Shift[0] AnimalEntity -> Animal
+Rename ClassReference[1032:12, "AnimalEntity", Internal: net/minecraft/entity/passive/AnimalEntity, Qualified: false] Shift[-6] AnimalEntity -> Animal
+Rename ClassReference[1052:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[-12] World -> Level
+Rename ClassReference[1155:20, "AttributeModifierMap", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap, Qualified: false] Shift[-12] AttributeModifierMap -> AttributeSupplier
+Rename ClassReference[1176:16, "MutableAttribute", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap$MutableAttribute, Qualified: true] Shift[-15] MutableAttribute -> Builder
+Rename ClassReference[1232:9, "MobEntity", Internal: net/minecraft/entity/MobEntity, Qualified: false] Shift[-24] MobEntity -> Mob
+Rename ClassReference[1668:8, "SwimGoal", Internal: net/minecraft/entity/ai/goal/SwimGoal, Qualified: false] Shift[-30] SwimGoal -> FloatGoal
+Rename ClassReference[2021:17, "RandomWalkingGoal", Internal: net/minecraft/entity/ai/goal/RandomWalkingGoal, Qualified: false] Shift[-29] RandomWalkingGoal -> RandomStrollGoal
+Rename ClassReference[2096:10, "LookAtGoal", Internal: net/minecraft/entity/ai/goal/LookAtGoal, Qualified: false] Shift[-30] LookAtGoal -> LookAtPlayerGoal
+Rename ClassReference[2113:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-24] PlayerEntity -> Player
+Rename ClassReference[2183:16, "LookRandomlyGoal", Internal: net/minecraft/entity/ai/goal/LookRandomlyGoal, Qualified: false] Shift[-30] LookRandomlyGoal -> RandomLookAroundGoal
+Rename ClassReference[2271:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-26] PlayerEntity -> Player
+Rename ClassReference[2955:13, "AgeableEntity", Internal: net/minecraft/entity/AgeableEntity, Qualified: false] Shift[-32] AgeableEntity -> AgableMob
+Rename ClassReference[2987:11, "ServerWorld", Internal: net/minecraft/world/server/ServerWorld, Qualified: false] Shift[-36] ServerWorld -> ServerLevel
+Rename ClassReference[3006:13, "AgeableEntity", Internal: net/minecraft/entity/AgeableEntity, Qualified: false] Shift[-36] AgeableEntity -> AgableMob
+Adding 11 imports
+        net.minecraft.world.entity.AgableMob
+        net.minecraft.world.entity.EntityType
+        net.minecraft.world.entity.Mob
+        net.minecraft.world.entity.ai.goal.BreedGoal
+        net.minecraft.world.entity.ai.goal.FloatGoal
+        net.minecraft.world.entity.ai.goal.FollowParentGoal
+        net.minecraft.world.entity.ai.goal.LookAtPlayerGoal
+        net.minecraft.world.entity.ai.goal.PanicGoal
+        net.minecraft.world.entity.ai.goal.RandomLookAroundGoal
+        net.minecraft.world.entity.ai.goal.RandomStrollGoal
+        net.minecraft.world.entity.ai.goal.TemptGoal
+End  Processing: fr/janis/pintium/entities/BananosaurEntity.java
+
+Start Processing: fr/janis/pintium/entities/CreeperBodyGuardEntity.java
+Rename ClassReference[873:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[0] CreeperEntity -> Creeper
+Rename ClassReference[947:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-6] CreeperEntity -> Creeper
+Rename ClassReference[968:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[-12] World -> Level
+Rename ClassReference[1071:20, "AttributeModifierMap", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap, Qualified: false] Shift[-12] AttributeModifierMap -> AttributeSupplier
+Rename ClassReference[1092:16, "MutableAttribute", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap$MutableAttribute, Qualified: true] Shift[-15] MutableAttribute -> Builder
+Rename ClassReference[1148:13, "MonsterEntity", Internal: net/minecraft/entity/monster/MonsterEntity, Qualified: false] Shift[-24] MonsterEntity -> Monster
+Rename ClassReference[1365:8, "SwimGoal", Internal: net/minecraft/entity/ai/goal/SwimGoal, Qualified: false] Shift[-30] SwimGoal -> FloatGoal
+Rename ClassReference[1424:16, "CreeperSwellGoal", Internal: net/minecraft/entity/ai/goal/CreeperSwellGoal, Qualified: false] Shift[-29] CreeperSwellGoal -> SwellGoal
+Rename ClassReference[1515:12, "OcelotEntity", Internal: net/minecraft/entity/passive/OcelotEntity, Qualified: false] Shift[-36] OcelotEntity -> Ocelot
+Rename ClassReference[1621:9, "CatEntity", Internal: net/minecraft/entity/passive/CatEntity, Qualified: false] Shift[-42] CatEntity -> Cat
+Rename ClassReference[1779:30, "WaterAvoidingRandomWalkingGoal", Internal: net/minecraft/entity/ai/goal/WaterAvoidingRandomWalkingGoal, Qualified: false] Shift[-48] WaterAvoidingRandomWalkingGoal -> WaterAvoidingRandomStrollGoal
+Rename ClassReference[1866:10, "LookAtGoal", Internal: net/minecraft/entity/ai/goal/LookAtGoal, Qualified: false] Shift[-49] LookAtGoal -> LookAtPlayerGoal
+Rename ClassReference[1883:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-43] PlayerEntity -> Player
+Rename ClassReference[1953:16, "LookRandomlyGoal", Internal: net/minecraft/entity/ai/goal/LookRandomlyGoal, Qualified: false] Shift[-49] LookRandomlyGoal -> RandomLookAroundGoal
+Rename ClassReference[2060:12, "PiglinEntity", Internal: net/minecraft/entity/monster/piglin/PiglinEntity, Qualified: false] Shift[-45] PiglinEntity -> Piglin
+Rename ClassReference[2168:9, "CowEntity", Internal: net/minecraft/entity/passive/CowEntity, Qualified: false] Shift[-51] CowEntity -> Cow
+Rename ClassReference[2273:11, "SheepEntity", Internal: net/minecraft/entity/passive/SheepEntity, Qualified: false] Shift[-57] SheepEntity -> Sheep
+Rename ClassReference[2380:9, "PigEntity", Internal: net/minecraft/entity/passive/PigEntity, Qualified: false] Shift[-63] PigEntity -> Pig
+Rename ClassReference[2485:14, "SkeletonEntity", Internal: net/minecraft/entity/monster/SkeletonEntity, Qualified: false] Shift[-69] SkeletonEntity -> Skeleton
+Rename ClassReference[2595:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[-75] ZombieEntity -> Zombie
+Rename ClassReference[2703:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-81] CreeperEntity -> Creeper
+Rename ClassReference[2812:12, "SpiderEntity", Internal: net/minecraft/entity/monster/SpiderEntity, Qualified: false] Shift[-87] SpiderEntity -> Spider
+Rename ClassReference[3032:14, "PillagerEntity", Internal: net/minecraft/entity/monster/PillagerEntity, Qualified: false] Shift[-93] PillagerEntity -> Pillager
+Rename ClassReference[3143:11, "WitchEntity", Internal: net/minecraft/entity/monster/WitchEntity, Qualified: false] Shift[-99] WitchEntity -> Witch
+Rename ClassReference[3251:14, "VillagerEntity", Internal: net/minecraft/entity/merchant/villager/VillagerEntity, Qualified: false] Shift[-105] VillagerEntity -> Villager
+Rename ClassReference[3362:11, "HorseEntity", Internal: net/minecraft/entity/passive/horse/HorseEntity, Qualified: false] Shift[-111] HorseEntity -> Horse
+Rename ClassReference[3578:11, "BlazeEntity", Internal: net/minecraft/entity/monster/BlazeEntity, Qualified: false] Shift[-117] BlazeEntity -> Blaze
+Rename ClassReference[3686:16, "CaveSpiderEntity", Internal: net/minecraft/entity/monster/CaveSpiderEntity, Qualified: false] Shift[-123] CaveSpiderEntity -> CaveSpider
+Rename ClassReference[3799:14, "EndermanEntity", Internal: net/minecraft/entity/monster/EndermanEntity, Qualified: false] Shift[-129] EndermanEntity -> EnderMan
+Rename ClassReference[3910:19, "ElderGuardianEntity", Internal: net/minecraft/entity/monster/ElderGuardianEntity, Qualified: false] Shift[-135] ElderGuardianEntity -> ElderGuardian
+Rename ClassReference[4026:15, "EndermiteEntity", Internal: net/minecraft/entity/monster/EndermiteEntity, Qualified: false] Shift[-141] EndermiteEntity -> Endermite
+Rename ClassReference[4138:12, "EvokerEntity", Internal: net/minecraft/entity/monster/EvokerEntity, Qualified: false] Shift[-147] EvokerEntity -> Evoker
+Rename ClassReference[4247:11, "GhastEntity", Internal: net/minecraft/entity/monster/GhastEntity, Qualified: false] Shift[-153] GhastEntity -> Ghast
+Rename ClassReference[4355:12, "HoglinEntity", Internal: net/minecraft/entity/monster/HoglinEntity, Qualified: false] Shift[-159] HoglinEntity -> Hoglin
+Rename ClassReference[4464:10, "HuskEntity", Internal: net/minecraft/entity/monster/HuskEntity, Qualified: false] Shift[-165] HuskEntity -> Husk
+Rename ClassReference[4571:16, "IllusionerEntity", Internal: net/minecraft/entity/monster/IllusionerEntity, Qualified: false] Shift[-171] IllusionerEntity -> Illusioner
+Rename ClassReference[4684:15, "MagmaCubeEntity", Internal: net/minecraft/entity/monster/MagmaCubeEntity, Qualified: false] Shift[-177] MagmaCubeEntity -> MagmaCube
+Rename ClassReference[4796:13, "PhantomEntity", Internal: net/minecraft/entity/monster/PhantomEntity, Qualified: false] Shift[-183] PhantomEntity -> Phantom
+Rename ClassReference[4906:13, "RavagerEntity", Internal: net/minecraft/entity/monster/RavagerEntity, Qualified: false] Shift[-189] RavagerEntity -> Ravager
+Rename ClassReference[5016:13, "ShulkerEntity", Internal: net/minecraft/entity/monster/ShulkerEntity, Qualified: false] Shift[-195] ShulkerEntity -> Shulker
+Rename ClassReference[5126:16, "SilverfishEntity", Internal: net/minecraft/entity/monster/SilverfishEntity, Qualified: false] Shift[-201] SilverfishEntity -> Silverfish
+Rename ClassReference[5239:11, "SlimeEntity", Internal: net/minecraft/entity/monster/SlimeEntity, Qualified: false] Shift[-207] SlimeEntity -> Slime
+Rename ClassReference[5347:20, "WitherSkeletonEntity", Internal: net/minecraft/entity/monster/WitherSkeletonEntity, Qualified: false] Shift[-213] WitherSkeletonEntity -> WitherSkeleton
+Rename ClassReference[5464:12, "ZoglinEntity", Internal: net/minecraft/entity/monster/ZoglinEntity, Qualified: false] Shift[-219] ZoglinEntity -> Zoglin
+Rename ClassReference[5555:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-225] PlayerEntity -> Player
+Adding 39 imports
+        net.minecraft.world.entity.EntityType
+        net.minecraft.world.entity.ai.goal.AvoidEntityGoal
+        net.minecraft.world.entity.ai.goal.FloatGoal
+        net.minecraft.world.entity.ai.goal.LookAtPlayerGoal
+        net.minecraft.world.entity.ai.goal.MeleeAttackGoal
+        net.minecraft.world.entity.ai.goal.RandomLookAroundGoal
+        net.minecraft.world.entity.ai.goal.SwellGoal
+        net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal
+        net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal
+        net.minecraft.world.entity.animal.Cat
+        net.minecraft.world.entity.animal.Cow
+        net.minecraft.world.entity.animal.Ocelot
+        net.minecraft.world.entity.animal.Pig
+        net.minecraft.world.entity.animal.Sheep
+        net.minecraft.world.entity.monster.Blaze
+        net.minecraft.world.entity.monster.CaveSpider
+        net.minecraft.world.entity.monster.Creeper
+        net.minecraft.world.entity.monster.ElderGuardian
+        net.minecraft.world.entity.monster.EnderMan
+        net.minecraft.world.entity.monster.Endermite
+        net.minecraft.world.entity.monster.Evoker
+        net.minecraft.world.entity.monster.Ghast
+        net.minecraft.world.entity.monster.Husk
+        net.minecraft.world.entity.monster.Illusioner
+        net.minecraft.world.entity.monster.MagmaCube
+        net.minecraft.world.entity.monster.Monster
+        net.minecraft.world.entity.monster.Phantom
+        net.minecraft.world.entity.monster.Pillager
+        net.minecraft.world.entity.monster.Ravager
+        net.minecraft.world.entity.monster.Shulker
+        net.minecraft.world.entity.monster.Silverfish
+        net.minecraft.world.entity.monster.Skeleton
+        net.minecraft.world.entity.monster.Slime
+        net.minecraft.world.entity.monster.Spider
+        net.minecraft.world.entity.monster.Witch
+        net.minecraft.world.entity.monster.WitherSkeleton
+        net.minecraft.world.entity.monster.Zoglin
+        net.minecraft.world.entity.monster.Zombie
+        net.minecraft.world.entity.monster.hoglin.Hoglin
+End  Processing: fr/janis/pintium/entities/CreeperBodyGuardEntity.java
+
+Start Processing: fr/janis/pintium/entities/RatelBodyGuardEntity.java
+Rename ClassReference[1148:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1251:20, "AttributeModifierMap", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap, Qualified: false] Shift[0] AttributeModifierMap -> AttributeSupplier
+Rename ClassReference[1272:16, "MutableAttribute", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap$MutableAttribute, Qualified: true] Shift[-3] MutableAttribute -> Builder
+Rename ClassReference[1328:9, "MobEntity", Internal: net/minecraft/entity/MobEntity, Qualified: false] Shift[-12] MobEntity -> Mob
+Rename ClassReference[1766:8, "SwimGoal", Internal: net/minecraft/entity/ai/goal/SwimGoal, Qualified: false] Shift[-18] SwimGoal -> FloatGoal
+Rename ClassReference[1863:12, "PiglinEntity", Internal: net/minecraft/entity/monster/piglin/PiglinEntity, Qualified: false] Shift[-17] PiglinEntity -> Piglin
+Rename ClassReference[1971:9, "CowEntity", Internal: net/minecraft/entity/passive/CowEntity, Qualified: false] Shift[-23] CowEntity -> Cow
+Rename ClassReference[2076:11, "SheepEntity", Internal: net/minecraft/entity/passive/SheepEntity, Qualified: false] Shift[-29] SheepEntity -> Sheep
+Rename ClassReference[2183:9, "PigEntity", Internal: net/minecraft/entity/passive/PigEntity, Qualified: false] Shift[-35] PigEntity -> Pig
+Rename ClassReference[2288:14, "SkeletonEntity", Internal: net/minecraft/entity/monster/SkeletonEntity, Qualified: false] Shift[-41] SkeletonEntity -> Skeleton
+Rename ClassReference[2398:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[-47] ZombieEntity -> Zombie
+Rename ClassReference[2506:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-53] CreeperEntity -> Creeper
+Rename ClassReference[2615:12, "SpiderEntity", Internal: net/minecraft/entity/monster/SpiderEntity, Qualified: false] Shift[-59] SpiderEntity -> Spider
+Rename ClassReference[2835:14, "PillagerEntity", Internal: net/minecraft/entity/monster/PillagerEntity, Qualified: false] Shift[-65] PillagerEntity -> Pillager
+Rename ClassReference[2946:11, "WitchEntity", Internal: net/minecraft/entity/monster/WitchEntity, Qualified: false] Shift[-71] WitchEntity -> Witch
+Rename ClassReference[3054:14, "VillagerEntity", Internal: net/minecraft/entity/merchant/villager/VillagerEntity, Qualified: false] Shift[-77] VillagerEntity -> Villager
+Rename ClassReference[3165:11, "HorseEntity", Internal: net/minecraft/entity/passive/horse/HorseEntity, Qualified: false] Shift[-83] HorseEntity -> Horse
+Rename ClassReference[3381:11, "BlazeEntity", Internal: net/minecraft/entity/monster/BlazeEntity, Qualified: false] Shift[-89] BlazeEntity -> Blaze
+Rename ClassReference[3489:16, "CaveSpiderEntity", Internal: net/minecraft/entity/monster/CaveSpiderEntity, Qualified: false] Shift[-95] CaveSpiderEntity -> CaveSpider
+Rename ClassReference[3602:14, "EndermanEntity", Internal: net/minecraft/entity/monster/EndermanEntity, Qualified: false] Shift[-101] EndermanEntity -> EnderMan
+Rename ClassReference[3713:19, "ElderGuardianEntity", Internal: net/minecraft/entity/monster/ElderGuardianEntity, Qualified: false] Shift[-107] ElderGuardianEntity -> ElderGuardian
+Rename ClassReference[3829:15, "EndermiteEntity", Internal: net/minecraft/entity/monster/EndermiteEntity, Qualified: false] Shift[-113] EndermiteEntity -> Endermite
+Rename ClassReference[3941:12, "EvokerEntity", Internal: net/minecraft/entity/monster/EvokerEntity, Qualified: false] Shift[-119] EvokerEntity -> Evoker
+Rename ClassReference[4050:11, "GhastEntity", Internal: net/minecraft/entity/monster/GhastEntity, Qualified: false] Shift[-125] GhastEntity -> Ghast
+Rename ClassReference[4158:12, "HoglinEntity", Internal: net/minecraft/entity/monster/HoglinEntity, Qualified: false] Shift[-131] HoglinEntity -> Hoglin
+Rename ClassReference[4267:10, "HuskEntity", Internal: net/minecraft/entity/monster/HuskEntity, Qualified: false] Shift[-137] HuskEntity -> Husk
+Rename ClassReference[4374:16, "IllusionerEntity", Internal: net/minecraft/entity/monster/IllusionerEntity, Qualified: false] Shift[-143] IllusionerEntity -> Illusioner
+Rename ClassReference[4487:15, "MagmaCubeEntity", Internal: net/minecraft/entity/monster/MagmaCubeEntity, Qualified: false] Shift[-149] MagmaCubeEntity -> MagmaCube
+Rename ClassReference[4599:13, "PhantomEntity", Internal: net/minecraft/entity/monster/PhantomEntity, Qualified: false] Shift[-155] PhantomEntity -> Phantom
+Rename ClassReference[4709:13, "RavagerEntity", Internal: net/minecraft/entity/monster/RavagerEntity, Qualified: false] Shift[-161] RavagerEntity -> Ravager
+Rename ClassReference[4819:13, "ShulkerEntity", Internal: net/minecraft/entity/monster/ShulkerEntity, Qualified: false] Shift[-167] ShulkerEntity -> Shulker
+Rename ClassReference[4929:16, "SilverfishEntity", Internal: net/minecraft/entity/monster/SilverfishEntity, Qualified: false] Shift[-173] SilverfishEntity -> Silverfish
+Rename ClassReference[5042:11, "SlimeEntity", Internal: net/minecraft/entity/monster/SlimeEntity, Qualified: false] Shift[-179] SlimeEntity -> Slime
+Rename ClassReference[5150:20, "WitherSkeletonEntity", Internal: net/minecraft/entity/monster/WitherSkeletonEntity, Qualified: false] Shift[-185] WitherSkeletonEntity -> WitherSkeleton
+Rename ClassReference[5267:12, "ZoglinEntity", Internal: net/minecraft/entity/monster/ZoglinEntity, Qualified: false] Shift[-191] ZoglinEntity -> Zoglin
+Rename ClassReference[5413:17, "RandomWalkingGoal", Internal: net/minecraft/entity/ai/goal/RandomWalkingGoal, Qualified: false] Shift[-197] RandomWalkingGoal -> RandomStrollGoal
+Rename ClassReference[5488:16, "LookRandomlyGoal", Internal: net/minecraft/entity/ai/goal/LookRandomlyGoal, Qualified: false] Shift[-198] LookRandomlyGoal -> RandomLookAroundGoal
+Rename ClassReference[5576:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-194] PlayerEntity -> Player
+Adding 31 imports
+        net.minecraft.world.entity.EntityType
+        net.minecraft.world.entity.Mob
+        net.minecraft.world.entity.ai.goal.FloatGoal
+        net.minecraft.world.entity.ai.goal.MeleeAttackGoal
+        net.minecraft.world.entity.ai.goal.RandomLookAroundGoal
+        net.minecraft.world.entity.ai.goal.RandomStrollGoal
+        net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal
+        net.minecraft.world.entity.monster.Blaze
+        net.minecraft.world.entity.monster.CaveSpider
+        net.minecraft.world.entity.monster.Creeper
+        net.minecraft.world.entity.monster.ElderGuardian
+        net.minecraft.world.entity.monster.EnderMan
+        net.minecraft.world.entity.monster.Endermite
+        net.minecraft.world.entity.monster.Evoker
+        net.minecraft.world.entity.monster.Ghast
+        net.minecraft.world.entity.monster.Husk
+        net.minecraft.world.entity.monster.Illusioner
+        net.minecraft.world.entity.monster.MagmaCube
+        net.minecraft.world.entity.monster.Phantom
+        net.minecraft.world.entity.monster.Pillager
+        net.minecraft.world.entity.monster.Ravager
+        net.minecraft.world.entity.monster.Shulker
+        net.minecraft.world.entity.monster.Silverfish
+        net.minecraft.world.entity.monster.Skeleton
+        net.minecraft.world.entity.monster.Slime
+        net.minecraft.world.entity.monster.Spider
+        net.minecraft.world.entity.monster.Witch
+        net.minecraft.world.entity.monster.WitherSkeleton
+        net.minecraft.world.entity.monster.Zoglin
+        net.minecraft.world.entity.monster.Zombie
+        net.minecraft.world.entity.monster.hoglin.Hoglin
+End  Processing: fr/janis/pintium/entities/RatelBodyGuardEntity.java
+
+Start Processing: fr/janis/pintium/entities/RatelEntity.java
+Rename ClassReference[1151:13, "MonsterEntity", Internal: net/minecraft/entity/monster/MonsterEntity, Qualified: false] Shift[0] MonsterEntity -> Monster
+Rename ClassReference[1214:13, "MonsterEntity", Internal: net/minecraft/entity/monster/MonsterEntity, Qualified: false] Shift[-6] MonsterEntity -> Monster
+Rename ClassReference[1235:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[-12] World -> Level
+Rename ClassReference[1338:20, "AttributeModifierMap", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap, Qualified: false] Shift[-12] AttributeModifierMap -> AttributeSupplier
+Rename ClassReference[1359:16, "MutableAttribute", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap$MutableAttribute, Qualified: true] Shift[-15] MutableAttribute -> Builder
+Rename ClassReference[1415:9, "MobEntity", Internal: net/minecraft/entity/MobEntity, Qualified: false] Shift[-24] MobEntity -> Mob
+Rename ClassReference[1773:12, "IServerWorld", Internal: net/minecraft/world/IServerWorld, Qualified: false] Shift[-30] IServerWorld -> ServerLevelAccessor
+Rename ClassReference[2083:8, "SwimGoal", Internal: net/minecraft/entity/ai/goal/SwimGoal, Qualified: false] Shift[-23] SwimGoal -> FloatGoal
+Rename ClassReference[2180:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-22] PlayerEntity -> Player
+Rename ClassReference[2288:9, "CowEntity", Internal: net/minecraft/entity/passive/CowEntity, Qualified: false] Shift[-28] CowEntity -> Cow
+Rename ClassReference[2393:11, "SheepEntity", Internal: net/minecraft/entity/passive/SheepEntity, Qualified: false] Shift[-34] SheepEntity -> Sheep
+Rename ClassReference[2500:9, "PigEntity", Internal: net/minecraft/entity/passive/PigEntity, Qualified: false] Shift[-40] PigEntity -> Pig
+Rename ClassReference[2605:14, "SkeletonEntity", Internal: net/minecraft/entity/monster/SkeletonEntity, Qualified: false] Shift[-46] SkeletonEntity -> Skeleton
+Rename ClassReference[2715:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[-52] ZombieEntity -> Zombie
+Rename ClassReference[2823:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-58] CreeperEntity -> Creeper
+Rename ClassReference[2932:12, "SpiderEntity", Internal: net/minecraft/entity/monster/SpiderEntity, Qualified: false] Shift[-64] SpiderEntity -> Spider
+Rename ClassReference[3152:14, "PillagerEntity", Internal: net/minecraft/entity/monster/PillagerEntity, Qualified: false] Shift[-70] PillagerEntity -> Pillager
+Rename ClassReference[3263:11, "WitchEntity", Internal: net/minecraft/entity/monster/WitchEntity, Qualified: false] Shift[-76] WitchEntity -> Witch
+Rename ClassReference[3371:14, "VillagerEntity", Internal: net/minecraft/entity/merchant/villager/VillagerEntity, Qualified: false] Shift[-82] VillagerEntity -> Villager
+Rename ClassReference[3482:11, "HorseEntity", Internal: net/minecraft/entity/passive/horse/HorseEntity, Qualified: false] Shift[-88] HorseEntity -> Horse
+Rename ClassReference[3590:13, "ChickenEntity", Internal: net/minecraft/entity/passive/ChickenEntity, Qualified: false] Shift[-94] ChickenEntity -> Chicken
+Rename ClassReference[4213:17, "RandomWalkingGoal", Internal: net/minecraft/entity/ai/goal/RandomWalkingGoal, Qualified: false] Shift[-100] RandomWalkingGoal -> RandomStrollGoal
+Rename ClassReference[4288:16, "LookRandomlyGoal", Internal: net/minecraft/entity/ai/goal/LookRandomlyGoal, Qualified: false] Shift[-101] LookRandomlyGoal -> RandomLookAroundGoal
+Rename ClassReference[4376:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-97] PlayerEntity -> Player
+Adding 14 imports
+        net.minecraft.world.entity.EntityType
+        net.minecraft.world.entity.Mob
+        net.minecraft.world.entity.ai.goal.FloatGoal
+        net.minecraft.world.entity.ai.goal.MeleeAttackGoal
+        net.minecraft.world.entity.ai.goal.RandomLookAroundGoal
+        net.minecraft.world.entity.ai.goal.RandomStrollGoal
+        net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal
+        net.minecraft.world.entity.monster.Creeper
+        net.minecraft.world.entity.monster.Monster
+        net.minecraft.world.entity.monster.Pillager
+        net.minecraft.world.entity.monster.Skeleton
+        net.minecraft.world.entity.monster.Spider
+        net.minecraft.world.entity.monster.Witch
+        net.minecraft.world.entity.monster.Zombie
+End  Processing: fr/janis/pintium/entities/RatelEntity.java
+
+Start Processing: fr/janis/pintium/entities/SkeletonBodyGuardEntity.java
+Rename ClassReference[1027:14, "SkeletonEntity", Internal: net/minecraft/entity/monster/SkeletonEntity, Qualified: false] Shift[0] SkeletonEntity -> Skeleton
+Rename ClassReference[1103:14, "SkeletonEntity", Internal: net/minecraft/entity/monster/SkeletonEntity, Qualified: false] Shift[-6] SkeletonEntity -> Skeleton
+Rename ClassReference[1125:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[-12] World -> Level
+Rename ClassReference[1228:20, "AttributeModifierMap", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap, Qualified: false] Shift[-12] AttributeModifierMap -> AttributeSupplier
+Rename ClassReference[1249:16, "MutableAttribute", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap$MutableAttribute, Qualified: true] Shift[-15] MutableAttribute -> Builder
+Rename ClassReference[1305:13, "MonsterEntity", Internal: net/minecraft/entity/monster/MonsterEntity, Qualified: false] Shift[-24] MonsterEntity -> Monster
+Rename ClassReference[1488:8, "SwimGoal", Internal: net/minecraft/entity/ai/goal/SwimGoal, Qualified: false] Shift[-30] SwimGoal -> FloatGoal
+Rename ClassReference[1547:10, "LookAtGoal", Internal: net/minecraft/entity/ai/goal/LookAtGoal, Qualified: false] Shift[-29] LookAtGoal -> LookAtPlayerGoal
+Rename ClassReference[1564:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-23] PlayerEntity -> Player
+Rename ClassReference[1634:16, "LookRandomlyGoal", Internal: net/minecraft/entity/ai/goal/LookRandomlyGoal, Qualified: false] Shift[-29] LookRandomlyGoal -> RandomLookAroundGoal
+Rename ClassReference[1739:12, "PiglinEntity", Internal: net/minecraft/entity/monster/piglin/PiglinEntity, Qualified: false] Shift[-25] PiglinEntity -> Piglin
+Rename ClassReference[1847:9, "CowEntity", Internal: net/minecraft/entity/passive/CowEntity, Qualified: false] Shift[-31] CowEntity -> Cow
+Rename ClassReference[1952:11, "SheepEntity", Internal: net/minecraft/entity/passive/SheepEntity, Qualified: false] Shift[-37] SheepEntity -> Sheep
+Rename ClassReference[2059:9, "PigEntity", Internal: net/minecraft/entity/passive/PigEntity, Qualified: false] Shift[-43] PigEntity -> Pig
+Rename ClassReference[2164:14, "SkeletonEntity", Internal: net/minecraft/entity/monster/SkeletonEntity, Qualified: false] Shift[-49] SkeletonEntity -> Skeleton
+Rename ClassReference[2274:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[-55] ZombieEntity -> Zombie
+Rename ClassReference[2382:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-61] CreeperEntity -> Creeper
+Rename ClassReference[2491:12, "SpiderEntity", Internal: net/minecraft/entity/monster/SpiderEntity, Qualified: false] Shift[-67] SpiderEntity -> Spider
+Rename ClassReference[2711:14, "PillagerEntity", Internal: net/minecraft/entity/monster/PillagerEntity, Qualified: false] Shift[-73] PillagerEntity -> Pillager
+Rename ClassReference[2822:11, "WitchEntity", Internal: net/minecraft/entity/monster/WitchEntity, Qualified: false] Shift[-79] WitchEntity -> Witch
+Rename ClassReference[2930:14, "VillagerEntity", Internal: net/minecraft/entity/merchant/villager/VillagerEntity, Qualified: false] Shift[-85] VillagerEntity -> Villager
+Rename ClassReference[3041:11, "HorseEntity", Internal: net/minecraft/entity/passive/horse/HorseEntity, Qualified: false] Shift[-91] HorseEntity -> Horse
+Rename ClassReference[3257:11, "BlazeEntity", Internal: net/minecraft/entity/monster/BlazeEntity, Qualified: false] Shift[-97] BlazeEntity -> Blaze
+Rename ClassReference[3365:16, "CaveSpiderEntity", Internal: net/minecraft/entity/monster/CaveSpiderEntity, Qualified: false] Shift[-103] CaveSpiderEntity -> CaveSpider
+Rename ClassReference[3478:14, "EndermanEntity", Internal: net/minecraft/entity/monster/EndermanEntity, Qualified: false] Shift[-109] EndermanEntity -> EnderMan
+Rename ClassReference[3589:19, "ElderGuardianEntity", Internal: net/minecraft/entity/monster/ElderGuardianEntity, Qualified: false] Shift[-115] ElderGuardianEntity -> ElderGuardian
+Rename ClassReference[3705:15, "EndermiteEntity", Internal: net/minecraft/entity/monster/EndermiteEntity, Qualified: false] Shift[-121] EndermiteEntity -> Endermite
+Rename ClassReference[3817:12, "EvokerEntity", Internal: net/minecraft/entity/monster/EvokerEntity, Qualified: false] Shift[-127] EvokerEntity -> Evoker
+Rename ClassReference[3926:11, "GhastEntity", Internal: net/minecraft/entity/monster/GhastEntity, Qualified: false] Shift[-133] GhastEntity -> Ghast
+Rename ClassReference[4034:12, "HoglinEntity", Internal: net/minecraft/entity/monster/HoglinEntity, Qualified: false] Shift[-139] HoglinEntity -> Hoglin
+Rename ClassReference[4143:10, "HuskEntity", Internal: net/minecraft/entity/monster/HuskEntity, Qualified: false] Shift[-145] HuskEntity -> Husk
+Rename ClassReference[4250:16, "IllusionerEntity", Internal: net/minecraft/entity/monster/IllusionerEntity, Qualified: false] Shift[-151] IllusionerEntity -> Illusioner
+Rename ClassReference[4363:15, "MagmaCubeEntity", Internal: net/minecraft/entity/monster/MagmaCubeEntity, Qualified: false] Shift[-157] MagmaCubeEntity -> MagmaCube
+Rename ClassReference[4475:13, "PhantomEntity", Internal: net/minecraft/entity/monster/PhantomEntity, Qualified: false] Shift[-163] PhantomEntity -> Phantom
+Rename ClassReference[4585:13, "RavagerEntity", Internal: net/minecraft/entity/monster/RavagerEntity, Qualified: false] Shift[-169] RavagerEntity -> Ravager
+Rename ClassReference[4695:13, "ShulkerEntity", Internal: net/minecraft/entity/monster/ShulkerEntity, Qualified: false] Shift[-175] ShulkerEntity -> Shulker
+Rename ClassReference[4805:16, "SilverfishEntity", Internal: net/minecraft/entity/monster/SilverfishEntity, Qualified: false] Shift[-181] SilverfishEntity -> Silverfish
+Rename ClassReference[4918:11, "SlimeEntity", Internal: net/minecraft/entity/monster/SlimeEntity, Qualified: false] Shift[-187] SlimeEntity -> Slime
+Rename ClassReference[5026:20, "WitherSkeletonEntity", Internal: net/minecraft/entity/monster/WitherSkeletonEntity, Qualified: false] Shift[-193] WitherSkeletonEntity -> WitherSkeleton
+Rename ClassReference[5143:12, "ZoglinEntity", Internal: net/minecraft/entity/monster/ZoglinEntity, Qualified: false] Shift[-199] ZoglinEntity -> Zoglin
+Rename ClassReference[5234:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-205] PlayerEntity -> Player
+Adding 33 imports
+        net.minecraft.world.entity.EntityType
+        net.minecraft.world.entity.ai.goal.FloatGoal
+        net.minecraft.world.entity.ai.goal.LookAtPlayerGoal
+        net.minecraft.world.entity.ai.goal.RandomLookAroundGoal
+        net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal
+        net.minecraft.world.entity.animal.Cow
+        net.minecraft.world.entity.animal.Pig
+        net.minecraft.world.entity.animal.Sheep
+        net.minecraft.world.entity.monster.Blaze
+        net.minecraft.world.entity.monster.CaveSpider
+        net.minecraft.world.entity.monster.Creeper
+        net.minecraft.world.entity.monster.ElderGuardian
+        net.minecraft.world.entity.monster.EnderMan
+        net.minecraft.world.entity.monster.Endermite
+        net.minecraft.world.entity.monster.Evoker
+        net.minecraft.world.entity.monster.Ghast
+        net.minecraft.world.entity.monster.Husk
+        net.minecraft.world.entity.monster.Illusioner
+        net.minecraft.world.entity.monster.MagmaCube
+        net.minecraft.world.entity.monster.Monster
+        net.minecraft.world.entity.monster.Phantom
+        net.minecraft.world.entity.monster.Pillager
+        net.minecraft.world.entity.monster.Ravager
+        net.minecraft.world.entity.monster.Shulker
+        net.minecraft.world.entity.monster.Silverfish
+        net.minecraft.world.entity.monster.Skeleton
+        net.minecraft.world.entity.monster.Slime
+        net.minecraft.world.entity.monster.Spider
+        net.minecraft.world.entity.monster.Witch
+        net.minecraft.world.entity.monster.WitherSkeleton
+        net.minecraft.world.entity.monster.Zoglin
+        net.minecraft.world.entity.monster.Zombie
+        net.minecraft.world.entity.monster.hoglin.Hoglin
+End  Processing: fr/janis/pintium/entities/SkeletonBodyGuardEntity.java
+
+Start Processing: fr/janis/pintium/entities/TunaEntity.java
+Rename ClassReference[650:18, "AbstractFishEntity", Internal: net/minecraft/entity/passive/fish/AbstractFishEntity, Qualified: false] Shift[0] AbstractFishEntity -> AbstractFish
+Rename ClassReference[717:18, "AbstractFishEntity", Internal: net/minecraft/entity/passive/fish/AbstractFishEntity, Qualified: false] Shift[-6] AbstractFishEntity -> AbstractFish
+Rename ClassReference[743:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[-12] World -> Level
+Rename ClassReference[1051:20, "AttributeModifierMap", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap, Qualified: false] Shift[-12] AttributeModifierMap -> AttributeSupplier
+Rename ClassReference[1072:16, "MutableAttribute", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap$MutableAttribute, Qualified: true] Shift[-15] MutableAttribute -> Builder
+Rename ClassReference[1128:9, "MobEntity", Internal: net/minecraft/entity/MobEntity, Qualified: false] Shift[-24] MobEntity -> Mob
+Rename ClassReference[1821:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-30] PlayerEntity -> Player
+Adding 4 imports
+        net.minecraft.world.entity.EntityType
+        net.minecraft.world.entity.Mob
+        net.minecraft.world.entity.ai.goal.PanicGoal
+        net.minecraft.world.entity.ai.goal.RandomSwimmingGoal
+End  Processing: fr/janis/pintium/entities/TunaEntity.java
+
+Start Processing: fr/janis/pintium/entities/ZombieBodyGuardEntity.java
+Rename ClassReference[954:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[0] ZombieEntity -> Zombie
+Rename ClassReference[1026:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[-6] ZombieEntity -> Zombie
+Rename ClassReference[1046:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[-12] World -> Level
+Rename ClassReference[1149:20, "AttributeModifierMap", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap, Qualified: false] Shift[-12] AttributeModifierMap -> AttributeSupplier
+Rename ClassReference[1170:16, "MutableAttribute", Internal: net/minecraft/entity/ai/attributes/AttributeModifierMap$MutableAttribute, Qualified: true] Shift[-15] MutableAttribute -> Builder
+Rename ClassReference[1226:13, "MonsterEntity", Internal: net/minecraft/entity/monster/MonsterEntity, Qualified: false] Shift[-24] MonsterEntity -> Monster
+Rename ClassReference[1561:8, "SwimGoal", Internal: net/minecraft/entity/ai/goal/SwimGoal, Qualified: false] Shift[-30] SwimGoal -> FloatGoal
+Rename ClassReference[1620:10, "LookAtGoal", Internal: net/minecraft/entity/ai/goal/LookAtGoal, Qualified: false] Shift[-29] LookAtGoal -> LookAtPlayerGoal
+Rename ClassReference[1637:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-23] PlayerEntity -> Player
+Rename ClassReference[1707:16, "LookRandomlyGoal", Internal: net/minecraft/entity/ai/goal/LookRandomlyGoal, Qualified: false] Shift[-29] LookRandomlyGoal -> RandomLookAroundGoal
+Rename ClassReference[1892:12, "PiglinEntity", Internal: net/minecraft/entity/monster/piglin/PiglinEntity, Qualified: false] Shift[-25] PiglinEntity -> Piglin
+Rename ClassReference[2000:9, "CowEntity", Internal: net/minecraft/entity/passive/CowEntity, Qualified: false] Shift[-31] CowEntity -> Cow
+Rename ClassReference[2105:11, "SheepEntity", Internal: net/minecraft/entity/passive/SheepEntity, Qualified: false] Shift[-37] SheepEntity -> Sheep
+Rename ClassReference[2212:9, "PigEntity", Internal: net/minecraft/entity/passive/PigEntity, Qualified: false] Shift[-43] PigEntity -> Pig
+Rename ClassReference[2317:14, "SkeletonEntity", Internal: net/minecraft/entity/monster/SkeletonEntity, Qualified: false] Shift[-49] SkeletonEntity -> Skeleton
+Rename ClassReference[2427:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[-55] ZombieEntity -> Zombie
+Rename ClassReference[2535:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-61] CreeperEntity -> Creeper
+Rename ClassReference[2644:12, "SpiderEntity", Internal: net/minecraft/entity/monster/SpiderEntity, Qualified: false] Shift[-67] SpiderEntity -> Spider
+Rename ClassReference[2864:14, "PillagerEntity", Internal: net/minecraft/entity/monster/PillagerEntity, Qualified: false] Shift[-73] PillagerEntity -> Pillager
+Rename ClassReference[2975:11, "WitchEntity", Internal: net/minecraft/entity/monster/WitchEntity, Qualified: false] Shift[-79] WitchEntity -> Witch
+Rename ClassReference[3083:14, "VillagerEntity", Internal: net/minecraft/entity/merchant/villager/VillagerEntity, Qualified: false] Shift[-85] VillagerEntity -> Villager
+Rename ClassReference[3194:11, "HorseEntity", Internal: net/minecraft/entity/passive/horse/HorseEntity, Qualified: false] Shift[-91] HorseEntity -> Horse
+Rename ClassReference[3410:11, "BlazeEntity", Internal: net/minecraft/entity/monster/BlazeEntity, Qualified: false] Shift[-97] BlazeEntity -> Blaze
+Rename ClassReference[3518:16, "CaveSpiderEntity", Internal: net/minecraft/entity/monster/CaveSpiderEntity, Qualified: false] Shift[-103] CaveSpiderEntity -> CaveSpider
+Rename ClassReference[3631:14, "EndermanEntity", Internal: net/minecraft/entity/monster/EndermanEntity, Qualified: false] Shift[-109] EndermanEntity -> EnderMan
+Rename ClassReference[3742:19, "ElderGuardianEntity", Internal: net/minecraft/entity/monster/ElderGuardianEntity, Qualified: false] Shift[-115] ElderGuardianEntity -> ElderGuardian
+Rename ClassReference[3858:15, "EndermiteEntity", Internal: net/minecraft/entity/monster/EndermiteEntity, Qualified: false] Shift[-121] EndermiteEntity -> Endermite
+Rename ClassReference[3970:12, "EvokerEntity", Internal: net/minecraft/entity/monster/EvokerEntity, Qualified: false] Shift[-127] EvokerEntity -> Evoker
+Rename ClassReference[4079:11, "GhastEntity", Internal: net/minecraft/entity/monster/GhastEntity, Qualified: false] Shift[-133] GhastEntity -> Ghast
+Rename ClassReference[4187:12, "HoglinEntity", Internal: net/minecraft/entity/monster/HoglinEntity, Qualified: false] Shift[-139] HoglinEntity -> Hoglin
+Rename ClassReference[4296:10, "HuskEntity", Internal: net/minecraft/entity/monster/HuskEntity, Qualified: false] Shift[-145] HuskEntity -> Husk
+Rename ClassReference[4403:16, "IllusionerEntity", Internal: net/minecraft/entity/monster/IllusionerEntity, Qualified: false] Shift[-151] IllusionerEntity -> Illusioner
+Rename ClassReference[4516:15, "MagmaCubeEntity", Internal: net/minecraft/entity/monster/MagmaCubeEntity, Qualified: false] Shift[-157] MagmaCubeEntity -> MagmaCube
+Rename ClassReference[4628:13, "PhantomEntity", Internal: net/minecraft/entity/monster/PhantomEntity, Qualified: false] Shift[-163] PhantomEntity -> Phantom
+Rename ClassReference[4738:13, "RavagerEntity", Internal: net/minecraft/entity/monster/RavagerEntity, Qualified: false] Shift[-169] RavagerEntity -> Ravager
+Rename ClassReference[4848:13, "ShulkerEntity", Internal: net/minecraft/entity/monster/ShulkerEntity, Qualified: false] Shift[-175] ShulkerEntity -> Shulker
+Rename ClassReference[4958:16, "SilverfishEntity", Internal: net/minecraft/entity/monster/SilverfishEntity, Qualified: false] Shift[-181] SilverfishEntity -> Silverfish
+Rename ClassReference[5071:11, "SlimeEntity", Internal: net/minecraft/entity/monster/SlimeEntity, Qualified: false] Shift[-187] SlimeEntity -> Slime
+Rename ClassReference[5179:20, "WitherSkeletonEntity", Internal: net/minecraft/entity/monster/WitherSkeletonEntity, Qualified: false] Shift[-193] WitherSkeletonEntity -> WitherSkeleton
+Rename ClassReference[5296:12, "ZoglinEntity", Internal: net/minecraft/entity/monster/ZoglinEntity, Qualified: false] Shift[-199] ZoglinEntity -> Zoglin
+Rename ClassReference[5387:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-205] PlayerEntity -> Player
+Adding 34 imports
+        net.minecraft.world.entity.EntityType
+        net.minecraft.world.entity.ai.goal.FloatGoal
+        net.minecraft.world.entity.ai.goal.LookAtPlayerGoal
+        net.minecraft.world.entity.ai.goal.RandomLookAroundGoal
+        net.minecraft.world.entity.ai.goal.ZombieAttackGoal
+        net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal
+        net.minecraft.world.entity.animal.Cow
+        net.minecraft.world.entity.animal.Pig
+        net.minecraft.world.entity.animal.Sheep
+        net.minecraft.world.entity.monster.Blaze
+        net.minecraft.world.entity.monster.CaveSpider
+        net.minecraft.world.entity.monster.Creeper
+        net.minecraft.world.entity.monster.ElderGuardian
+        net.minecraft.world.entity.monster.EnderMan
+        net.minecraft.world.entity.monster.Endermite
+        net.minecraft.world.entity.monster.Evoker
+        net.minecraft.world.entity.monster.Ghast
+        net.minecraft.world.entity.monster.Husk
+        net.minecraft.world.entity.monster.Illusioner
+        net.minecraft.world.entity.monster.MagmaCube
+        net.minecraft.world.entity.monster.Monster
+        net.minecraft.world.entity.monster.Phantom
+        net.minecraft.world.entity.monster.Pillager
+        net.minecraft.world.entity.monster.Ravager
+        net.minecraft.world.entity.monster.Shulker
+        net.minecraft.world.entity.monster.Silverfish
+        net.minecraft.world.entity.monster.Skeleton
+        net.minecraft.world.entity.monster.Slime
+        net.minecraft.world.entity.monster.Spider
+        net.minecraft.world.entity.monster.Witch
+        net.minecraft.world.entity.monster.WitherSkeleton
+        net.minecraft.world.entity.monster.Zoglin
+        net.minecraft.world.entity.monster.Zombie
+        net.minecraft.world.entity.monster.hoglin.Hoglin
+End  Processing: fr/janis/pintium/entities/ZombieBodyGuardEntity.java
+
+Start Processing: fr/janis/pintium/event/ArmorEvents.java
+Rename ClassReference[640:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[678:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-6] PlayerEntity -> Player
+Rename ClassReference[702:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-12] PlayerEntity -> Player
+Rename ClassReference[874:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-18] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[1188:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-22] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[1417:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-26] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[1514:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-30] Effects -> MobEffects
+Rename ClassReference[1581:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[-27] EffectInstance -> MobEffectInstance
+Rename ClassReference[1596:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-24] Effects -> MobEffects
+Rename ClassReference[1779:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-21] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[1834:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-25] Effects -> MobEffects
+Rename ClassReference[1900:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-22] Effects -> MobEffects
+Rename ClassReference[1999:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-19] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[2093:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-23] Effects -> MobEffects
+Rename ClassReference[2157:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[-20] EffectInstance -> MobEffectInstance
+Rename ClassReference[2172:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-17] Effects -> MobEffects
+Rename ClassReference[2350:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-14] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[2404:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-18] Effects -> MobEffects
+Rename ClassReference[2467:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-15] Effects -> MobEffects
+Rename ClassReference[2563:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-12] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[2654:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-16] Effects -> MobEffects
+Rename ClassReference[2723:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[-13] EffectInstance -> MobEffectInstance
+Rename ClassReference[2738:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-10] Effects -> MobEffects
+Rename ClassReference[2918:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-7] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[2972:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-11] Effects -> MobEffects
+Rename ClassReference[3040:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-8] Effects -> MobEffects
+Rename ClassReference[3141:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-5] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[3274:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-9] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[3412:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-13] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[3547:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-17] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[3663:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-21] Effects -> MobEffects
+Rename ClassReference[3730:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[-18] EffectInstance -> MobEffectInstance
+Rename ClassReference[3745:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-15] Effects -> MobEffects
+Rename ClassReference[3924:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-12] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[3978:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-16] Effects -> MobEffects
+Rename ClassReference[4128:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-13] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[4183:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-17] Effects -> MobEffects
+Rename ClassReference[4331:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-14] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[4385:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-18] Effects -> MobEffects
+Rename ClassReference[4530:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-15] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[4584:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-19] Effects -> MobEffects
+Rename ClassReference[4650:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-16] Effects -> MobEffects
+End  Processing: fr/janis/pintium/event/ArmorEvents.java
+
+Start Processing: fr/janis/pintium/event/FallingEvent.java
+Rename ClassReference[415:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[454:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-6] PlayerEntity -> Player
+Rename ClassReference[478:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-12] PlayerEntity -> Player
+End  Processing: fr/janis/pintium/event/FallingEvent.java
+
+Start Processing: fr/janis/pintium/event/KeyBindEvent.java
+End  Processing: fr/janis/pintium/event/KeyBindEvent.java
+
+Start Processing: fr/janis/pintium/event/PintiumEvents.java
+End  Processing: fr/janis/pintium/event/PintiumEvents.java
+
+Start Processing: fr/janis/pintium/event/ServerTickEvent.java
+Rename ClassReference[1606:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[0] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1831:11, "HorseEntity", Internal: net/minecraft/entity/passive/horse/HorseEntity, Qualified: false] Shift[-6] HorseEntity -> Horse
+Rename ClassReference[1855:11, "HorseEntity", Internal: net/minecraft/entity/passive/horse/HorseEntity, Qualified: false] Shift[-12] HorseEntity -> Horse
+Rename ClassReference[2151:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-18] CreeperEntity -> Creeper
+Rename ClassReference[2179:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-24] CreeperEntity -> Creeper
+Rename ClassReference[4004:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-30] Effects -> MobEffects
+Rename ClassReference[5106:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-27] Effects -> MobEffects
+End  Processing: fr/janis/pintium/event/ServerTickEvent.java
+
+Start Processing: fr/janis/pintium/event/TickEvent.java
+End  Processing: fr/janis/pintium/event/TickEvent.java
+
+Start Processing: fr/janis/pintium/event/UsedItemEvent.java
+End  Processing: fr/janis/pintium/event/UsedItemEvent.java
+
+Start Processing: fr/janis/pintium/event/loot/PintiumSeedAdditionModifier.java
+Rename ClassReference[706:14, "ILootCondition", Internal: net/minecraft/loot/conditions/ILootCondition, Qualified: false] Shift[0] ILootCondition -> LootItemCondition
+Rename ClassReference[1444:14, "ILootCondition", Internal: net/minecraft/loot/conditions/ILootCondition, Qualified: false] Shift[3] ILootCondition -> LootItemCondition
+Rename ClassReference[1580:9, "JSONUtils", Internal: net/minecraft/util/JSONUtils, Qualified: false] Shift[6] JSONUtils -> GsonHelper
+End  Processing: fr/janis/pintium/event/loot/PintiumSeedAdditionModifier.java
+
+Start Processing: fr/janis/pintium/gui/SpellsGui.java
+Rename ClassReference[1052:18, "ClientPlayerEntity", Internal: net/minecraft/client/entity/player/ClientPlayerEntity, Qualified: false] Shift[0] ClientPlayerEntity -> LocalPlayer
+Rename ClassReference[1098:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[-7] World -> Level
+Rename ClassReference[1211:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-7] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1708:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-10] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1982:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-13] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2268:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-16] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2551:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-19] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2785:11, "MatrixStack", Internal: com/mojang/blaze3d/matrix/MatrixStack, Qualified: false] Shift[-22] MatrixStack -> PoseStack
+Rename ClassReference[3002:11, "MatrixStack", Internal: com/mojang/blaze3d/matrix/MatrixStack, Qualified: false] Shift[-24] MatrixStack -> PoseStack
+End  Processing: fr/janis/pintium/gui/SpellsGui.java
+
+Start Processing: fr/janis/pintium/gui/TPObjectGUI.java
+Rename ClassReference[1256:18, "ClientPlayerEntity", Internal: net/minecraft/client/entity/player/ClientPlayerEntity, Qualified: false] Shift[0] ClientPlayerEntity -> LocalPlayer
+Rename ClassReference[1302:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[-7] World -> Level
+Rename ClassReference[1383:15, "TextFieldWidget", Internal: net/minecraft/client/gui/widget/TextFieldWidget, Qualified: false] Shift[-7] TextFieldWidget -> EditBox
+Rename ClassReference[1418:15, "TextFieldWidget", Internal: net/minecraft/client/gui/widget/TextFieldWidget, Qualified: false] Shift[-15] TextFieldWidget -> EditBox
+Rename ClassReference[1453:15, "TextFieldWidget", Internal: net/minecraft/client/gui/widget/TextFieldWidget, Qualified: false] Shift[-23] TextFieldWidget -> EditBox
+Rename ClassReference[1496:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-31] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1538:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-34] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1620:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-37] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1662:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-40] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1744:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-43] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1786:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-46] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2000:11, "StringUtils", Internal: net/minecraft/util/StringUtils, Qualified: false] Shift[-49] StringUtils -> StringUtil
+Rename ClassReference[2564:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-50] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[3037:15, "TextFieldWidget", Internal: net/minecraft/client/gui/widget/TextFieldWidget, Qualified: false] Shift[-53] TextFieldWidget -> EditBox
+Rename ClassReference[3182:15, "TextFieldWidget", Internal: net/minecraft/client/gui/widget/TextFieldWidget, Qualified: false] Shift[-61] TextFieldWidget -> EditBox
+Rename ClassReference[3327:15, "TextFieldWidget", Internal: net/minecraft/client/gui/widget/TextFieldWidget, Qualified: false] Shift[-69] TextFieldWidget -> EditBox
+Rename ClassReference[4028:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-77] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[4179:11, "MatrixStack", Internal: com/mojang/blaze3d/matrix/MatrixStack, Qualified: false] Shift[-80] MatrixStack -> PoseStack
+Rename ClassReference[4978:11, "MatrixStack", Internal: com/mojang/blaze3d/matrix/MatrixStack, Qualified: false] Shift[-82] MatrixStack -> PoseStack
+Rename ClassReference[6391:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-84] ITextComponent -> Component
+Rename ClassReference[6422:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-89] TranslationTextComponent -> TranslatableComponent
+End  Processing: fr/janis/pintium/gui/TPObjectGUI.java
+
+Start Processing: fr/janis/pintium/init/CannabisCrop.java
+Rename ClassReference[420:10, "CropsBlock", Internal: net/minecraft/block/CropsBlock, Qualified: false] Shift[0] CropsBlock -> CropBlock
+Rename ClassReference[1212:13, "IItemProvider", Internal: net/minecraft/util/IItemProvider, Qualified: false] Shift[-1] IItemProvider -> ItemLike
+Rename ClassReference[1373:12, "IBlockReader", Internal: net/minecraft/world/IBlockReader, Qualified: false] Shift[-6] IBlockReader -> BlockGetter
+Rename ClassReference[1407:17, "ISelectionContext", Internal: net/minecraft/util/math/shapes/ISelectionContext, Qualified: false] Shift[-7] ISelectionContext -> CollisionContext
+Adding 1 imports
+        net.minecraft.world.level.block.state.BlockBehaviour.Properties
+End  Processing: fr/janis/pintium/init/CannabisCrop.java
+
+Start Processing: fr/janis/pintium/init/PintiumBlocks.java
+Rename ClassReference[1091:13, "AbstractBlock", Internal: net/minecraft/block/AbstractBlock, Qualified: false] Shift[0] AbstractBlock -> BlockBehaviour
+Rename ClassReference[1343:13, "AbstractBlock", Internal: net/minecraft/block/AbstractBlock, Qualified: false] Shift[1] AbstractBlock -> BlockBehaviour
+Rename ClassReference[1612:13, "AbstractBlock", Internal: net/minecraft/block/AbstractBlock, Qualified: false] Shift[2] AbstractBlock -> BlockBehaviour
+Rename ClassReference[1854:13, "AbstractBlock", Internal: net/minecraft/block/AbstractBlock, Qualified: false] Shift[3] AbstractBlock -> BlockBehaviour
+Adding 4 imports
+        net.minecraft.world.level.block.Block
+        net.minecraft.world.level.block.Blocks
+        net.minecraft.world.level.block.SoundType
+        net.minecraft.world.level.block.state.BlockBehaviour
+End  Processing: fr/janis/pintium/init/PintiumBlocks.java
+
+Start Processing: fr/janis/pintium/init/PintiumCrop.java
+Rename ClassReference[419:10, "CropsBlock", Internal: net/minecraft/block/CropsBlock, Qualified: false] Shift[0] CropsBlock -> CropBlock
+Rename ClassReference[1242:13, "IItemProvider", Internal: net/minecraft/util/IItemProvider, Qualified: false] Shift[-1] IItemProvider -> ItemLike
+Rename ClassReference[1403:12, "IBlockReader", Internal: net/minecraft/world/IBlockReader, Qualified: false] Shift[-6] IBlockReader -> BlockGetter
+Rename ClassReference[1437:17, "ISelectionContext", Internal: net/minecraft/util/math/shapes/ISelectionContext, Qualified: false] Shift[-7] ISelectionContext -> CollisionContext
+Adding 1 imports
+        net.minecraft.world.level.block.state.BlockBehaviour.Properties
+End  Processing: fr/janis/pintium/init/PintiumCrop.java
+
+Start Processing: fr/janis/pintium/init/PintiumEntities.java
+Rename ClassReference[803:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[0] EntityClassification -> MobCategory
+Rename ClassReference[1186:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[-9] EntityClassification -> MobCategory
+Rename ClassReference[1557:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[-18] EntityClassification -> MobCategory
+Rename ClassReference[1949:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[-27] EntityClassification -> MobCategory
+Rename ClassReference[2339:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[-36] EntityClassification -> MobCategory
+Rename ClassReference[2686:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[-45] EntityClassification -> MobCategory
+Rename ClassReference[2997:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[-54] EntityClassification -> MobCategory
+Rename ClassReference[3332:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[-63] EntityClassification -> MobCategory
+End  Processing: fr/janis/pintium/init/PintiumEntities.java
+
+Start Processing: fr/janis/pintium/init/PintiumFeatures.java
+Rename ClassReference[1006:16, "OreFeatureConfig", Internal: net/minecraft/world/gen/feature/OreFeatureConfig, Qualified: false] Shift[0] OreFeatureConfig -> OreConfiguration
+Rename ClassReference[1023:16, "OreFeatureConfig", Internal: net/minecraft/world/gen/feature/OreFeatureConfig, Qualified: false] Shift[0] OreFeatureConfig -> OreConfiguration
+Rename ClassReference[1040:15, "FillerBlockType", Internal: net/minecraft/world/gen/feature/OreFeatureConfig$FillerBlockType, Qualified: true] Shift[0] FillerBlockType -> Predicates
+Rename ClassReference[1354:16, "OreFeatureConfig", Internal: net/minecraft/world/gen/feature/OreFeatureConfig, Qualified: false] Shift[-5] OreFeatureConfig -> OreConfiguration
+Rename ClassReference[1371:16, "OreFeatureConfig", Internal: net/minecraft/world/gen/feature/OreFeatureConfig, Qualified: false] Shift[-5] OreFeatureConfig -> OreConfiguration
+Rename ClassReference[1388:15, "FillerBlockType", Internal: net/minecraft/world/gen/feature/OreFeatureConfig$FillerBlockType, Qualified: true] Shift[-5] FillerBlockType -> Predicates
+Rename ClassReference[1574:14, "IFeatureConfig", Internal: net/minecraft/world/gen/feature/IFeatureConfig, Qualified: false] Shift[-10] IFeatureConfig -> FeatureConfiguration
+Rename ClassReference[1707:18, "WorldGenRegistries", Internal: net/minecraft/util/registry/WorldGenRegistries, Qualified: false] Shift[-4] WorldGenRegistries -> BuiltinRegistries
+Rename ClassReference[1957:8, "Category", Internal: net/minecraft/world/biome/Biome$Category, Qualified: true] Shift[-5] Category -> BiomeCategory
+Rename ClassReference[2001:8, "Category", Internal: net/minecraft/world/biome/Biome$Category, Qualified: true] Shift[0] Category -> BiomeCategory
+Rename ClassReference[2054:15, "GenerationStage", Internal: net/minecraft/world/gen/GenerationStage, Qualified: false] Shift[5] GenerationStage -> GenerationStep
+Rename ClassReference[2177:8, "Category", Internal: net/minecraft/world/biome/Biome$Category, Qualified: true] Shift[4] Category -> BiomeCategory
+Rename ClassReference[2230:15, "GenerationStage", Internal: net/minecraft/world/gen/GenerationStage, Qualified: false] Shift[9] GenerationStage -> GenerationStep
+Rename ClassReference[2347:8, "Category", Internal: net/minecraft/world/biome/Biome$Category, Qualified: true] Shift[8] Category -> BiomeCategory
+Rename ClassReference[2412:8, "Category", Internal: net/minecraft/world/biome/Biome$Category, Qualified: true] Shift[13] Category -> BiomeCategory
+Rename ClassReference[2492:8, "Category", Internal: net/minecraft/world/biome/Biome$Category, Qualified: true] Shift[18] Category -> BiomeCategory
+Rename ClassReference[2535:8, "Category", Internal: net/minecraft/world/biome/Biome$Category, Qualified: true] Shift[23] Category -> BiomeCategory
+Rename ClassReference[2594:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[28] EntityClassification -> MobCategory
+Rename ClassReference[2632:12, "MobSpawnInfo", Internal: net/minecraft/world/biome/MobSpawnInfo, Qualified: false] Shift[19] MobSpawnInfo -> MobSpawnSettings
+Rename ClassReference[2645:8, "Spawners", Internal: net/minecraft/world/biome/MobSpawnInfo$Spawners, Qualified: true] Shift[23] Spawners -> SpawnerData
+Rename ClassReference[2738:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[26] EntityClassification -> MobCategory
+Rename ClassReference[2777:12, "MobSpawnInfo", Internal: net/minecraft/world/biome/MobSpawnInfo, Qualified: false] Shift[17] MobSpawnInfo -> MobSpawnSettings
+Rename ClassReference[2790:8, "Spawners", Internal: net/minecraft/world/biome/MobSpawnInfo$Spawners, Qualified: true] Shift[21] Spawners -> SpawnerData
+Rename ClassReference[2921:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[24] EntityClassification -> MobCategory
+Rename ClassReference[2966:12, "MobSpawnInfo", Internal: net/minecraft/world/biome/MobSpawnInfo, Qualified: false] Shift[15] MobSpawnInfo -> MobSpawnSettings
+Rename ClassReference[2979:8, "Spawners", Internal: net/minecraft/world/biome/MobSpawnInfo$Spawners, Qualified: true] Shift[19] Spawners -> SpawnerData
+Rename ClassReference[3069:20, "EntityClassification", Internal: net/minecraft/entity/EntityClassification, Qualified: false] Shift[22] EntityClassification -> MobCategory
+Rename ClassReference[3114:12, "MobSpawnInfo", Internal: net/minecraft/world/biome/MobSpawnInfo, Qualified: false] Shift[13] MobSpawnInfo -> MobSpawnSettings
+Rename ClassReference[3127:8, "Spawners", Internal: net/minecraft/world/biome/MobSpawnInfo$Spawners, Qualified: true] Shift[17] Spawners -> SpawnerData
+End  Processing: fr/janis/pintium/init/PintiumFeatures.java
+
+Start Processing: fr/janis/pintium/init/PintiumItems.java
+Rename ClassReference[3899:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[0] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[4177:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-4] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[4452:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-8] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[4720:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-12] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[5320:4, "Food", Internal: net/minecraft/item/Food, Qualified: false] Shift[-16] Food -> FoodProperties
+Rename ClassReference[5467:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[-6] EffectInstance -> MobEffectInstance
+Rename ClassReference[5482:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-3] Effects -> MobEffects
+Rename ClassReference[8556:4, "Food", Internal: net/minecraft/item/Food, Qualified: false] Shift[0] Food -> FoodProperties
+Rename ClassReference[8687:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[10] EffectInstance -> MobEffectInstance
+Rename ClassReference[8702:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[13] Effects -> MobEffects
+Rename ClassReference[8780:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[16] EffectInstance -> MobEffectInstance
+Rename ClassReference[8795:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[19] Effects -> MobEffects
+Rename ClassReference[8872:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[22] EffectInstance -> MobEffectInstance
+Rename ClassReference[8887:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[25] Effects -> MobEffects
+Rename ClassReference[8969:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[28] EffectInstance -> MobEffectInstance
+Rename ClassReference[8984:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[31] Effects -> MobEffects
+Rename ClassReference[9068:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[34] EffectInstance -> MobEffectInstance
+Rename ClassReference[9083:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[37] Effects -> MobEffects
+Rename ClassReference[9383:4, "Food", Internal: net/minecraft/item/Food, Qualified: false] Shift[40] Food -> FoodProperties
+Rename ClassReference[9713:4, "Food", Internal: net/minecraft/item/Food, Qualified: false] Shift[50] Food -> FoodProperties
+Rename ClassReference[9820:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[60] EffectInstance -> MobEffectInstance
+Rename ClassReference[9835:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[63] Effects -> MobEffects
+Rename ClassReference[9908:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[66] EffectInstance -> MobEffectInstance
+Rename ClassReference[9923:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[69] Effects -> MobEffects
+Rename ClassReference[9990:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[72] EffectInstance -> MobEffectInstance
+Rename ClassReference[10005:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[75] Effects -> MobEffects
+Rename ClassReference[10288:4, "Food", Internal: net/minecraft/item/Food, Qualified: false] Shift[78] Food -> FoodProperties
+Rename ClassReference[10608:4, "Food", Internal: net/minecraft/item/Food, Qualified: false] Shift[88] Food -> FoodProperties
+Rename ClassReference[11582:13, "MusicDiscItem", Internal: net/minecraft/item/MusicDiscItem, Qualified: false] Shift[98] MusicDiscItem -> RecordItem
+Adding 11 imports
+        net.minecraft.world.food.FoodProperties
+        net.minecraft.world.item.ArmorItem
+        net.minecraft.world.item.AxeItem
+        net.minecraft.world.item.BlockItem
+        net.minecraft.world.item.FishBucketItem
+        net.minecraft.world.item.HoeItem
+        net.minecraft.world.item.Item
+        net.minecraft.world.item.PickaxeItem
+        net.minecraft.world.item.RecordItem
+        net.minecraft.world.item.ShovelItem
+        net.minecraft.world.item.SwordItem
+End  Processing: fr/janis/pintium/init/PintiumItems.java
+
+Start Processing: fr/janis/pintium/items/HealStick.java
+Rename ClassReference[1007:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1027:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[0] ITextComponent -> Component
+Rename ClassReference[1052:12, "ITooltipFlag", Internal: net/minecraft/client/util/ITooltipFlag, Qualified: false] Shift[-5] ITooltipFlag -> TooltipFlag
+Rename ClassReference[1152:13, "InputMappings", Internal: net/minecraft/client/util/InputMappings, Qualified: false] Shift[-6] InputMappings -> InputConstants
+Rename ClassReference[1282:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-5] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1389:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-8] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1500:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[-11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1528:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1543:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[1566:4, "Hand", Internal: net/minecraft/util/Hand, Qualified: false] Shift[-6] Hand -> InteractionHand
+Rename ClassReference[1681:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[5] EffectInstance -> MobEffectInstance
+Rename ClassReference[1696:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[8] Effects -> MobEffects
+Rename ClassReference[1941:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[11] ActionResult -> InteractionResultHolder
+Rename ClassReference[2017:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[22] ActionResult -> InteractionResultHolder
+Adding 1 imports
+        net.minecraft.world.item.Item.Properties
+End  Processing: fr/janis/pintium/items/HealStick.java
+
+Start Processing: fr/janis/pintium/items/JumpStick.java
+Rename ClassReference[1056:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1076:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[0] ITextComponent -> Component
+Rename ClassReference[1101:12, "ITooltipFlag", Internal: net/minecraft/client/util/ITooltipFlag, Qualified: false] Shift[-5] ITooltipFlag -> TooltipFlag
+Rename ClassReference[1201:13, "InputMappings", Internal: net/minecraft/client/util/InputMappings, Qualified: false] Shift[-6] InputMappings -> InputConstants
+Rename ClassReference[1331:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-5] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1438:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-8] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1549:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[-11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1577:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1592:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[1615:4, "Hand", Internal: net/minecraft/util/Hand, Qualified: false] Shift[-6] Hand -> InteractionHand
+Rename ClassReference[1794:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[5] EffectInstance -> MobEffectInstance
+Rename ClassReference[1809:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[8] Effects -> MobEffects
+Rename ClassReference[1986:13, "SoundCategory", Internal: net/minecraft/util/SoundCategory, Qualified: false] Shift[11] SoundCategory -> SoundSource
+Rename ClassReference[2318:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[9] ActionResult -> InteractionResultHolder
+Rename ClassReference[2394:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[20] ActionResult -> InteractionResultHolder
+Adding 1 imports
+        net.minecraft.world.item.Item.Properties
+End  Processing: fr/janis/pintium/items/JumpStick.java
+
+Start Processing: fr/janis/pintium/items/LifeStick.java
+Rename ClassReference[1290:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1310:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[0] ITextComponent -> Component
+Rename ClassReference[1335:12, "ITooltipFlag", Internal: net/minecraft/client/util/ITooltipFlag, Qualified: false] Shift[-5] ITooltipFlag -> TooltipFlag
+Rename ClassReference[1435:13, "InputMappings", Internal: net/minecraft/client/util/InputMappings, Qualified: false] Shift[-6] InputMappings -> InputConstants
+Rename ClassReference[1565:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-5] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1672:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-8] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1783:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[-11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1811:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1826:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[1849:4, "Hand", Internal: net/minecraft/util/Hand, Qualified: false] Shift[-6] Hand -> InteractionHand
+Rename ClassReference[2364:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[5] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2506:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[2] ITextComponent -> Component
+Rename ClassReference[2763:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-3] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2885:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-6] ITextComponent -> Component
+Rename ClassReference[3310:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-11] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[3453:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-14] ITextComponent -> Component
+Rename ClassReference[3713:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-19] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[3835:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-22] ITextComponent -> Component
+Rename ClassReference[4263:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-27] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[4408:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-30] ITextComponent -> Component
+Rename ClassReference[4670:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-35] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[4792:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-38] ITextComponent -> Component
+Rename ClassReference[5235:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-43] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[5379:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-46] ITextComponent -> Component
+Rename ClassReference[5640:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-51] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[5762:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-54] ITextComponent -> Component
+Rename ClassReference[5921:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-59] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[6042:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-62] ITextComponent -> Component
+Rename ClassReference[6131:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[-67] ActionResult -> InteractionResultHolder
+Adding 1 imports
+        net.minecraft.world.item.Item.Properties
+End  Processing: fr/janis/pintium/items/LifeStick.java
+
+Start Processing: fr/janis/pintium/items/PintiumHammer.java
+Rename ClassReference[3478:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Adding 3 imports
+        net.minecraft.world.item.Item.Properties
+        net.minecraft.world.item.ItemStack
+        net.minecraft.world.item.PickaxeItem
+End  Processing: fr/janis/pintium/items/PintiumHammer.java
+
+Start Processing: fr/janis/pintium/items/PintiumSpawnEggItem.java
+Rename ClassReference[1596:12, "IBlockSource", Internal: net/minecraft/dispenser/IBlockSource, Qualified: false] Shift[0] IBlockSource -> BlockSource
+Rename ClassReference[1904:11, "SpawnReason", Internal: net/minecraft/entity/SpawnReason, Qualified: false] Shift[-1] SpawnReason -> MobSpawnType
+Rename ClassReference[2356:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[0] CompoundNBT -> CompoundTag
+Adding 1 imports
+        net.minecraft.world.item.Item.Properties
+End  Processing: fr/janis/pintium/items/PintiumSpawnEggItem.java
+
+Start Processing: fr/janis/pintium/items/SpeedStick.java
+Rename ClassReference[933:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[953:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[0] ITextComponent -> Component
+Rename ClassReference[978:12, "ITooltipFlag", Internal: net/minecraft/client/util/ITooltipFlag, Qualified: false] Shift[-5] ITooltipFlag -> TooltipFlag
+Rename ClassReference[1078:13, "InputMappings", Internal: net/minecraft/client/util/InputMappings, Qualified: false] Shift[-6] InputMappings -> InputConstants
+Rename ClassReference[1208:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-5] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1316:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-8] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1428:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[-11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1456:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1471:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[1494:4, "Hand", Internal: net/minecraft/util/Hand, Qualified: false] Shift[-6] Hand -> InteractionHand
+Rename ClassReference[1609:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[5] EffectInstance -> MobEffectInstance
+Rename ClassReference[1624:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[8] Effects -> MobEffects
+Rename ClassReference[1883:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1959:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[22] ActionResult -> InteractionResultHolder
+Adding 1 imports
+        net.minecraft.world.item.Item.Properties
+End  Processing: fr/janis/pintium/items/SpeedStick.java
+
+Start Processing: fr/janis/pintium/items/StickOfGod.java
+Rename ClassReference[1077:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1097:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[0] ITextComponent -> Component
+Rename ClassReference[1122:12, "ITooltipFlag", Internal: net/minecraft/client/util/ITooltipFlag, Qualified: false] Shift[-5] ITooltipFlag -> TooltipFlag
+Rename ClassReference[1222:13, "InputMappings", Internal: net/minecraft/client/util/InputMappings, Qualified: false] Shift[-6] InputMappings -> InputConstants
+Rename ClassReference[1352:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-5] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1461:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-8] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1574:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[-11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1602:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1617:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[1640:4, "Hand", Internal: net/minecraft/util/Hand, Qualified: false] Shift[-6] Hand -> InteractionHand
+Rename ClassReference[1753:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[5] EffectInstance -> MobEffectInstance
+Rename ClassReference[1768:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[8] Effects -> MobEffects
+Rename ClassReference[1839:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[11] EffectInstance -> MobEffectInstance
+Rename ClassReference[1854:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[14] Effects -> MobEffects
+Rename ClassReference[1925:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[17] EffectInstance -> MobEffectInstance
+Rename ClassReference[1940:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[20] Effects -> MobEffects
+Rename ClassReference[2010:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[23] EffectInstance -> MobEffectInstance
+Rename ClassReference[2025:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[26] Effects -> MobEffects
+Rename ClassReference[2100:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[29] EffectInstance -> MobEffectInstance
+Rename ClassReference[2115:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[32] Effects -> MobEffects
+Rename ClassReference[2370:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[35] ActionResult -> InteractionResultHolder
+Rename ClassReference[2439:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[46] ZombieEntity -> Zombie
+Rename ClassReference[2465:12, "ZombieEntity", Internal: net/minecraft/entity/monster/ZombieEntity, Qualified: false] Shift[40] ZombieEntity -> Zombie
+Rename ClassReference[2622:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[34] ActionResult -> InteractionResultHolder
+Adding 1 imports
+        net.minecraft.world.item.Item.Properties
+End  Processing: fr/janis/pintium/items/StickOfGod.java
+
+Start Processing: fr/janis/pintium/items/StrengthStick.java
+Rename ClassReference[939:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[959:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[0] ITextComponent -> Component
+Rename ClassReference[984:12, "ITooltipFlag", Internal: net/minecraft/client/util/ITooltipFlag, Qualified: false] Shift[-5] ITooltipFlag -> TooltipFlag
+Rename ClassReference[1084:13, "InputMappings", Internal: net/minecraft/client/util/InputMappings, Qualified: false] Shift[-6] InputMappings -> InputConstants
+Rename ClassReference[1214:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-5] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1325:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-8] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1440:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[-11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1468:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1483:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[1506:4, "Hand", Internal: net/minecraft/util/Hand, Qualified: false] Shift[-6] Hand -> InteractionHand
+Rename ClassReference[1621:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[5] EffectInstance -> MobEffectInstance
+Rename ClassReference[1636:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[8] Effects -> MobEffects
+Rename ClassReference[1893:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1969:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[22] ActionResult -> InteractionResultHolder
+Adding 1 imports
+        net.minecraft.world.item.Item.Properties
+End  Processing: fr/janis/pintium/items/StrengthStick.java
+
+Start Processing: fr/janis/pintium/items/SuperJumpStick.java
+Rename ClassReference[1110:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1130:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[0] ITextComponent -> Component
+Rename ClassReference[1155:12, "ITooltipFlag", Internal: net/minecraft/client/util/ITooltipFlag, Qualified: false] Shift[-5] ITooltipFlag -> TooltipFlag
+Rename ClassReference[1255:13, "InputMappings", Internal: net/minecraft/client/util/InputMappings, Qualified: false] Shift[-6] InputMappings -> InputConstants
+Rename ClassReference[1385:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-5] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1492:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-8] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1603:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[-11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1631:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1646:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[1669:4, "Hand", Internal: net/minecraft/util/Hand, Qualified: false] Shift[-6] Hand -> InteractionHand
+Rename ClassReference[1848:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[5] EffectInstance -> MobEffectInstance
+Rename ClassReference[1863:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[8] Effects -> MobEffects
+Rename ClassReference[2041:13, "SoundCategory", Internal: net/minecraft/util/SoundCategory, Qualified: false] Shift[11] SoundCategory -> SoundSource
+Rename ClassReference[2373:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[9] ActionResult -> InteractionResultHolder
+Rename ClassReference[2640:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[20] ActionResult -> InteractionResultHolder
+Adding 1 imports
+        net.minecraft.world.item.Item.Properties
+End  Processing: fr/janis/pintium/items/SuperJumpStick.java
+
+Start Processing: fr/janis/pintium/items/TPObject.java
+Rename ClassReference[802:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[822:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[0] ITextComponent -> Component
+Rename ClassReference[847:12, "ITooltipFlag", Internal: net/minecraft/client/util/ITooltipFlag, Qualified: false] Shift[-5] ITooltipFlag -> TooltipFlag
+Rename ClassReference[947:13, "InputMappings", Internal: net/minecraft/client/util/InputMappings, Qualified: false] Shift[-6] InputMappings -> InputConstants
+Rename ClassReference[1077:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-5] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1182:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-8] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1291:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[-11] ActionResult -> InteractionResultHolder
+Rename ClassReference[1319:5, "World", Internal: net/minecraft/world/World, Qualified: false] Shift[0] World -> Level
+Rename ClassReference[1334:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[0] PlayerEntity -> Player
+Rename ClassReference[1357:4, "Hand", Internal: net/minecraft/util/Hand, Qualified: false] Shift[-6] Hand -> InteractionHand
+Rename ClassReference[1455:12, "ActionResult", Internal: net/minecraft/util/ActionResult, Qualified: false] Shift[5] ActionResult -> InteractionResultHolder
+Adding 1 imports
+        net.minecraft.world.item.Item.Properties
+End  Processing: fr/janis/pintium/items/TPObject.java
+
+Start Processing: fr/janis/pintium/keybind/KeyBinds.java
+Rename ClassReference[342:10, "KeyBinding", Internal: net/minecraft/client/settings/KeyBinding, Qualified: false] Shift[0] KeyBinding -> KeyMapping
+Rename ClassReference[366:10, "KeyBinding", Internal: net/minecraft/client/settings/KeyBinding, Qualified: false] Shift[0] KeyBinding -> KeyMapping
+Rename ClassReference[421:13, "InputMappings", Internal: net/minecraft/client/util/InputMappings, Qualified: false] Shift[0] InputMappings -> InputConstants
+End  Processing: fr/janis/pintium/keybind/KeyBinds.java
+
+Start Processing: fr/janis/pintium/main.java
+Rename ClassReference[2958:16, "RenderTypeLookup", Internal: net/minecraft/client/renderer/RenderTypeLookup, Qualified: false] Shift[0] RenderTypeLookup -> ItemBlockRenderTypes
+Rename ClassReference[3055:16, "RenderTypeLookup", Internal: net/minecraft/client/renderer/RenderTypeLookup, Qualified: false] Shift[4] RenderTypeLookup -> ItemBlockRenderTypes
+End  Processing: fr/janis/pintium/main.java
+
+Start Processing: fr/janis/pintium/network/Network.java
+End  Processing: fr/janis/pintium/network/Network.java
+
+Start Processing: fr/janis/pintium/network/packet/CannabisPacket.java
+Rename ClassReference[571:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[649:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[1032:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[6] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1411:11, "HorseEntity", Internal: net/minecraft/entity/passive/horse/HorseEntity, Qualified: false] Shift[0] HorseEntity -> Horse
+Rename ClassReference[1435:11, "HorseEntity", Internal: net/minecraft/entity/passive/horse/HorseEntity, Qualified: false] Shift[-6] HorseEntity -> Horse
+Rename ClassReference[1651:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-12] CreeperEntity -> Creeper
+Rename ClassReference[1679:13, "CreeperEntity", Internal: net/minecraft/entity/monster/CreeperEntity, Qualified: false] Shift[-18] CreeperEntity -> Creeper
+End  Processing: fr/janis/pintium/network/packet/CannabisPacket.java
+
+Start Processing: fr/janis/pintium/network/packet/LaunchFireBall.java
+Rename ClassReference[846:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[924:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[1110:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[6] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1318:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[0] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1429:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-3] ITextComponent -> Component
+Rename ClassReference[1828:8, "Vector3d", Internal: net/minecraft/util/math/vector/Vector3d, Qualified: false] Shift[-8] Vector3d -> Vec3
+Rename ClassReference[2201:12, "PlayerEntity", Internal: net/minecraft/entity/player/PlayerEntity, Qualified: false] Shift[-12] PlayerEntity -> Player
+Rename ClassReference[2288:14, "FireballEntity", Internal: net/minecraft/entity/projectile/FireballEntity, Qualified: false] Shift[-18] FireballEntity -> LargeFireball
+Rename ClassReference[2324:14, "FireballEntity", Internal: net/minecraft/entity/projectile/FireballEntity, Qualified: false] Shift[-19] FireballEntity -> LargeFireball
+Rename ClassReference[2735:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-20] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2919:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-23] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[3041:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-26] ITextComponent -> Component
+End  Processing: fr/janis/pintium/network/packet/LaunchFireBall.java
+
+Start Processing: fr/janis/pintium/network/packet/SpawnABoatPacket.java
+Rename ClassReference[554:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[634:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[824:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[6] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1189:10, "BoatEntity", Internal: net/minecraft/entity/item/BoatEntity, Qualified: false] Shift[0] BoatEntity -> Boat
+Rename ClassReference[1213:10, "BoatEntity", Internal: net/minecraft/entity/item/BoatEntity, Qualified: false] Shift[-6] BoatEntity -> Boat
+Rename ClassReference[1438:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-12] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1622:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-15] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[1740:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-18] ITextComponent -> Component
+End  Processing: fr/janis/pintium/network/packet/SpawnABoatPacket.java
+
+Start Processing: fr/janis/pintium/network/packet/SpawnSomeZombiesPacket.java
+Rename ClassReference[842:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[928:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[1130:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[6] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1787:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[0] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2130:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-3] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2318:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-6] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[2436:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-9] ITextComponent -> Component
+End  Processing: fr/janis/pintium/network/packet/SpawnSomeZombiesPacket.java
+
+Start Processing: fr/janis/pintium/network/packet/TPlayerPacket.java
+Rename ClassReference[880:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[1074:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[1388:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[6] ServerPlayerEntity -> ServerPlayer
+End  Processing: fr/janis/pintium/network/packet/TPlayerPacket.java
+
+Start Processing: fr/janis/pintium/network/packet/TameCreeperPacket.java
+Rename ClassReference[599:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[680:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+End  Processing: fr/janis/pintium/network/packet/TameCreeperPacket.java
+
+Start Processing: fr/janis/pintium/network/packet/TameRatelPacket.java
+Rename ClassReference[419:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[498:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+End  Processing: fr/janis/pintium/network/packet/TameRatelPacket.java
+
+Start Processing: fr/janis/pintium/network/packet/TameSkeletonPacket.java
+Rename ClassReference[544:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[626:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+End  Processing: fr/janis/pintium/network/packet/TameSkeletonPacket.java
+
+Start Processing: fr/janis/pintium/network/packet/TameZombiePacket.java
+Rename ClassReference[479:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[559:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+End  Processing: fr/janis/pintium/network/packet/TameZombiePacket.java
+
+Start Processing: fr/janis/pintium/network/packet/TransformToABlockPacket.java
+Rename ClassReference[970:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[0] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[1051:12, "PacketBuffer", Internal: net/minecraft/network/PacketBuffer, Qualified: false] Shift[3] PacketBuffer -> FriendlyByteBuf
+Rename ClassReference[1255:18, "ServerPlayerEntity", Internal: net/minecraft/entity/player/ServerPlayerEntity, Qualified: false] Shift[6] ServerPlayerEntity -> ServerPlayer
+Rename ClassReference[1318:11, "ServerWorld", Internal: net/minecraft/world/server/ServerWorld, Qualified: false] Shift[0] ServerWorld -> ServerLevel
+Rename ClassReference[1440:11, "CompoundNBT", Internal: net/minecraft/nbt/CompoundNBT, Qualified: false] Shift[0] CompoundNBT -> CompoundTag
+Rename ClassReference[1798:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[0] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[1894:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-4] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[1991:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-8] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[2087:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[-12] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[3018:14, "EffectInstance", Internal: net/minecraft/potion/EffectInstance, Qualified: false] Shift[-16] EffectInstance -> MobEffectInstance
+Rename ClassReference[3033:7, "Effects", Internal: net/minecraft/potion/Effects, Qualified: false] Shift[-13] Effects -> MobEffects
+Rename ClassReference[3234:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-10] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[3356:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-13] ITextComponent -> Component
+Rename ClassReference[3488:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-18] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[3613:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-21] ITextComponent -> Component
+Rename ClassReference[3729:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-26] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[3919:24, "TranslationTextComponent", Internal: net/minecraft/util/text/TranslationTextComponent, Qualified: false] Shift[-29] TranslationTextComponent -> TranslatableComponent
+Rename ClassReference[4037:14, "ITextComponent", Internal: net/minecraft/util/text/ITextComponent, Qualified: false] Shift[-32] ITextComponent -> Component
+End  Processing: fr/janis/pintium/network/packet/TransformToABlockPacket.java
+
+Start Processing: fr/janis/pintium/utils/ClientEventBusSubscriber.java
+End  Processing: fr/janis/pintium/utils/ClientEventBusSubscriber.java
+
+Start Processing: fr/janis/pintium/utils/CustomPintiumArmorMaterials.java
+Rename ClassReference[503:14, "IArmorMaterial", Internal: net/minecraft/item/IArmorMaterial, Qualified: false] Shift[0] IArmorMaterial -> ArmorMaterial
+Rename ClassReference[1106:9, "LazyValue", Internal: net/minecraft/util/LazyValue, Qualified: false] Shift[-1] LazyValue -> LazyLoadedValue
+Rename ClassReference[1704:9, "LazyValue", Internal: net/minecraft/util/LazyValue, Qualified: false] Shift[5] LazyValue -> LazyLoadedValue
+Rename ClassReference[1793:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[11] EquipmentSlotType -> EquipmentSlot
+Rename ClassReference[1955:17, "EquipmentSlotType", Internal: net/minecraft/inventory/EquipmentSlotType, Qualified: false] Shift[7] EquipmentSlotType -> EquipmentSlot
+End  Processing: fr/janis/pintium/utils/CustomPintiumArmorMaterials.java
+
+Start Processing: fr/janis/pintium/utils/CustomPintiumTiers.java
+Rename ClassReference[249:9, "IItemTier", Internal: net/minecraft/item/IItemTier, Qualified: false] Shift[0] IItemTier -> Tier
+Rename ClassReference[304:9, "LazyValue", Internal: net/minecraft/util/LazyValue, Qualified: false] Shift[-5] LazyValue -> LazyLoadedValue
+Rename ClassReference[604:9, "LazyValue", Internal: net/minecraft/util/LazyValue, Qualified: false] Shift[1] LazyValue -> LazyLoadedValue
+Rename ClassReference[757:9, "LazyValue", Internal: net/minecraft/util/LazyValue, Qualified: false] Shift[7] LazyValue -> LazyLoadedValue
+End  Processing: fr/janis/pintium/utils/CustomPintiumTiers.java
+
+Start Processing: fr/janis/pintium/utils/PintiumItemGroup.java
+Rename ClassReference[247:9, "ItemGroup", Internal: net/minecraft/item/ItemGroup, Qualified: false] Shift[0] ItemGroup -> CreativeModeTab
+Rename ClassReference[275:9, "ItemGroup", Internal: net/minecraft/item/ItemGroup, Qualified: false] Shift[6] ItemGroup -> CreativeModeTab
+End  Processing: fr/janis/pintium/utils/PintiumItemGroup.java
+
+Start Processing: fr/janis/pintium/utils/SoundEvents.java
+End  Processing: fr/janis/pintium/utils/SoundEvents.java
+
