@@ -2,6 +2,7 @@ package fr.janis.pintium.entities;
 
 import fr.janis.pintium.init.PintiumEntities;
 import fr.janis.pintium.init.PintiumItems;
+import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -17,7 +18,6 @@ import net.minecraft.server.level.ServerLevel;
 
 import javax.annotation.Nullable;
 
-import net.minecraft.world.entity.AgableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.BreedGoal;
@@ -90,7 +90,7 @@ public class BananosaurEntity extends Animal {
 
     @Nullable
     @Override
-    public AgableMob getBreedOffspring(ServerLevel world, AgableMob mate) {
+    public AgeableMob getBreedOffspring(ServerLevel world, AgeableMob mate) {
         return PintiumEntities.BANANOSAUR.get().create(this.level);
     }
 }

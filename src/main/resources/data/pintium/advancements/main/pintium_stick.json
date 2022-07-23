@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "pintium:pintium_stick"
+            "items": [
+              "pintium:pintium_stick"
+            ]
           }
         ]
       }

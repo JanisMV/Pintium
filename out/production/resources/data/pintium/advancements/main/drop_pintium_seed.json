@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "pintium:pintium_seeds"
+            "items": [
+              "pintium:pintium_seeds"
+            ]
           }
         ]
       }

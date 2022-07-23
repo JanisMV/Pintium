@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "pintium:pintium_nugget"
+            "items": [
+              "pintium:pintium_nugget"
+            ]
           }
         ]
       }

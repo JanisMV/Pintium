@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "pintium:speed_stick"
+            "items": [
+              "pintium:speed_stick"
+            ]
           }
         ]
       }

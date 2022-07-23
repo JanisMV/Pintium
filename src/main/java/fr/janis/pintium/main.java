@@ -1,8 +1,6 @@
 package fr.janis.pintium;
 
-import fr.janis.pintium.data.CapabilityEntityKilled;
-import fr.janis.pintium.data.CapabilityEventHandler;
-import fr.janis.pintium.data.onEntityDeathEvent;
+import fr.janis.pintium.event.onEntityDeathEvent;
 import fr.janis.pintium.event.*;
 import fr.janis.pintium.init.*;
 
@@ -21,6 +19,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /* Prochaine Maj : Plus de Mobs Tameable
+needs iron tool marche pas
 Succès : https://misode.github.io/advancement/
 1.16 -> 1.17 https://www.youtube.com/watch?v=9aJjI7UDHeI, https://www.youtube.com/watch?v=G-eQ8e4zJ8U
 1.17 -> 1.18 https://www.youtube.com/watch?v=O8l5ANZSXnM
@@ -51,7 +50,6 @@ public class main
         PintiumFeatures features = new PintiumFeatures();
 
         Network.registerNetworkPackets();
-        CapabilityEntityKilled.register();
 
         features.init();
 
@@ -62,7 +60,6 @@ public class main
         MinecraftForge.EVENT_BUS.register(new ServerTickEvent());
         MinecraftForge.EVENT_BUS.register(new UsedItemEvent());
         MinecraftForge.EVENT_BUS.register(new onEntityDeathEvent());
-        MinecraftForge.EVENT_BUS.register(new CapabilityEventHandler());
 
         KeyBinds.register();
 

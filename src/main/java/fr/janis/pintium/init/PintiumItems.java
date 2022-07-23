@@ -11,6 +11,7 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fmllegacy.RegistryObject;
@@ -37,10 +38,10 @@ public class PintiumItems {
 
     public static final RegistryObject<Item> PINTIUM_INGOT = ITEMS.register("pintium_ingot", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
 
-    public static final RegistryObject<PintiumSpawnEggItem> RATEL_SPAWN_EGG = ITEMS.register("ratel_spawn_egg", () -> new PintiumSpawnEggItem(PintiumEntities.RATEL, 0x000000, 0xFFFFFF, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
-    public static final RegistryObject<PintiumSpawnEggItem> BANANOSAUR_SPAWN_EGG = ITEMS.register("bananosaur_spawn_egg", () -> new PintiumSpawnEggItem(PintiumEntities.BANANOSAUR, 0xFFE300, 0xFFFFFF, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
-    public static final RegistryObject<PintiumSpawnEggItem> TUNA_SPAWN_EGG = ITEMS.register("tuna_spawn_egg", () -> new PintiumSpawnEggItem(PintiumEntities.TUNA, 0xFFAD00, 0x47FF00, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
-    public static final RegistryObject<PintiumSpawnEggItem> BANANOFISH_SPAWN_EGG = ITEMS.register("bananofish_spawn_egg", () -> new PintiumSpawnEggItem(PintiumEntities.BANANOFISH, 0xE1FF00, 0xEEF0DC, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
+    public static final RegistryObject<ForgeSpawnEggItem> RATEL_SPAWN_EGG = ITEMS.register("ratel_spawn_egg", () -> new ForgeSpawnEggItem(PintiumEntities.RATEL, 0x000000, 0xFFFFFF, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
+    public static final RegistryObject<ForgeSpawnEggItem> BANANOSAUR_SPAWN_EGG = ITEMS.register("bananosaur_spawn_egg", () -> new ForgeSpawnEggItem(PintiumEntities.BANANOSAUR, 0xFFE300, 0xFFFFFF, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
+    public static final RegistryObject<ForgeSpawnEggItem> TUNA_SPAWN_EGG = ITEMS.register("tuna_spawn_egg", () -> new ForgeSpawnEggItem(PintiumEntities.TUNA, 0xFFAD00, 0x47FF00, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
+    public static final RegistryObject<ForgeSpawnEggItem> BANANOFISH_SPAWN_EGG = ITEMS.register("bananofish_spawn_egg", () -> new ForgeSpawnEggItem(PintiumEntities.BANANOFISH, 0xE1FF00, 0xEEF0DC, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
 
     public static final RegistryObject<Item> PINTIUM_SWORD = ITEMS.register("pintium_sword", () -> new SwordItem(CustomPintiumTiers.PINTIUM, 6, -2.0f, new Item.Properties().stacksTo(1).tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
     public static final RegistryObject<Item> PINTIUM_PICKAXE = ITEMS.register("pintium_pickaxe", () -> new PickaxeItem(CustomPintiumTiers.PINTIUM, 2, -2.4f, new Item.Properties().stacksTo(1).tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));

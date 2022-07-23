@@ -17,16 +17,24 @@
       "conditions": {
         "items": [
           {
-            "item": "pintium:pintium_helmet"
+            "items": [
+              "pintium:pintium_helmet"
+            ]
           },
           {
-            "item": "pintium:pintium_chestplate"
+            "items": [
+              "pintium:pintium_chestplate"
+            ]
           },
           {
-            "item": "pintium:pintium_leggings"
+            "items": [
+              "pintium:pintium_leggings"
+            ]
           },
           {
-            "item": "pintium:pintium_boots"
+            "items": [
+              "pintium:pintium_boots"
+            ]
           }
         ]
       }

@@ -1,29 +1,24 @@
 package fr.janis.pintium.utils;
 
+import fr.janis.pintium.client.model.BananoFishModel;
+import fr.janis.pintium.client.model.BananosaurModel;
+import fr.janis.pintium.client.model.RatelModel;
+import fr.janis.pintium.client.model.TunaModel;
 import fr.janis.pintium.client.render.*;
-import fr.janis.pintium.commands.ReturnHomeCommand;
-import fr.janis.pintium.commands.SetHomeCommand;
 import fr.janis.pintium.entities.*;
 import fr.janis.pintium.event.loot.PintiumSeedAdditionModifier;
 import fr.janis.pintium.init.PintiumEntities;
-import fr.janis.pintium.items.PintiumSpawnEggItem;
 import fr.janis.pintium.main;
-import net.minecraft.client.renderer.entity.CreeperRenderer;
-import net.minecraft.client.renderer.entity.SkeletonRenderer;
-import net.minecraft.client.renderer.entity.ZombieRenderer;
+import net.minecraft.client.renderer.entity.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
-import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.server.command.ConfigCommand;
 
 import javax.annotation.Nonnull;
 
@@ -40,21 +35,28 @@ public class ClientEventBusSubscriber {
         event.put(PintiumEntities.TUNA.get(), TunaEntity.setCustomAttributes().build());
         event.put(PintiumEntities.BANANOFISH.get(), BananoFishEntity.setCustomAttributes().build());
     }
+
     @SubscribeEvent
-    public static void onClientSetup(FMLClientSetupEvent e){
-        RenderingRegistry.registerEntityRenderingHandler(PintiumEntities.RATEL.get(), RatelRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(PintiumEntities.RATEL_BODY_GUARD.get(), RatelRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(PintiumEntities.ZOMBIE_BODY_GUARD.get(), ZombieRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(PintiumEntities.SKELETON_BODY_GUARD.get(), SkeletonRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(PintiumEntities.CREEPER_BODY_GUARD.get(), CreeperRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(PintiumEntities.BANANOSAUR.get(), BananosaurRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(PintiumEntities.TUNA.get(), TunaRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(PintiumEntities.BANANOFISH.get(), BananoFishRenderer::new);
+    public static void onRegisterRenderer(EntityRenderersEvent.RegisterRenderers e){
+        e.registerEntityRenderer(PintiumEntities.RATEL.get(), RatelRenderer::new);
+        e.registerEntityRenderer(PintiumEntities.RATEL_BODY_GUARD.get(), RatelRenderer::new);
+        e.registerEntityRenderer(PintiumEntities.ZOMBIE_BODY_GUARD.get(), ZombieRenderer::new);
+        e.registerEntityRenderer(PintiumEntities.SKELETON_BODY_GUARD.get(), SkeletonRenderer::new);
+        e.registerEntityRenderer(PintiumEntities.CREEPER_BODY_GUARD.get(), CreeperRenderer::new);
+        e.registerEntityRenderer(PintiumEntities.TUNA.get(), TunaRenderer::new);
+        e.registerEntityRenderer(PintiumEntities.BANANOSAUR.get(), BananosaurRenderer::new);
+        e.registerEntityRenderer(PintiumEntities.BANANOFISH.get(), BananoFishRenderer::new);
     }
 
     @SubscribeEvent
+    public static void onRegisterLayer(EntityRenderersEvent.RegisterLayerDefinitions e){
+        e.registerLayerDefinition(RatelModel.LAYER_LOCATION, RatelModel::createBodyLayer);
+        e.registerLayerDefinition(TunaModel.LAYER_LOCATION, TunaModel::createBodyLayer);
+        e.registerLayerDefinition(BananosaurModel.LAYER_LOCATION, BananosaurModel::createBodyLayer);
+        e.registerLayerDefinition(BananoFishModel.LAYER_LOCATION, BananoFishModel::createBodyLayer);
+    }
+    @SubscribeEvent
     public static void onRegisterEntities(final RegistryEvent.Register<EntityType<?>> e){
-        PintiumSpawnEggItem.initSpawnEggs();
     }
 
     @SubscribeEvent

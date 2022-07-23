@@ -40,8 +40,8 @@ public class BananoFishEntity extends AbstractFish {
     }
 
     @Override
-    protected ItemStack getBucketItemStack() {
-        return new ItemStack(PintiumItems.BANANOFISH_BUCKET);
+    public ItemStack getBucketItemStack() {
+        return new ItemStack(PintiumItems.BANANOFISH_BUCKET.get());
     }
 
     @Override

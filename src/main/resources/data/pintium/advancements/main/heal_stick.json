@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "pintium:heal_stick"
+            "items": [
+              "pintium:heal_stick"
+            ]
           }
         ]
       }

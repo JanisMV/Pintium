@@ -1,7 +1,6 @@
 package fr.janis.pintium.utils;
 
 import fr.janis.pintium.init.PintiumItems;
-import net.minecraft.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 

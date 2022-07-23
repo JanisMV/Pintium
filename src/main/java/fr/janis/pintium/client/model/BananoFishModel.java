@@ -7,17 +7,19 @@ package fr.janis.pintium.client.model;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import fr.janis.pintium.entities.BananoFishEntity;
+import fr.janis.pintium.main;
 import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.geom.PartPose;
+import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 
-
 public class BananoFishModel<T extends BananoFishEntity> extends EntityModel<BananoFishEntity> {
+    // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
+    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(main.MODID, "bananofish"), "main");
     private final ModelPart body;
-    private final ModelPart fin_top;
-    private final ModelPart body_sub_1;
-    private final ModelPart fin_right2;
-    private final ModelPart fin_left2;
     private final ModelPart fin_back;
     private final ModelPart head;
     private final ModelPart nose;
@@ -29,113 +31,80 @@ public class BananoFishModel<T extends BananoFishEntity> extends EntityModel<Ban
     private final ModelPart cou2;
     private final ModelPart cou3;
 
-    public BananoFishModel() {
-        texWidth = 32;
-        texHeight = 32;
+    public BananoFishModel(ModelPart root) {
+        this.body = root.getChild("body");
+        this.fin_back = root.getChild("fin_back");
+        this.head = root.getChild("head");
+        this.nose = root.getChild("nose");
+        this.fin_left = root.getChild("fin_left");
+        this.fin_right = root.getChild("fin_right");
+        this.tail = root.getChild("tail");
+        this.body_banana = root.getChild("body_banana");
+        this.cou = root.getChild("cou");
+        this.cou2 = root.getChild("cou2");
+        this.cou3 = root.getChild("cou3");
+    }
 
-        body = new ModelPart(this);
-        body.setPos(0.0F, 22.0F, 0.0F);
-        body.texOffs(0, 0).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 2.0F, 7.0F, 0.0F, false);
+    public static LayerDefinition createBodyLayer() {
+        MeshDefinition meshdefinition = new MeshDefinition();
+        PartDefinition partdefinition = meshdefinition.getRoot();
 
-        fin_top = new ModelPart(this);
-        fin_top.setPos(0.0F, -2.0F, 5.0F);
-        body.addChild(fin_top);
-        setRotationAngle(fin_top, 0.0F, -1.5708F, 0.0F);
+        PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 2.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 22.0F, 0.0F));
 
+        PartDefinition fin_top = body.addOrReplaceChild("fin_top", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -2.0F, 5.0F, 0.0F, -1.5708F, 0.0F));
 
-        body_sub_1 = new ModelPart(this);
-        body_sub_1.setPos(0.0F, 0.0F, 0.0F);
-        fin_top.addChild(body_sub_1);
-        body_sub_1.texOffs(20, 0).addBox(-5.0F, 0.0F, 0.0F, 6.0F, 1.0F, 0.0F, 0.0F, false);
+        PartDefinition body_sub_1 = fin_top.addOrReplaceChild("body_sub_1", CubeListBuilder.create().texOffs(20, 0).addBox(-5.0F, 0.0F, 0.0F, 6.0F, 1.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-        fin_right2 = new ModelPart(this);
-        fin_right2.setPos(1.0F, 1.0F, 0.0F);
-        body.addChild(fin_right2);
-        setRotationAngle(fin_right2, 0.0F, 0.0F, 0.7854F);
-        fin_right2.texOffs(24, 4).addBox(0.0F, 0.0F, -1.0F, 2.0F, 1.0F, 2.0F, 0.0F, false);
+        PartDefinition fin_right2 = body.addOrReplaceChild("fin_right2", CubeListBuilder.create().texOffs(24, 4).addBox(0.0F, 0.0F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 1.0F, 0.0F, 0.0F, 0.0F, 0.7854F));
 
-        fin_left2 = new ModelPart(this);
-        fin_left2.setPos(-1.0F, 1.0F, 0.0F);
-        body.addChild(fin_left2);
-        setRotationAngle(fin_left2, 0.0F, 0.0F, -0.7854F);
-        fin_left2.texOffs(24, 1).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 1.0F, 2.0F, 0.0F, false);
+        PartDefinition fin_left2 = body.addOrReplaceChild("fin_left2", CubeListBuilder.create().texOffs(24, 1).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.0F, 1.0F, 0.0F, 0.0F, 0.0F, -0.7854F));
 
-        fin_back = new ModelPart(this);
-        fin_back.setPos(0.0F, 20.0F, 0.0F);
+        PartDefinition fin_back = partdefinition.addOrReplaceChild("fin_back", CubeListBuilder.create(), PartPose.offset(0.0F, 20.0F, 0.0F));
 
+        PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(11, 0).addBox(-1.0F, -5.0F, -9.0F, 2.0F, 4.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 22.0F, 0.0F));
 
-        head = new ModelPart(this);
-        head.setPos(0.0F, 22.0F, 0.0F);
-        head.texOffs(11, 0).addBox(-1.0F, -5.0F, -9.0F, 2.0F, 4.0F, 3.0F, 0.0F, false);
+        PartDefinition nose = partdefinition.addOrReplaceChild("nose", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -4.0F, -7.0F, 2.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 22.0F, -3.0F));
 
-        nose = new ModelPart(this);
-        nose.setPos(0.0F, 22.0F, -3.0F);
-        nose.texOffs(0, 0).addBox(-1.0F, -4.0F, -7.0F, 2.0F, 3.0F, 1.0F, 0.0F, false);
+        PartDefinition fin_left = partdefinition.addOrReplaceChild("fin_left", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
 
-        fin_left = new ModelPart(this);
-        fin_left.setPos(0.0F, 24.0F, 0.0F);
+        PartDefinition fin_right = partdefinition.addOrReplaceChild("fin_right", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
 
+        PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create().texOffs(20, 1).addBox(0.0F, -2.0F, 0.0F, 0.0F, 4.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 22.0F, 7.0F));
 
-        fin_right = new ModelPart(this);
-        fin_right.setPos(0.0F, 24.0F, 0.0F);
+        PartDefinition body_banana = partdefinition.addOrReplaceChild("body_banana", CubeListBuilder.create().texOffs(0, 0).addBox(0.0F, -1.5F, -5.5F, 1.0F, 2.0F, 9.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, 21.5F, -2.5F, -0.5672F, 0.0F, 0.0F));
 
+        PartDefinition cou = partdefinition.addOrReplaceChild("cou", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -7.0F, -4.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
+                .texOffs(0, 0).addBox(-1.0F, -4.0F, -4.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 25.0F, -2.0F, -0.3054F, 0.0F, 0.0F));
 
-        tail = new ModelPart(this);
-        tail.setPos(0.0F, 22.0F, 7.0F);
-        tail.texOffs(20, 1).addBox(0.0F, -2.0F, 0.0F, 0.0F, 4.0F, 6.0F, 0.0F, false);
+        PartDefinition cou2 = partdefinition.addOrReplaceChild("cou2", CubeListBuilder.create().texOffs(0, 0).addBox(0.0F, -1.5F, -1.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 19.5F, -4.0F, -0.6981F, -1.5708F, 0.5236F));
 
-        body_banana = new ModelPart(this);
-        body_banana.setPos(-0.5F, 21.5F, -2.5F);
-        setRotationAngle(body_banana, -0.5672F, 0.0F, 0.0F);
-        body_banana.texOffs(0, 0).addBox(0.0F, -1.5F, -5.5F, 1.0F, 2.0F, 9.0F, 0.0F, false);
+        PartDefinition cou3 = partdefinition.addOrReplaceChild("cou3", CubeListBuilder.create().texOffs(0, 0).addBox(0.0F, -1.0F, -0.5F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.0F, 19.0F, -4.5F, -0.1745F, 1.4399F, -0.3054F));
 
-        cou = new ModelPart(this);
-        cou.setPos(0.0F, 25.0F, -2.0F);
-        setRotationAngle(cou, -0.3054F, 0.0F, 0.0F);
-        cou.texOffs(0, 0).addBox(-1.0F, -7.0F, -4.0F, 2.0F, 2.0F, 0.0F, 0.0F, false);
-        cou.texOffs(0, 0).addBox(-1.0F, -4.0F, -4.0F, 2.0F, 2.0F, 0.0F, 0.0F, false);
-
-        cou2 = new ModelPart(this);
-        cou2.setPos(1.0F, 19.5F, -4.0F);
-        setRotationAngle(cou2, -0.6981F, -1.5708F, 0.5236F);
-        cou2.texOffs(0, 0).addBox(0.0F, -1.5F, -1.0F, 0.0F, 2.0F, 2.0F, 0.0F, false);
-
-        cou3 = new ModelPart(this);
-        cou3.setPos(-1.0F, 19.0F, -4.5F);
-        setRotationAngle(cou3, -0.1745F, 1.4399F, -0.3054F);
-        cou3.texOffs(0, 0).addBox(0.0F, -1.0F, -0.5F, 0.0F, 2.0F, 1.0F, 0.0F, false);
+        return LayerDefinition.create(meshdefinition, 32, 32);
     }
 
     @Override
-    public void setupAnim(BananoFishEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
+    public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
+        body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        fin_back.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        head.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        nose.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        fin_left.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        fin_right.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        tail.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        body_banana.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        cou.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        cou2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        cou3.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+    }
+
+    @Override
+    public void setupAnim(BananoFishEntity p_102618_, float p_102619_, float p_102620_, float p_102621_, float p_102622_, float p_102623_) {
         float f = 1.0F;
-        float f1 = 1.0F;
-        if (!entity.isInWater()) {
-            f = 1.3F;
-            f1 = 1.7F;
+        if (!p_102618_.isInWater()) {
+            f = 1.5F;
         }
 
-        this.tail.yRot = -f * 0.25F * Mth.sin(f1 * 0.6F * ageInTicks);
-    }
-
-    @Override
-    public void renderToBuffer(PoseStack matrixStack, VertexConsumer buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-        body.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        fin_back.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        head.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        nose.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        fin_left.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        fin_right.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        tail.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        body_banana.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        cou.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        cou2.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-        cou3.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-    }
-
-    public void setRotationAngle(ModelPart modelRenderer, float x, float y, float z) {
-        modelRenderer.xRot = x;
-        modelRenderer.yRot = y;
-        modelRenderer.zRot = z;
+        this.tail.yRot = -f * 0.45F * Mth.sin(0.6F * p_102621_);
     }
 }

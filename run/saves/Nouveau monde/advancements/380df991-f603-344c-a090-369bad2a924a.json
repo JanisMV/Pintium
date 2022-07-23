@@ -1,63 +1,238 @@
 {
-  "pintium:main/jump_stick": {
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
     "criteria": {
-      "craft_speed_stick": "2022-07-15 15:57:20 +0100"
+      "has_iron_pickaxe": "2022-07-23 23:28:39 +0100"
     },
     "done": true
   },
-  "pintium:main/strength_stick": {
+  "minecraft:recipes/building_blocks/oak_planks": {
     "criteria": {
-      "craft_speed_stick": "2022-07-15 15:57:23 +0100"
+      "has_logs": "2022-07-23 22:18:50 +0100"
     },
     "done": true
   },
-  "pintium:main/cover_with_pintium": {
+  "minecraft:recipes/redstone/oak_fence_gate": {
     "criteria": {
-      "craft_pintium_armor": "2022-07-15 15:57:11 +0100"
+      "has_planks": "2022-07-23 22:53:49 +0100"
     },
     "done": true
   },
-  "pintium:main/stick_of_god": {
+  "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
-      "craft_speed_stick": "2022-07-15 15:57:18 +0100"
+      "has_diamond": "2022-07-23 21:56:02 +0100"
     },
     "done": true
   },
-  "pintium:main/pintium_stick": {
+  "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
-      "craft_pintium_stick": "2022-07-15 15:57:12 +0100"
+      "has_diamond": "2022-07-23 21:56:02 +0100"
     },
     "done": true
   },
-  "pintium:main/speed_stick": {
+  "minecraft:recipes/tools/diamond_hoe": {
     "criteria": {
-      "craft_speed_stick": "2022-07-15 15:57:22 +0100"
-    },
-    "done": true
-  },
-  "pintium:main/super_jump_stick": {
-    "criteria": {
-      "craft_speed_stick": "2022-07-15 15:57:27 +0100"
+      "has_diamond": "2022-07-23 21:56:02 +0100"
     },
     "done": true
   },
   "pintium:main/root": {
     "criteria": {
-      "ore_discovered": "2022-07-15 15:57:03 +0100"
+      "ore_discovered": "2022-07-23 21:55:23 +0100"
     },
     "done": true
   },
-  "pintium:main/heal_stick": {
+  "minecraft:recipes/tools/diamond_shovel": {
     "criteria": {
-      "craft_heal_stick": "2022-07-15 16:01:46 +0100"
+      "has_diamond": "2022-07-23 21:56:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2022-07-23 21:56:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2022-07-23 21:56:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_pickaxe": "2022-07-23 23:28:39 +0100"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:beach": "2022-07-15 15:56:44 +0100"
+      "minecraft:forest": "2022-07-23 21:54:16 +0100",
+      "minecraft:beach": "2022-07-23 21:55:32 +0100"
     },
     "done": false
   },
-  "DataVersion": 2586
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2022-07-23 21:56:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2022-07-23 22:18:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_diamond_ore": {
+    "criteria": {
+      "has_diamond_ore": "2022-07-23 21:55:12 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2022-07-23 23:28:39 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_pickaxe": "2022-07-23 22:54:34 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2022-07-23 21:56:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2022-07-23 21:56:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2022-07-23 22:54:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2022-07-23 22:18:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2022-07-23 21:56:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_fence": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/torch": {
+    "criteria": {
+      "has_stone_pickaxe": "2022-07-23 22:54:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2022-07-23 21:56:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_door": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_sign": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_diamond_ore": {
+    "criteria": {
+      "has_diamond_ore": "2022-07-23 21:55:12 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-07-23 23:05:58 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab": {
+    "criteria": {
+      "has_planks": "2022-07-23 22:53:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2022-07-23 21:56:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_pickaxe": "2022-07-23 22:54:34 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 2730
 }

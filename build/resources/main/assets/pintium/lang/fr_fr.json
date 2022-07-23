@@ -59,8 +59,8 @@
   "tooltip.heal_stick.hold_shift": "Clic droit pour super heal !",
   "tooltip.life_stick.hold_shift": "Tuer un mob puis clic droit pour le voir devenir votre bodyguard !",
   "tooltip.life_stick.not_hold_shift": "Maintenir Shift pour plus d'informations",
-  "tooltip.tpobject.not_hold_shift": "Maitniens SHIFT pour plus d'informations",
-  "tooltip.tpobject.hold_shift": "Clic droit pour une tp",
+  "tooltip.tpobject.not_hold_shift": "Maintiens SHIFT pour plus d'informations",
+  "tooltip.tpobject.hold_shift": "/setcos puis clic droit pour une tp !",
   "pintium.life_stick.entity_revived": "Bravo ! Vous venez de ressuciter un ",
   "pintium.life_stick.cannot_revive": "Vous n'avez pas d'entité invocable...",
   "pintium.life_stick.no_orb": "Vous devez avoir une orbe de vie pour invoquer.",
@@ -75,11 +75,6 @@
   "pintium.guispells.cooldown_not_finished2": " secondes pour utiliser ce sort.",
   "pintium.guispells.inertium.no_block_in_hand": "Vous devez avoir un bloc dans votre main pour utiliser ce sort.",
   "pintium.guispells.inertium.has_armor": "Vous ne devez porter aucune armure.",
-  "pintium.TPObjectGUI.title": "Coordonnées",
-  "pintium.TPObjectGUI.error": "Les coordonnées doivent être des nombres",
-  "pintium.tpobjectgui.field.x.title": "Coordonnée X :",
-  "pintium.tpobjectgui.field.y.title": "Coordonnée Y :",
-  "pintium.tpobjectgui.field.z.title": "Coordonnée Z :",
   "key.spells": "Sorts",
   "key.categories.pintium": "Pintium",
   "entity.pintium.ratel": "Ratel",
@@ -106,5 +101,7 @@
   "advancements.pintium.super_jump_stick.title": "Une amélioration de bâton",
   "advancements.pintium.super_jump_stick.desc": "Craft l'amélioration",
   "advancements.pintium.stick_of_god.title": "Suis-je dieu ?!",
-  "advancements.pintium.stick_of_god.desc": "Craft le bâton de dieu"
+  "advancements.pintium.stick_of_god.desc": "Craft le bâton de dieu",
+  "pintium.getcoordinates.done": "Fait",
+  "pintium.tpobject.needcommand": "You need to /setcos first"
 }

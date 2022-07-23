@@ -1,9 +1,6 @@
 package fr.janis.pintium.event;
 
-import fr.janis.pintium.commands.DelHomeCommand;
-import fr.janis.pintium.commands.ListHomesCommand;
-import fr.janis.pintium.commands.ReturnHomeCommand;
-import fr.janis.pintium.commands.SetHomeCommand;
+import fr.janis.pintium.commands.*;
 import fr.janis.pintium.main;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -19,6 +16,7 @@ public class PintiumEvents {
         new ReturnHomeCommand(e.getDispatcher());
         new ListHomesCommand(e.getDispatcher());
         new DelHomeCommand(e.getDispatcher());
+        new GetCoordinatesCommand(e.getDispatcher());
 
         ConfigCommand.register(e.getDispatcher());
     }

@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "pintium:synthwave_vibe_music_disc"
+            "items": [
+              "pintium:synthwave_vibe_music_disc"
+            ]
           }
         ]
       }

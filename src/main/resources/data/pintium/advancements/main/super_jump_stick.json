@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "pintium:super_jump_stick"
+            "items": [
+              "pintium:super_jump_stick"
+            ]
           }
         ]
       }

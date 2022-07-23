@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "pintium:stick_of_god"
+            "items": [
+              "pintium:stick_of_god"
+            ]
           }
         ]
       }
