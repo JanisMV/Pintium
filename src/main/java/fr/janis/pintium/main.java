@@ -19,12 +19,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /* Prochaine Maj : Plus de Mobs Tameable
-needs iron tool marche pas
+Supprimer le GUI Spells
 Succès : https://misode.github.io/advancement/
-1.16 -> 1.17 https://www.youtube.com/watch?v=9aJjI7UDHeI, https://www.youtube.com/watch?v=G-eQ8e4zJ8U
 1.17 -> 1.18 https://www.youtube.com/watch?v=O8l5ANZSXnM
 Y aussi l'OG :
 1.17 -> 1.18 https://www.youtube.com/watch?v=5leVDDzU_0U
+1.18.1 -> 1.18.2 https://www.youtube.com/watch?v=4u0oWxZLMOA
+1.18 -> 1.19 https://www.youtube.com/watch?v=tYAC5zRh12A&ab_channel=ModdingbyKaupenjoe
 */
 
 @Mod(main.MODID)
