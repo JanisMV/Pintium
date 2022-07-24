@@ -1,8 +1,13 @@
 package fr.janis.pintium.event;
 
+import fr.janis.pintium.entities.BananoFishEntity;
+import fr.janis.pintium.entities.BananosaurEntity;
 import fr.janis.pintium.entities.SkeletonBodyGuardEntity;
+import fr.janis.pintium.init.PintiumEntities;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.boss.wither.WitherBoss;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.animal.horse.Horse;
 import net.minecraft.server.level.ServerPlayer;
@@ -20,11 +25,12 @@ import net.minecraftforge.fmllegacy.server.ServerLifecycleHooks;
 import java.time.Instant;
 import java.util.Objects;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class ServerTickEvent {
 
     @SubscribeEvent
-    public void onServerTickEvent(final TickEvent.ServerTickEvent e){
+    public void onServerTickEvent(final TickEvent.ServerTickEvent e) throws InterruptedException {
 
         Random dice = new Random();
 
@@ -41,20 +47,90 @@ public class ServerTickEvent {
         for(ServerPlayer p : plist.getPlayers()) {
             if (p.getPersistentData().getBoolean("is_using_cannabis")){
                 if (p.getPersistentData().getInt("is_using_cannabis_for") != 20*30){
-                    Horse horse = new Horse(EntityType.HORSE, Objects.requireNonNull(p.getLevel()));
-                    horse.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
-                    Objects.requireNonNull(p.getLevel()).addFreshEntity(horse);
-                    horse.remove(Entity.RemovalReason.DISCARDED);
 
-                    Creeper creeper = new Creeper(EntityType.CREEPER, Objects.requireNonNull(p.getLevel()));
-                    creeper.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
+                    int relative = dice.nextInt(2);
+
+                    Horse horse = new Horse(EntityType.HORSE, p.getLevel());
+                    if (relative == 1) {
+                        horse.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
+                    }
+                    else {
+                        horse.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
+                    }
+                    p.getLevel().addFreshEntity(horse);
+
+                    TimeUnit.MILLISECONDS.sleep(10);
+
+                    p.getLevel().removeEntity(horse);
+
+                    relative = dice.nextInt(2);
+
+                    Creeper creeper = new Creeper(EntityType.CREEPER, p.getLevel());
+                    if (relative == 1) {
+                        creeper.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
+                    }
+                    else {
+                        creeper.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
+                    }
                     p.getLevel().addFreshEntity(creeper);
-                    creeper.remove(Entity.RemovalReason.DISCARDED);
 
-                    SkeletonBodyGuardEntity skeleton = new SkeletonBodyGuardEntity(EntityType.SKELETON, Objects.requireNonNull(p.getLevel()));
-                    skeleton.setPos(p.getX() - posX + 5, p.getY() - posY, p.getZ() - posZ + 5);
+                    TimeUnit.MILLISECONDS.sleep(10);
+
+                    p.getLevel().removeEntity(creeper);
+
+                    relative = dice.nextInt(2);
+                    
+                    SkeletonBodyGuardEntity skeleton = new SkeletonBodyGuardEntity(EntityType.SKELETON, p.getLevel());
+                    if (relative == 1) {
+                        skeleton.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
+                    }
+                    else {
+                        skeleton.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
+                    }
                     p.getLevel().addFreshEntity(skeleton);
-                    skeleton.remove(Entity.RemovalReason.DISCARDED);
+
+                    TimeUnit.MILLISECONDS.sleep(10);
+
+                    p.getLevel().removeEntity(skeleton);
+
+                    BananosaurEntity b = new BananosaurEntity(PintiumEntities.BANANOSAUR.get(), p.getLevel());
+                    if (relative == 1) {
+                        b.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
+                    }
+                    else {
+                        b.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
+                    }
+                    p.getLevel().addFreshEntity(b);
+
+                    TimeUnit.MILLISECONDS.sleep(10);
+
+                    p.getLevel().removeEntity(b);
+
+                    BananoFishEntity bf = new BananoFishEntity(PintiumEntities.BANANOFISH.get(), p.getLevel());
+                    if (relative == 1) {
+                        bf.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
+                    }
+                    else {
+                        bf.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
+                    }
+                    p.getLevel().addFreshEntity(bf);
+
+                    TimeUnit.MILLISECONDS.sleep(10);
+
+                    p.getLevel().removeEntity(bf);
+
+                    WitherBoss w = new WitherBoss(EntityType.WITHER, p.getLevel());
+                    if (relative == 1) {
+                        w.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
+                    }
+                    else {
+                        w.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
+                    }
+                    p.getLevel().addFreshEntity(w);
+
+                    TimeUnit.MILLISECONDS.sleep(10);
+
+                    p.getLevel().removeEntity(w);
 
                     int cannabis_used = p.getPersistentData().getInt("is_using_cannabis_for");
 

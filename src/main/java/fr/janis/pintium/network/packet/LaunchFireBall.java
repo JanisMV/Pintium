@@ -36,7 +36,7 @@ public class LaunchFireBall {
         LivingEntity livingEntity = p.getLastHurtMob();
 
         if (livingEntity == null) {
-            String text = new TranslatableComponent("pintium.guispells.ignis.no_entity").getString();
+            String text = new TranslatableComponent("pintium.ignis.no_entity").getString();
             p.displayClientMessage(Component.nullToEmpty((text)), true);
         }
         else {
@@ -61,7 +61,7 @@ public class LaunchFireBall {
 
                 ctxProvider.get().setPacketHandled(true);
             } else {
-                String text = new TranslatableComponent("pintium.guispells.cooldown_not_finished1").getString() + (p.getPersistentData().getLong("ignis_cooldown") - p.getPersistentData().getLong("ignis_use")) + new TranslatableComponent("pintium.guispells.cooldown_not_finished2").getString();
+                String text = new TranslatableComponent("pintium.cooldown_not_finished").getString() + (p.getPersistentData().getLong("ignis_cooldown") - p.getPersistentData().getLong("ignis_use")) + new TranslatableComponent("pintium.cooldown_not_finished2").getString();
                 p.displayClientMessage(Component.nullToEmpty((text)), true);
             }
         }

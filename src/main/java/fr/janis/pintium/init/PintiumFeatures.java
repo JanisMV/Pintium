@@ -20,18 +20,24 @@ public class PintiumFeatures {
 
     public ConfiguredFeature<?, ?> PINTIUM_OVERWORLD_ORE;
     public ConfiguredFeature<?, ?> PINTIUM_NETHER_ORE;
+    public ConfiguredFeature<?, ?> PINTIUM_DEEPSLATE_ORE;
 
     public void init(){
 
-        PINTIUM_OVERWORLD_ORE = register("pintium_overworld_ore", Feature.ORE.configured(new OreConfiguration(OreConfiguration.Predicates.NATURAL_STONE, PintiumBlocks.PINTIUM_OVERWORLD_ORE.get().defaultBlockState(), 6))
+        PINTIUM_OVERWORLD_ORE = register("pintium_overworld_ore", Feature.ORE.configured(new OreConfiguration(OreConfiguration.Predicates.STONE_ORE_REPLACEABLES, PintiumBlocks.PINTIUM_OVERWORLD_ORE.get().defaultBlockState(), 6))
                 .squared()
         .rangeUniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(12)) //Couche ou l'on le trouve
         .count(1)); // Nombre de filons par chunk
 
-        PINTIUM_NETHER_ORE = register("pintium_nether_ore", Feature.ORE.configured(new OreConfiguration(OreConfiguration.Predicates.NETHERRACK, PintiumBlocks.PINTIUM_NETHER_ORE.get().defaultBlockState(), 6))
+        PINTIUM_NETHER_ORE = register("pintium_nether_ore", Feature.ORE.configured(new OreConfiguration(OreConfiguration.Predicates.NETHER_ORE_REPLACEABLES, PintiumBlocks.PINTIUM_NETHER_ORE.get().defaultBlockState(), 6))
         .squared()
         .rangeUniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(20))
         .count(1));
+
+        PINTIUM_DEEPSLATE_ORE = register("pintium_deepslate_ore", Feature.ORE.configured(new OreConfiguration(OreConfiguration.Predicates.DEEPSLATE_ORE_REPLACEABLES, PintiumBlocks.PINTIUM_DEEPSLATE_ORE.get().defaultBlockState(), 6))
+                .squared()
+                .rangeUniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(10))
+                .count(1));
     }
 
     public <FC extends FeatureConfiguration>ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> feature){
@@ -46,14 +52,11 @@ public class PintiumFeatures {
         BiomeGenerationSettingsBuilder generation = e.getGeneration();
         if(e.getCategory() != Biome.BiomeCategory.NETHER && e.getCategory() != Biome.BiomeCategory.THEEND){
             generation.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, PINTIUM_OVERWORLD_ORE);
+            generation.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, PINTIUM_DEEPSLATE_ORE);
         }
         else if (e.getCategory() != Biome.BiomeCategory.THEEND){
             generation.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, PINTIUM_NETHER_ORE);
         }
-
-        if (e.getCategory() == Biome.BiomeCategory.NETHER) {}
-
-        else if (e.getCategory() == Biome.BiomeCategory.THEEND) {}
 
         else {
             if (e.getCategory() != Biome.BiomeCategory.OCEAN && e.getCategory() != Biome.BiomeCategory.RIVER){

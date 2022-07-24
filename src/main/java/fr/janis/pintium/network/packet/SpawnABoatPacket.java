@@ -39,7 +39,7 @@ public class SpawnABoatPacket {
 
         }
         else {
-            String text = new TranslatableComponent("pintium.guispells.cooldown_not_finished1").getString() + (p.getPersistentData().getLong("batum_cooldown") - p.getPersistentData().getLong("batum_use")) + new TranslatableComponent("pintium.guispells.cooldown_not_finished2").getString();
+            String text = new TranslatableComponent("pintium.cooldown_not_finished").getString() + (p.getPersistentData().getLong("batum_cooldown") - p.getPersistentData().getLong("batum_use")) + new TranslatableComponent("pintium.cooldown_not_finished2").getString();
             p.displayClientMessage(Component.nullToEmpty((text)), true);
         }
         ctxProvider.get().setPacketHandled(true);

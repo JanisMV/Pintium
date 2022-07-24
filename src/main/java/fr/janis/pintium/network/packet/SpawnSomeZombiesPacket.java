@@ -40,7 +40,7 @@ public class SpawnSomeZombiesPacket {
 
                 ZombieBodyGuardEntity entity = new ZombieBodyGuardEntity(PintiumEntities.ZOMBIE_BODY_GUARD.get(), p.getLevel());
                 entity.setPos(p.getX(), p.getY(), p.getZ());
-                entity.setCustomName(new TranslatableComponent("pintium.guispells.zombium.zombieName"));
+                entity.setCustomName(new TranslatableComponent("pintium.zombium.name"));
                 entity.setBaby(true);
                 entity.setTarget(p.getLastHurtMob());
                 p.getLevel().addFreshEntity(entity);
@@ -48,7 +48,7 @@ public class SpawnSomeZombiesPacket {
             ctxProvider.get().setPacketHandled(true);
         }
         else {
-            String text = new TranslatableComponent("pintium.guispells.cooldown_not_finished1").getString() + (p.getPersistentData().getLong("zombium_cooldown") - p.getPersistentData().getLong("zombium_use")) + new TranslatableComponent("pintium.guispells.cooldown_not_finished2").getString();
+            String text = new TranslatableComponent("pintium.cooldown_not_finished").getString() + (p.getPersistentData().getLong("zombium_cooldown") - p.getPersistentData().getLong("zombium_use")) + new TranslatableComponent("pintium.cooldown_not_finished2").getString();
             p.displayClientMessage(Component.nullToEmpty((text)), true);
         }
         ctxProvider.get().setPacketHandled(true);

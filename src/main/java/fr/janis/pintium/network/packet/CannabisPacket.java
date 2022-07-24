@@ -1,5 +1,6 @@
 package fr.janis.pintium.network.packet;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.monster.Creeper;
@@ -42,18 +43,17 @@ public class CannabisPacket {
         p.getPersistentData().putLong("cannabis_use", Instant.now().getEpochSecond());
 
         if (p.getPersistentData().getLong("cannabis_cooldown") <= p.getPersistentData().getLong("cannabis_use")) {
-
             p.getPersistentData().putLong("cannabis_cooldown", Instant.now().getEpochSecond() + 30);
 
             Horse horse = new Horse(EntityType.HORSE, p.getLevel());
             horse.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
             p.getLevel().addFreshEntity(horse);
-            horse.remove(Entity.RemovalReason.DISCARDED);
+            p.getLevel().removeEntity(horse);
 
             Creeper creeper = new Creeper(EntityType.CREEPER, p.getLevel());
             creeper.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
             p.getLevel().addFreshEntity(creeper);
-            creeper.remove(Entity.RemovalReason.DISCARDED);
+            p.getLevel().removeEntity(creeper);
 
             p.getPersistentData().putBoolean("is_using_cannabis", true);
             p.getPersistentData().putInt("is_using_cannabis_for", 1);

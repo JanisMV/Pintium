@@ -59,17 +59,17 @@ public class TransformToABlockPacket {
                     ctxProvider.get().setPacketHandled(true);
                 }
                 else{
-                    String text = new TranslatableComponent("pintium.guispells.inertium.has_armor").getString();
+                    String text = new TranslatableComponent("pintium.inertium.has_armor").getString();
                     p.displayClientMessage(Component.nullToEmpty((text)), true);
                 }
             }
             else {
-                String text = new TranslatableComponent("pintium.guispells.inertium.no_block_in_hand").getString();
+                String text = new TranslatableComponent("pintium.inertium.no_block_in_hand").getString();
                 p.displayClientMessage(Component.nullToEmpty((text)), true);
             }
         }
         else {
-            String text = new TranslatableComponent("pintium.guispells.cooldown_not_finished1").getString() + (p.getPersistentData().getLong("inertium_cooldown") - p.getPersistentData().getLong("inertium_use")) + new TranslatableComponent("pintium.guispells.cooldown_not_finished2").getString();
+            String text = new TranslatableComponent("pintium.cooldown_not_finished").getString() + (p.getPersistentData().getLong("inertium_cooldown") - p.getPersistentData().getLong("inertium_use")) + new TranslatableComponent("pintium.cooldown_not_finished2").getString();
             p.displayClientMessage(Component.nullToEmpty((text)), true);
         }
         ctxProvider.get().setPacketHandled(true);
