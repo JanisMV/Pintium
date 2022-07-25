@@ -14,7 +14,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -31,6 +30,7 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
+import net.minecraftforge.registries.RegistryObject;
 
 public class PintiumItems {
 
@@ -63,7 +63,7 @@ public class PintiumItems {
                     new FoodProperties.Builder()
                             .nutrition(3)
                             .saturationMod(1.4F)
-                    .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 20*17, 0), 1.0F)
+                    .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 20*30, 0), 1.0F)
                     .build()
             )));
 

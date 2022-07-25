@@ -1,5 +1,5 @@
 Java Launcher: C:\Program Files\Java\jdk-16.0.2\bin\java.exe
-Arguments: '--in-jar, C:\Users\Win10\Desktop\Pintium-1.16.5\build\libs\PINTIUM-1.0.jar, --out-jar, C:\Users\Win10\Desktop\Pintium-1.16.5\build\reobfJar\output.jar, --srg-in, C:\Users\Win10\Desktop\Pintium-1.16.5\build\createMcpToSrg\output.tsrg, --live'
+Arguments: '--in-jar, C:\Users\Win10\Desktop\Pintium-1.16.5\build\libs\PINTIUM-1.1.jar, --out-jar, C:\Users\Win10\Desktop\Pintium-1.16.5\build\reobfJar\output.jar, --srg-in, C:\Users\Win10\Desktop\Pintium-1.16.5\build\createMcpToSrg\output.tsrg, --live'
 Classpath:
  - C:\Users\Win10\.gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar
  - C:\Users\Win10\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.17.1-37.1.1_mapped_official_1.17.1\forge-1.17.1-37.1.1_mapped_official_1.17.1-recomp.jar

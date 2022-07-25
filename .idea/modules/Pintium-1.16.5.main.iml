@@ -13,9 +13,9 @@
   </component>
   <component name="McpModuleSettings">
     <option name="mappingFile" value="C:\Users\Win10\Desktop\Pintium-1.16.5\build\createMcpToSrg\output.tsrg" />
-    <option name="mcpVersion" value="official_1.17.1" />
-    <option name="minecraftVersion" value="1.17.1" />
-    <option name="platformVersion" value="37.1.1" />
+    <option name="mcpVersion" value="official_1.18.2" />
+    <option name="minecraftVersion" value="1.18.2" />
+    <option name="platformVersion" value="40.1.0" />
     <option name="srgType" value="TSRG" />
   </component>
 </module>

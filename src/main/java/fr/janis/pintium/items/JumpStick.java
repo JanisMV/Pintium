@@ -47,7 +47,7 @@ public class JumpStick extends Item {
 
             playerIn.getPersistentData().putBoolean("using_jump_stick", true);
 
-            playerIn.getMainHandItem().hurtAndBreak(8, playerIn, player -> player.broadcastBreakEvent(playerIn.getUsedItemHand()));
+            playerIn.getMainHandItem().hurtAndBreak(4, playerIn, player -> player.broadcastBreakEvent(playerIn.getUsedItemHand()));
 
             playerIn.getCooldowns().addCooldown(this, 20*10);
 

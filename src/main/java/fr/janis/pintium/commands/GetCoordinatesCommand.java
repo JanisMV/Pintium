@@ -22,7 +22,7 @@ public class GetCoordinatesCommand {
         p.getPersistentData().putDouble(main.MODID + "x", cos.getPosition(s).x);
         p.getPersistentData().putDouble(main.MODID + "y", cos.getPosition(s).y);
         p.getPersistentData().putDouble(main.MODID + "z", cos.getPosition(s).z);
-        s.sendSuccess(new TranslatableComponent("pintium.getcoordinates.done"), true);
+        s.sendSuccess(new TranslatableComponent("pintium.getcoordinatescommand.done"), true);
         return 1;
     }
 }

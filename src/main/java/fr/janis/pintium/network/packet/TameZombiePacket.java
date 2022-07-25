@@ -1,10 +1,9 @@
 package fr.janis.pintium.network.packet;
 
-import fr.janis.pintium.entities.RatelBodyGuardEntity;
 import fr.janis.pintium.entities.ZombieBodyGuardEntity;
 import fr.janis.pintium.init.PintiumEntities;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.NetworkEvent;
 
 import java.util.function.Supplier;
 

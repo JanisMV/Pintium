@@ -20,8 +20,6 @@ import org.apache.logging.log4j.Logger;
 
 /* Prochaine Maj : Plus de Mobs Tameable
 Succès : https://misode.github.io/advancement/
-1.17 -> 1.18 https://www.youtube.com/watch?v=5leVDDzU_0U
-1.18.1 -> 1.18.2 https://www.youtube.com/watch?v=4u0oWxZLMOA
 1.18 -> 1.19 https://www.youtube.com/watch?v=tYAC5zRh12A&ab_channel=ModdingbyKaupenjoe
 */
 
@@ -45,13 +43,9 @@ public class main
     }
 
     private void setup(FMLCommonSetupEvent e){
-        PintiumFeatures features = new PintiumFeatures();
 
         Network.registerNetworkPackets();
 
-        features.init();
-
-        MinecraftForge.EVENT_BUS.register(features);
         MinecraftForge.EVENT_BUS.register(new FallingEvent());
         MinecraftForge.EVENT_BUS.register(new ArmorEvents());
         MinecraftForge.EVENT_BUS.register(new TickEvent());

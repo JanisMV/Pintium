@@ -3,7 +3,7 @@ Specification-Title: examplemod
 Specification-Vendor: examplemodsareus
 Specification-Version: 1
 Implementation-Title: Pintium-1.16.5
-Implementation-Version: 1.0
+Implementation-Version: 1.1
 Implementation-Vendor: examplemodsareus
-Implementation-Timestamp: 2022-07-24T00:01:29+0100
+Implementation-Timestamp: 2022-07-24T22:09:58+0100
 

@@ -5,12 +5,13 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import fr.janis.pintium.main;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 
 public class ListHomesCommand {
     public ListHomesCommand(CommandDispatcher<CommandSourceStack> dispatcher){
-        dispatcher.register(Commands.literal("homes").executes((command) -> {
+        dispatcher.register(Commands.literal("homepos").executes((command) -> {
             return listhomes(command.getSource());
         }));
     }
@@ -23,10 +24,10 @@ public class ListHomesCommand {
             int [] ppos = p.getPersistentData().getIntArray(main.MODID + "homepos");
             String strpos = "X: " + ppos[0] + " Y: " + ppos[1] + " Z: " + ppos[2];
 
-            s.sendSuccess(new TextComponent("Your home at " + strpos), true);
+            s.sendSuccess(new TextComponent(new TranslatableComponent("pintium.listhomes.pos") + strpos), true);
             return 1;
         }else {
-            s.sendSuccess(new TextComponent("No home set"), true);
+            s.sendSuccess(new TranslatableComponent("pintium.homecommand.error"), true);
             return -1;
         }
 

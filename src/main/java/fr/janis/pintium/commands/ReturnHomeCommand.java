@@ -5,6 +5,7 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import fr.janis.pintium.main;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 
@@ -41,10 +42,10 @@ public class ReturnHomeCommand {
 
             p.teleportTo(x, ppos[1], z);
 
-            s.sendSuccess(new TextComponent( "You returned home"), true);
+            s.sendSuccess(new TranslatableComponent( "pintium.returnhomecommand.success"), true);
             return 1;
         }else {
-            s.sendSuccess(new TextComponent("No home set"), true);
+            s.sendSuccess(new TranslatableComponent("pintium.homecommand.error"), true);
             return -1;
         }
 

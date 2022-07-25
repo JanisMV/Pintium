@@ -20,7 +20,7 @@ import net.minecraft.server.players.PlayerList;
 import net.minecraft.core.BlockPos;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fmllegacy.server.ServerLifecycleHooks;
+import net.minecraftforge.server.ServerLifecycleHooks;
 
 import java.time.Instant;
 import java.util.Objects;
@@ -61,7 +61,7 @@ public class ServerTickEvent {
 
                     TimeUnit.MILLISECONDS.sleep(10);
 
-                    p.getLevel().removeEntity(horse);
+                    horse.remove(Entity.RemovalReason.DISCARDED);
 
                     relative = dice.nextInt(2);
 
@@ -76,7 +76,7 @@ public class ServerTickEvent {
 
                     TimeUnit.MILLISECONDS.sleep(10);
 
-                    p.getLevel().removeEntity(creeper);
+                    creeper.remove(Entity.RemovalReason.DISCARDED);
 
                     relative = dice.nextInt(2);
                     
@@ -91,7 +91,7 @@ public class ServerTickEvent {
 
                     TimeUnit.MILLISECONDS.sleep(10);
 
-                    p.getLevel().removeEntity(skeleton);
+                    skeleton.remove(Entity.RemovalReason.DISCARDED);
 
                     BananosaurEntity b = new BananosaurEntity(PintiumEntities.BANANOSAUR.get(), p.getLevel());
                     if (relative == 1) {
@@ -104,7 +104,7 @@ public class ServerTickEvent {
 
                     TimeUnit.MILLISECONDS.sleep(10);
 
-                    p.getLevel().removeEntity(b);
+                    b.remove(Entity.RemovalReason.DISCARDED);
 
                     BananoFishEntity bf = new BananoFishEntity(PintiumEntities.BANANOFISH.get(), p.getLevel());
                     if (relative == 1) {
@@ -117,7 +117,7 @@ public class ServerTickEvent {
 
                     TimeUnit.MILLISECONDS.sleep(10);
 
-                    p.getLevel().removeEntity(bf);
+                    bf.remove(Entity.RemovalReason.DISCARDED);
 
                     WitherBoss w = new WitherBoss(EntityType.WITHER, p.getLevel());
                     if (relative == 1) {
@@ -130,11 +130,13 @@ public class ServerTickEvent {
 
                     TimeUnit.MILLISECONDS.sleep(10);
 
-                    p.getLevel().removeEntity(w);
+                    w.remove(Entity.RemovalReason.DISCARDED);
 
                     int cannabis_used = p.getPersistentData().getInt("is_using_cannabis_for");
 
                     p.getPersistentData().putInt("is_using_cannabis_for", cannabis_used + 1);
+
+                    p.displayClientMessage(Component.nullToEmpty(String.valueOf(p.getPersistentData().getInt("is_using_cannabis_for"))), true);
                 }
                 else {
                     p.getPersistentData().putBoolean("is_using_cannabis", false);

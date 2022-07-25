@@ -5,6 +5,7 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import fr.janis.pintium.main;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 
@@ -22,10 +23,10 @@ public class DelHomeCommand {
         if(hasHome){
             p.getPersistentData().putIntArray(main.MODID + "homepos", new int[]{});
 
-            s.sendSuccess(new TextComponent("Home deleted"), true);
+            s.sendSuccess(new TranslatableComponent("pintium.delhomecommand.success"), true);
             return 1;
         }else {
-            s.sendSuccess(new TextComponent("No home set"), true);
+            s.sendSuccess(new TranslatableComponent("pintium.homecommand.error"), true);
             return -1;
         }
 

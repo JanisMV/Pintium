@@ -100,5 +100,11 @@
   "advancements.pintium.super_jump_stick.title": "A stick upgrade ?!",
   "advancements.pintium.super_jump_stick.desc": "Craft the stick upgrade",
   "advancements.pintium.stick_of_god.title": "Am I god ?!",
-  "advancements.pintium.stick_of_god.desc": "Craft stick of god"
+  "advancements.pintium.stick_of_god.desc": "Craft stick of god",
+  "pintium.getcoordinatescommand.done": "Done",
+  "pintium.delhomecommand.success": "Home deleted",
+  "pintium.homecommand.error": "No home set",
+  "pintium.listhomes.pos": "Your home at",
+  "pintium.returnhomecommand.success": "Your returned home successfully",
+  "pintium.sethomecommand.success": "Home set at"
 }

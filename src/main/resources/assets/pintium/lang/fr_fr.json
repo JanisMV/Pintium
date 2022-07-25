@@ -100,5 +100,11 @@
   "advancements.pintium.super_jump_stick.title": "Une amélioration de bâton",
   "advancements.pintium.super_jump_stick.desc": "Craft l'amélioration",
   "advancements.pintium.stick_of_god.title": "Suis-je dieu ?!",
-  "advancements.pintium.stick_of_god.desc": "Craft le bâton de dieu"
+  "advancements.pintium.stick_of_god.desc": "Craft le bâton de dieu",
+  "pintium.getcoordinatescommand.done": "Fait",
+  "pintium.delhomecommand.success": "Home supprimé",
+  "pintium.homecommand.error": "Pas de home vous appartenant",
+  "pintium.listhomes.pos": "Votre home est aux coordonnées",
+  "pintium.returnhomecommand.success": "Vous êtes rentré chez vous",
+  "pintium.sethomecommand.success": "Home placé aux coordonnées"
 }

@@ -1,159 +1,36 @@
 {
-  "minecraft:recipes/decorations/smoker": {
+  "minecraft:recipes/misc/copper_ingot_from_smelting_deepslate_copper_ore": {
     "criteria": {
-      "has_furnace": "2022-07-24 21:33:00 +0100"
+      "has_deepslate_copper_ore": "2022-07-25 16:36:42 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/tools/stone_shovel": {
+  "minecraft:recipes/misc/copper_ingot_from_blasting_deepslate_copper_ore": {
     "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
+      "has_deepslate_copper_ore": "2022-07-25 16:36:42 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+  "minecraft:husbandry/root": {
     "criteria": {
-      "has_iron_pickaxe": "2022-07-24 21:31:41 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_hoe": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/lever": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
+      "consumed_item": "2022-07-25 16:38:25 +0100"
     },
     "done": true
   },
   "pintium:main/root": {
     "criteria": {
-      "ore_discovered": "2022-07-24 21:31:29 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/mine_stone": {
-    "criteria": {
-      "get_stone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/stone": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cobblestone_slab": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/furnace": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_nugget_from_smelting": {
-    "criteria": {
-      "has_iron_pickaxe": "2022-07-24 21:31:41 +0100"
+      "ore_discovered": "2022-07-25 16:36:33 +0100"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:taiga": "2022-07-24 21:30:05 +0100"
+      "minecraft:frozen_river": "2022-07-25 16:37:15 +0100",
+      "minecraft:snowy_plains": "2022-07-25 16:35:24 +0100",
+      "minecraft:snowy_taiga": "2022-07-25 16:37:47 +0100",
+      "minecraft:dripstone_caves": "2022-07-25 16:37:02 +0100"
     },
     "done": false
   },
-  "minecraft:recipes/building_blocks/cobblestone_stairs": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/lava_bucket": {
-    "criteria": {
-      "lava_bucket": "2022-07-24 21:33:09 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/iron_tools": {
-    "criteria": {
-      "iron_pickaxe": "2022-07-24 21:31:41 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_nugget_from_smelting": {
-    "criteria": {
-      "has_golden_pickaxe": "2022-07-24 21:31:42 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/stone_sword": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/upgrade_tools": {
-    "criteria": {
-      "stone_pickaxe": "2022-07-24 21:31:54 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/cobblestone_wall": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/torch": {
-    "criteria": {
-      "has_stone_pickaxe": "2022-07-24 21:31:54 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_pickaxe": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_axe": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
-    "criteria": {
-      "has_cobblestone": "2022-07-24 21:35:14 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_nugget_from_blasting": {
-    "criteria": {
-      "has_golden_pickaxe": "2022-07-24 21:31:42 +0100"
-    },
-    "done": true
-  },
-  "DataVersion": 2730
+  "DataVersion": 2975
 }
