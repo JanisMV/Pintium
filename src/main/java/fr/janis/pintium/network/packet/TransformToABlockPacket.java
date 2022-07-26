@@ -41,7 +41,7 @@ public class TransformToABlockPacket {
 
         if (p.getPersistentData().getLong("inertium_cooldown") <= p.getPersistentData().getLong("inertium_use")) {
             if (p.getMainHandItem().getItem() instanceof BlockItem){
-                if (p.getItemBySlot(EquipmentSlot.HEAD).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlot.CHEST).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlot.LEGS).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlot.FEET).getItem().getDescription().getString().equals("Air")) {
+                if (p.getItemBySlot(EquipmentSlot.HEAD).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlot.CHEST).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlot.LEGS).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlot.FEET).getItem().getDescription().getString().equals("Air") && p.getItemBySlot(EquipmentSlot.OFFHAND).getItem().getDescription().getString().equals("Air")) {
                     dataP.putLong("inertium_cooldown", Instant.now().getEpochSecond() + 30);
                     dataP.putBoolean("inertium_is_used", true);
                     BlockPos posBlock = new BlockPos(p.getX() + 1, p.getY(), p.getZ() + 1);

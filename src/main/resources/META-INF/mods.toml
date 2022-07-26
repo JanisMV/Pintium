@@ -50,30 +50,50 @@ Additional Sounds : Joseph SARDIN - LaSonotheque.org
 authors="Janis, MATMADFOOT" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This mod is a mod which add a new ore with lots of new items like
-heal sticks, sticks of god ect... and a new armor with new tools.
-The Pintium Hammer is here !
-I've had some entities like ratels... Bananosaurs and some
-Bananofish too. And a strange tuna too. Cannabis is there.
+Hi ! Here's a resume about my mod:
 
-Some spells have been added.
-To use correctly Ignis and Zombium you need to hit an entity before.
+This mod is actually a training for me, therefore I'm adding all types of things I'm thinking of.
 
-Mole Mutatio : Take a block and transform into it !
-Ignis : Launch a FireBall which is gonna attack your last attacked entity !
+Entities :
+     - Ratel : Drops gold and pintium seeds
+     - Bananosaur : Drops bananas and polonium
+     - Bananofish : Drops bananas
+     - Strange Tuna : Drops tuna and cannabis
 
-Navis : Spawn a boat
-Zombium : Spawn a baby zombie bodyguard who is going to attack your last attacked ennemy !
+Items :
+     - Pintium Ingot
+     - Terbium Debris
+     - Pintium Sword, Axe, Pickaxe, Shovel, Hoe
+     - Pintium Hammer : Break 9x9 blocks
+     - Pintium Helmet, Chestplate, Leggins, Boots : Gives effects
+     - Pintium Seeds : Gives Pintium Nugget
+     - Pintium Nugget : With 9 of it, you can craft one Pintium Ingot
+     - Cannabis : Try it
+     - Stick of God
+     - Jump Stick
+     - Speed Stick
+     - Strength Stick
+     - Heal Stick
+     - Life Stick : Can reanimate dead mobs to help you (Only working with Ratel, Zombie, Skeleton and Enderman)
+     - Portable Portal : Try it
+     - Pintium Apple
+     - Banana
+     - Polonium : Try it
+     - Synthwave Vive Music Disc : Nice banger
 
-There is a new amazing Item :
-The Stick of Life. You will be able to tame ANY entities.
-For the moment you can only tame Ratel, Zombie, Skeleton and Creeper
-but in few time you will be able to tame more.
+Blocks :
+     - Pintium Block
+     - Banana Block
+     - Pintium Ores (Stone, Deepslate, Nether)
+     - Terbium Ore
 
-To tame entities, you have to kill it, get a heal orb in your inventory and right click
-with the life stick !
+Spells :
+     - Ignis : Launch a fireball to the last attacked entity
+     - Mole mutatio : Transforms you into a block
+     - Zombium : Spawn a Zombie BodyGuard
+     - Navis : Spawn a boat
 
-The supported languages are :
+The languages supported are :
 English (US)
 French (Fr)
 '''

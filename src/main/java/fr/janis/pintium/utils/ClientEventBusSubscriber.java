@@ -55,9 +55,6 @@ public class ClientEventBusSubscriber {
         e.registerLayerDefinition(BananosaurModel.LAYER_LOCATION, BananosaurModel::createBodyLayer);
         e.registerLayerDefinition(BananoFishModel.LAYER_LOCATION, BananoFishModel::createBodyLayer);
     }
-    @SubscribeEvent
-    public static void onRegisterEntities(final RegistryEvent.Register<EntityType<?>> e){
-    }
 
     @SubscribeEvent
     public static void registerModifierSerializers(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>>

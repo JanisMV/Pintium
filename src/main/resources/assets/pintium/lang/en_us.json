@@ -37,7 +37,8 @@
   "item.pintium.pintium_stick": "Pintium Stick",
   "item.pintium.synthwave_vibe_music_disc": "Synthwave Vibe - Meydän",
   "item.pintium.synthwave_vibe_music_disc.desc": "Synthwave Vibe - Meydän",
-  "item.pintium.tp_object": "TP Object",
+  "item.pintium.tp_object": "Portable Portal",
+  "item.pintium.terbium_ingot": "Terbium Debris",
   "itemGroup.pintium_tab": "Pintium",
   "block.pintium.pintium_block": "Pintium Block",
   "block.pintium.pintium_crop": "Pintium Seeds",
@@ -46,6 +47,7 @@
   "block.pintium.pintium_nether_ore": "Pintium Ore",
   "block.pintium.pintium_deepslate_ore": "Pintium Ore",
   "block.pintium.banana_block": "Banana Block",
+  "block.pintium.terbium_ore": "Terbium Ore",
   "tooltip.stick_of_god.not_hold_shift": "Hold \\u00A7eSHIFT\\u00A7r for more information",
   "tooltip.stick_of_god.hold_shift": "Right click for Absorption and Regeneration effects for 3 minutes.",
   "tooltip.jump_stick.not_hold_shift": "Hold \\u00A7eSHIFT\\u00A7r for more information",
@@ -61,7 +63,7 @@
   "tooltip.life_stick.hold_shift": "Kill a mob and right click to make him be your bodyguard !",
   "tooltip.life_stick.not_hold_shift": "Hold \\u00A7eSHIFT\\u00A7r for more information",
   "tooltip.tpobject.not_hold_shift": "Hold SHIFT for more information",
-  "tooltip.tpobject.hold_shift": "/setcos then right click for a tp !",
+  "tooltip.tpobject.hold_shift": "Right click on a block for a tp !",
   "pintium.life_stick.entity_revived": "GG ! You just revived a ",
   "pintium.life_stick.cannot_revive": "You don't have any revivable entity...",
   "pintium.life_stick.no_orb": "You have to have a life orb to revive an entity.",
@@ -106,5 +108,6 @@
   "pintium.homecommand.error": "No home set",
   "pintium.listhomes.pos": "Your home at",
   "pintium.returnhomecommand.success": "Your returned home successfully",
-  "pintium.sethomecommand.success": "Home set at"
+  "pintium.sethomecommand.success": "Home set at",
+  "pintium.tpobject.air": "You need to click on a block to teleport."
 }

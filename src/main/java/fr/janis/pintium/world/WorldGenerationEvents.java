@@ -18,8 +18,8 @@ public class WorldGenerationEvents {
 
         if (event.getCategory() != Biome.BiomeCategory.NETHER && event.getCategory() != Biome.BiomeCategory.THEEND) {
             if (event.getCategory() != Biome.BiomeCategory.OCEAN && event.getCategory() != Biome.BiomeCategory.RIVER){
-                event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PintiumEntities.RATEL.get(), 100, 5, 5));
-                event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(PintiumEntities.BANANOSAUR.get(), 1, 1, 5));
+                event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PintiumEntities.RATEL.get(), 5, 5, 5));
+                event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(PintiumEntities.BANANOSAUR.get(), 5, 1, 5));
             }
             else {
                 event.getSpawns().getSpawner(MobCategory.WATER_CREATURE).add(new MobSpawnSettings.SpawnerData(PintiumEntities.TUNA.get(), 5, 5, 5));

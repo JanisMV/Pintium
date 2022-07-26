@@ -10,4 +10,12 @@ public class PlacedFeatures {
     public static final Holder<PlacedFeature> PINTIUM_ORE_PLACED = PlacementUtils.register("pintium_ore_placed",
             ConfiguredFeatures.PINTIUM_ORE, OrePlacement.commonOrePlacement(2, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(12))));
+
+    public static final Holder<PlacedFeature> NETHER_PINTIUM_ORE_PLACED = PlacementUtils.register("nether_pintium_ore_placed",
+            ConfiguredFeatures.NETHER_PINTIUM_ORE, OrePlacement.commonOrePlacement(2,
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(20))));
+
+    public static final Holder<PlacedFeature> TERBIUM_ORE_PLACED = PlacementUtils.register("terbium_ore_placed",
+            ConfiguredFeatures.TERBIUM_ORE, OrePlacement.commonOrePlacement(12,
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
 }

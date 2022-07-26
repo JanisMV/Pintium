@@ -19,6 +19,23 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /* Prochaine Maj : Plus de Mobs Tameable
+Changelog :
+Bouclier demandé a enlever
+baisse des bananosaurs ratels (a tester)
+cannabis always eat
+fix globallootmodifers
+fix bucket item
+drop cannabis from tuna (modifier les deux descriptions)
+drop rate of getting 2 nuggets from pintium seeds
+Tp object updated
+Pintium hammer can destroy new blocks
+
+Code :
+x.y.z
+X : Changement majeur (dimension)
+Y : Changement mineur (item)
+Z : Polissage des changements
+
 Succès : https://misode.github.io/advancement/
 1.18 -> 1.19 https://www.youtube.com/watch?v=tYAC5zRh12A&ab_channel=ModdingbyKaupenjoe
 */

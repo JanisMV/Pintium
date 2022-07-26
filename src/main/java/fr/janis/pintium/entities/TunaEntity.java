@@ -4,6 +4,7 @@ import fr.janis.pintium.init.PintiumItems;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.AbstractFish;
+import net.minecraft.world.entity.animal.AbstractSchoolingFish;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.damagesource.DamageSource;
@@ -18,25 +19,24 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.PanicGoal;
 import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
 
-public class TunaEntity extends AbstractFish {
+public class TunaEntity extends AbstractSchoolingFish {
 
-    public TunaEntity(EntityType<? extends AbstractFish> type, Level worldIn) {
+    public TunaEntity(EntityType<? extends AbstractSchoolingFish> type, Level worldIn) {
         super(type, worldIn);
         //EntitySpawnPlacementRegistry.register(PintiumEntities.RATEL.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::canAnimalSpawn);
     }
 
+
     // registerAttributes
     public static AttributeSupplier.Builder setCustomAttributes(){
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 40.0D)
+                .add(Attributes.MAX_HEALTH, 5.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.50D);
     }
 
     @Override
     protected void registerGoals() {
         super.registerGoals();
-        this.goalSelector.addGoal(0, new PanicGoal(this, 0.75D));
-        this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 0.75D, 1));
     }
 
     @Override

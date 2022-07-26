@@ -4,6 +4,7 @@ import fr.janis.pintium.init.PintiumItems;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.AbstractFish;
+import net.minecraft.world.entity.animal.AbstractSchoolingFish;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.damagesource.DamageSource;
@@ -17,10 +18,11 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.PanicGoal;
 import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
+import org.jetbrains.annotations.NotNull;
 
-public class BananoFishEntity extends AbstractFish {
+public class BananoFishEntity extends AbstractSchoolingFish {
 
-    public BananoFishEntity(EntityType<? extends AbstractFish> type, Level worldIn) {
+    public BananoFishEntity(EntityType<? extends BananoFishEntity> type, Level worldIn) {
         super(type, worldIn);
         //EntitySpawnPlacementRegistry.register(PintiumEntities.RATEL.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::canAnimalSpawn);
     }
@@ -28,24 +30,24 @@ public class BananoFishEntity extends AbstractFish {
     // registerAttributes
     public static AttributeSupplier.Builder setCustomAttributes(){ //  func_233666_p_ - createMobAttributes et createMutableAttribute - add
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 40.0D)
+                .add(Attributes.MAX_HEALTH, 5.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.50D);
     }
 
     @Override
     protected void registerGoals() {
         super.registerGoals();
-        this.goalSelector.addGoal(0, new PanicGoal(this, 0.75D));
-        this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 0.75D, 1));
+        //this.goalSelector.addGoal(0, new PanicGoal(this, 0.75D));
+        //this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 0.75D, 1));
     }
 
     @Override
-    public ItemStack getBucketItemStack() {
+    public @NotNull ItemStack getBucketItemStack() {
         return new ItemStack(PintiumItems.BANANOFISH_BUCKET.get());
     }
 
     @Override
-    protected SoundEvent getFlopSound() {
+    protected @NotNull SoundEvent getFlopSound() {
         return SoundEvents.COD_FLOP;
     }
 

@@ -7,6 +7,7 @@ import fr.janis.pintium.utils.CustomPintiumArmorMaterials;
 import fr.janis.pintium.utils.CustomPintiumTiers;
 import fr.janis.pintium.utils.PintiumItemGroup;
 import fr.janis.pintium.utils.SoundEvents;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -20,16 +21,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import java.util.function.Supplier;
 
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.BucketItem;
-import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.RecordItem;
-import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.registries.RegistryObject;
 
 public class PintiumItems {
@@ -37,6 +28,7 @@ public class PintiumItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, main.MODID);
 
     public static final RegistryObject<Item> PINTIUM_INGOT = ITEMS.register("pintium_ingot", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
+    public static final RegistryObject<Item> TERBIUM_INGOT = ITEMS.register("terbium_ingot", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
 
     public static final RegistryObject<ForgeSpawnEggItem> RATEL_SPAWN_EGG = ITEMS.register("ratel_spawn_egg", () -> new ForgeSpawnEggItem(PintiumEntities.RATEL, 0x000000, 0xFFFFFF, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
     public static final RegistryObject<ForgeSpawnEggItem> BANANOSAUR_SPAWN_EGG = ITEMS.register("bananosaur_spawn_egg", () -> new ForgeSpawnEggItem(PintiumEntities.BANANOSAUR, 0xFFE300, 0xFFFFFF, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
@@ -64,6 +56,7 @@ public class PintiumItems {
                             .nutrition(3)
                             .saturationMod(1.4F)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 20*30, 0), 1.0F)
+                            .alwaysEat()
                     .build()
             )));
 
@@ -90,11 +83,11 @@ public class PintiumItems {
             .food(new FoodProperties.Builder()
                     .nutrition(6)
                     .saturationMod(1.5F)
-                    .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 20*30, 0), 1.0F)
-                    .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 20*600, 4), 1.0F)
-                    .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20*600, 1), 1.0F)
-                    .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*600, 0), 1.0F)
-                    .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20*600, 1), 1.0F)
+                    .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 20*30, 1), 1.0F)
+                    .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 20*60, 4), 1.0F)
+                    .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20*60, 1), 1.0F)
+                    .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*60, 0), 1.0F)
+                    .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20*60, 1), 1.0F)
                     .alwaysEat()
                     .build())));
 
@@ -110,9 +103,9 @@ public class PintiumItems {
             new FoodProperties.Builder()
             .nutrition(1)
             .saturationMod(0.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20*180, 500), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 20*30, 0), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*180, 500), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20*10, 500), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 20*10, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*10, 500), 1.0F)
             .alwaysEat().build()
     )));
 
@@ -132,12 +125,12 @@ public class PintiumItems {
             .build()
     )));
 
-    public static final RegistryObject<Item> TUNA_BUCKET = ITEMS.register("tuna_bucket", () -> new BucketItem(/*PintiumEntities.TUNA,*/ () -> Fluids.WATER, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).stacksTo(1)));
-    public static final RegistryObject<Item> BANANOFISH_BUCKET = ITEMS.register("bananofish_bucket", () -> new BucketItem(/*PintiumEntities.BANANOFISH,*/ () -> Fluids.WATER, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> TUNA_BUCKET = ITEMS.register("tuna_bucket", () -> new MobBucketItem(PintiumEntities.TUNA, () -> Fluids.WATER, () -> net.minecraft.sounds.SoundEvents.BUCKET_EMPTY, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> BANANOFISH_BUCKET = ITEMS.register("bananofish_bucket", () -> new MobBucketItem(PintiumEntities.BANANOFISH, () -> Fluids.WATER, () -> net.minecraft.sounds.SoundEvents.BUCKET_EMPTY, new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> LIFE_STICK = ITEMS.register("life_stick", () -> new LifeStick(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(80).defaultDurability(80)));
 
     public static final RegistryObject<Item> SYNTHWAVE_VIBE_MUSIC_DISC = ITEMS.register("synthwave_vibe_music_disc", () -> new RecordItem(1, () -> SoundEvents.SYNTHWAVE_VIBE.get(),new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).stacksTo(1)));
 
-    public static final RegistryObject<Item> TP_OBJECT = ITEMS.register("tp_object", () -> new TPObject(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(80).defaultDurability(80)));
+    public static final RegistryObject<Item> TP_OBJECT = ITEMS.register("tp_object", () -> new TPObject(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant().stacksTo(1).durability(900).defaultDurability(900)));
 }

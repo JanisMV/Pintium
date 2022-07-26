@@ -37,7 +37,8 @@
   "item.pintium.pintium_stick": "Bâton en Pintium",
   "item.pintium.synthwave_vibe_music_disc": "Synthwave Vibe - Meydän",
   "item.pintium.synthwave_vibe_music_disc.desc": "Synthwave Vibe - Meydän",
-  "item.pintium.tp_object": "TP Object",
+  "item.pintium.tp_object": "Portable Portal",
+  "item.pintium.terbium_ingot": "Débris de Terbium",
   "itemGroup.pintium_tab": "Pintium",
   "block.pintium.pintium_block": "Block de Pintium",
   "block.pintium.pintium_crop": "Graines de Pintium",
@@ -46,6 +47,7 @@
   "block.pintium.pintium_nether_ore": "Minerai de Pintium",
   "block.pintium.pintium_deepslate_ore": "Minerai de Pintium",
   "block.pintium.banana_block": "Bloc de bananes",
+  "block.pintium.terbium_ore": "Minerai de Terbium",
   "tooltip.stick_of_god.not_hold_shift": "Maintenir Shift pour plus d'informations",
   "tooltip.stick_of_god.hold_shift": "Clic droit pour des effets d'Absorption et de Régénération pour 3 minutes.",
   "tooltip.jump_stick.not_hold_shift": "Maintenir Shift pour plus d'informations",
@@ -61,7 +63,7 @@
   "tooltip.life_stick.hold_shift": "Tuer un mob puis clic droit pour le voir devenir votre bodyguard !",
   "tooltip.life_stick.not_hold_shift": "Maintenir Shift pour plus d'informations",
   "tooltip.tpobject.not_hold_shift": "Maintiens SHIFT pour plus d'informations",
-  "tooltip.tpobject.hold_shift": "/setcos puis clic droit pour une tp !",
+  "tooltip.tpobject.hold_shift": "Clic droit sur un bloc pour une tp !",
   "pintium.life_stick.entity_revived": "Bravo ! Vous venez de ressuciter un ",
   "pintium.life_stick.cannot_revive": "Vous n'avez pas d'entité invocable...",
   "pintium.life_stick.no_orb": "Vous devez avoir une orbe de vie pour invoquer.",
@@ -106,5 +108,6 @@
   "pintium.homecommand.error": "Pas de home vous appartenant",
   "pintium.listhomes.pos": "Votre home est aux coordonnées",
   "pintium.returnhomecommand.success": "Vous êtes rentré chez vous",
-  "pintium.sethomecommand.success": "Home placé aux coordonnées"
+  "pintium.sethomecommand.success": "Home placé aux coordonnées",
+  "pintium.tpobject.air": "Cliquez sur un block pour pouvoir vous téléporter."
 }

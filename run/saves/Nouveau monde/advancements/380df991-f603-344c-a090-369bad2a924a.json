@@ -1,36 +1,140 @@
 {
-  "minecraft:recipes/misc/copper_ingot_from_smelting_deepslate_copper_ore": {
+  "minecraft:recipes/misc/gold_ingot_from_blasting_nether_gold_ore": {
     "criteria": {
-      "has_deepslate_copper_ore": "2022-07-25 16:36:42 +0100"
+      "has_nether_gold_ore": "2022-07-26 14:28:48 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/misc/copper_ingot_from_blasting_deepslate_copper_ore": {
+  "minecraft:recipes/misc/coal_from_smelting_coal_ore": {
     "criteria": {
-      "has_deepslate_copper_ore": "2022-07-25 16:36:42 +0100"
+      "has_coal_ore": "2022-07-26 12:50:44 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2022-07-26 00:20:51 +0100"
     },
     "done": true
   },
   "minecraft:husbandry/root": {
     "criteria": {
-      "consumed_item": "2022-07-25 16:38:25 +0100"
+      "consumed_item": "2022-07-26 15:59:30 +0100"
     },
     "done": true
   },
-  "pintium:main/root": {
+  "pintium:main/get_pintium_nugget": {
     "criteria": {
-      "ore_discovered": "2022-07-25 16:36:33 +0100"
+      "craft_pintium_stick": "2022-07-25 23:36:48 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2022-07-26 00:20:51 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2022-07-26 14:27:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2022-07-26 14:27:57 +0100"
+    },
+    "done": true
+  },
+  "pintium:main/drop_pintium_seed": {
+    "criteria": {
+      "craft_pintium_stick": "2022-07-25 23:36:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2022-07-26 00:20:51 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2022-07-26 00:20:51 +0100"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "enchanted_golden_apple": "2022-07-26 15:59:30 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2022-07-26 15:59:27 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye": {
+    "criteria": {
+      "has_bone_meal": "2022-07-25 23:36:21 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_smelting_nether_gold_ore": {
+    "criteria": {
+      "has_nether_gold_ore": "2022-07-26 14:28:48 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-07-26 00:21:12 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2022-07-26 00:20:51 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2022-07-26 00:20:51 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/coal_from_blasting_coal_ore": {
+    "criteria": {
+      "has_coal_ore": "2022-07-26 12:50:44 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2022-07-26 09:22:33 +0100"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:frozen_river": "2022-07-25 16:37:15 +0100",
-      "minecraft:snowy_plains": "2022-07-25 16:35:24 +0100",
-      "minecraft:snowy_taiga": "2022-07-25 16:37:47 +0100",
-      "minecraft:dripstone_caves": "2022-07-25 16:37:02 +0100"
+      "minecraft:beach": "2022-07-26 14:08:29 +0100",
+      "minecraft:river": "2022-07-26 14:16:02 +0100",
+      "minecraft:stony_shore": "2022-07-25 23:34:11 +0100",
+      "minecraft:forest": "2022-07-26 14:18:17 +0100",
+      "minecraft:ocean": "2022-07-26 14:08:33 +0100",
+      "minecraft:plains": "2022-07-25 23:34:27 +0100"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/bone_block": {
+    "criteria": {
+      "has_bone_meal": "2022-07-25 23:36:21 +0100"
+    },
+    "done": true
   },
   "DataVersion": 2975
 }

@@ -32,7 +32,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pintium:polonium"
+          "name": "pintium:cannabis_food"
         }
       ],
       "conditions": [
@@ -41,7 +41,7 @@
         },
         {
           "condition": "minecraft:random_chance_with_looting",
-          "chance": 0.09896,
+          "chance": 0.25,
           "looting_multiplier": 0.01
         }
       ]

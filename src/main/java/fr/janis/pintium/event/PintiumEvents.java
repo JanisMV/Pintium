@@ -16,7 +16,6 @@ public class PintiumEvents {
         new ReturnHomeCommand(e.getDispatcher());
         new ListHomesCommand(e.getDispatcher());
         new DelHomeCommand(e.getDispatcher());
-        new GetCoordinatesCommand(e.getDispatcher());
 
         ConfigCommand.register(e.getDispatcher());
     }
