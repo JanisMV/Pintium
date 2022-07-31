@@ -1,0 +1,140 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 30/07/2022 13:44
+Description: Ticking block entity
+
+java.lang.NullPointerException: Cannot read field "level" because "p_41624_" is null
+	at net.minecraft.world.item.ItemStack.hurtAndBreak(ItemStack.java:338) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,xf:fml:forge:itemstack}
+	at fr.janis.pintium.blocks.entity.custom.ExtractorMachine.craftItem(ExtractorMachine.java:112) ~[%2380!/:?] {re:classloading}
+	at fr.janis.pintium.blocks.entity.custom.ExtractorMachine.tick(ExtractorMachine.java:106) ~[%2380!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:673) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:766) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:475) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:327) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:902) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:842) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:685) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:261) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.item.ItemStack.hurtAndBreak(ItemStack.java:338) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,xf:fml:forge:itemstack}
+	at fr.janis.pintium.blocks.entity.custom.ExtractorMachine.craftItem(ExtractorMachine.java:112) ~[%2380!/:?] {re:classloading}
+	at fr.janis.pintium.blocks.entity.custom.ExtractorMachine.tick(ExtractorMachine.java:106) ~[%2380!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:673) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:766) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:475) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:327) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+-- Block entity being ticked --
+Details:
+	Name: pintium:extractor_machine // fr.janis.pintium.blocks.entity.custom.ExtractorMachine
+	Block: Block{pintium:extractor_machine_block}[facing=south]
+	Block location: World: (-199,-48,-446), Section: (at 9,0,2 in -13,-3,-28; chunk contains blocks -208,-64,-448 to -193,319,-433), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,-64,-512 to -1,319,-1)
+	Block: Block{pintium:extractor_machine_block}[facing=south]
+	Block location: World: (-199,-48,-446), Section: (at 9,0,2 in -13,-3,-28; chunk contains blocks -208,-64,-448 to -193,319,-433), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,-64,-512 to -1,319,-1)
+Stacktrace:
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:673) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:766) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
+	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:475) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:327) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:902) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:842) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:685) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:261) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['Dev'/223, l='ServerLevel[Nouveau monde]', x=-198.43, y=-49.00, z=-444.70]]
+	Chunk stats: 2614
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-224,71,-416), Section: (at 0,7,0 in -14,4,-26; chunk contains blocks -224,-64,-416 to -209,319,-401), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,-64,-512 to -1,319,-1)
+	Level time: 19491 game time, 19491 day time
+	Level name: Nouveau monde
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 155646 (now: false), thunder time: 66294 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:902) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:842) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:685) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:261) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.4, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 117839752 bytes (112 MiB) / 914358272 bytes (872 MiB) up to 914358272 bytes (872 MiB)
+	CPUs: 4
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 3 2200U with Radeon Vega Mobile Gfx  
+	Identifier: AuthenticAMD Family 23 Model 17 Stepping 0
+	Microarchitecture: Zen
+	Frequency (GHz): 2,50
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: AMD Radeon(TM) Vega 3 Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 512,00
+	Graphics card #0 deviceId: 0x15dd
+	Graphics card #0 versionInfo: DriverVersion=27.20.14501.28009
+	Memory slot #0 capacity (MB): 2048,00
+	Memory slot #0 clockSpeed (GHz): 1,33
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 2048,00
+	Memory slot #1 clockSpeed (GHz): 1,33
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 9727,00
+	Virtual memory used (MB): 8455,22
+	Swap memory total (MB): 6241,61
+	Swap memory used (MB): 0,00
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/223, l='ServerLevel[Nouveau monde]', x=-198.43, y=-49.00, z=-444.70]]
+	Data Packs: vanilla (incompatible), mod:forge (incompatible), mod:pintium (incompatible)
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	ModLauncher: 9.1.3+9.1.3+main.9b69c82a
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 slf4jfixer PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		javafml@null
+	Mod List: 
+		forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.|Minecraft                     |minecraft                     |1.18.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |40.1.0              |DONE      |Manifest: NOSIGNATURE
+		resources                                         |Pintium                       |pintium                       |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 13f6b787-0adc-443e-8733-7dfa4871ae3b
+	FML: 40.1
+	Forge: net.minecraftforge:40.1.0

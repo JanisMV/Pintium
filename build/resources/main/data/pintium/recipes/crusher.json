@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "pintium:terbium_ingot"
+    },
+    "#": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "pintium:crusher"
+  }
+}

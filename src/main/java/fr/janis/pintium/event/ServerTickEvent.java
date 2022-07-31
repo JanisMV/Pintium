@@ -1,9 +1,12 @@
 package fr.janis.pintium.event;
 
+import fr.janis.pintium.blocks.entity.custom.ExtractorMachine;
 import fr.janis.pintium.entities.BananoFishEntity;
 import fr.janis.pintium.entities.BananosaurEntity;
 import fr.janis.pintium.entities.SkeletonBodyGuardEntity;
 import fr.janis.pintium.init.PintiumEntities;
+import fr.janis.pintium.init.PintiumItems;
+import fr.janis.pintium.main;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -32,21 +35,20 @@ public class ServerTickEvent {
     @SubscribeEvent
     public void onServerTickEvent(final TickEvent.ServerTickEvent e) throws InterruptedException {
 
-        Random dice = new Random();
-
-        int posX;
-        int posY;
-        int posZ;
-
-        posX = dice.nextInt(6);
-        posY = dice.nextInt(6);
-        posZ = dice.nextInt(6);
-
         MinecraftServer MServer = ServerLifecycleHooks.getCurrentServer();
         PlayerList plist = MServer.getPlayerList();
         for(ServerPlayer p : plist.getPlayers()) {
             if (p.getPersistentData().getBoolean("is_using_cannabis")){
                 if (p.getPersistentData().getInt("is_using_cannabis_for") != 20*30){
+                    Random dice = new Random();
+
+                    int posX;
+                    int posY;
+                    int posZ;
+
+                    posX = dice.nextInt(6);
+                    posY = dice.nextInt(6);
+                    posZ = dice.nextInt(6);
 
                     int relative = dice.nextInt(2);
 
@@ -136,7 +138,6 @@ public class ServerTickEvent {
 
                     p.getPersistentData().putInt("is_using_cannabis_for", cannabis_used + 1);
 
-                    p.displayClientMessage(Component.nullToEmpty(String.valueOf(p.getPersistentData().getInt("is_using_cannabis_for"))), true);
                 }
                 else {
                     p.getPersistentData().putBoolean("is_using_cannabis", false);
@@ -174,6 +175,28 @@ public class ServerTickEvent {
                     }
                 }
             }
+
+            if (p.getPersistentData().getBoolean(main.MODID+"extractor_cooldown")){
+                if (p.getPersistentData().getInt(main.MODID+"extractor_cd") != 20*5){
+                    int cd = p.getPersistentData().getInt(main.MODID+"extractor_cd");
+                    p.getPersistentData().putInt(main.MODID+"extractor_cd", cd+1);
+                }
+                else{
+                    p.getPersistentData().putBoolean(main.MODID+"extractor_cooldown", false);
+                    p.getPersistentData().putInt(main.MODID+"extractor_cd", 0);
+
+                    ExtractorMachine entity = (ExtractorMachine) p.getLevel().getBlockEntity(new BlockPos(p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_x"), p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_y"), p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_z")));
+
+                    Random rand = new Random();
+                    int random = rand.nextInt(11);
+                    if (random == 10) {
+                        entity.itemHandler.setStackInSlot(2, new ItemStack(PintiumItems.POLONIUM.get(),
+                                entity.itemHandler.getStackInSlot(2).getCount() + 1));
+                    }
+                    entity.isACooldownWorkingOn = false;
+                }
+            }
+
         }
 
     }

@@ -3,6 +3,7 @@ package fr.janis.pintium.event;
 import fr.janis.pintium.entities.RatelEntity;
 import fr.janis.pintium.main;
 import net.minecraft.world.entity.monster.Creeper;
+import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
@@ -31,6 +32,10 @@ public class onEntityDeathEvent {
 
             else if (e.getEntityLiving() instanceof Creeper)
             {
+                p.getPersistentData().putString("entity_killed", name);
+            }
+
+            else if (e.getEntityLiving() instanceof EnderMan) {
                 p.getPersistentData().putString("entity_killed", name);
             }
         }

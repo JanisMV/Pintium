@@ -5,6 +5,7 @@
     "pintium:pintium_overworld_ore",
     "pintium:pintium_nether_ore",
     "pintium:pintium_deepslate_ore",
-    "pintium:terbium_ore"
+    "pintium:terbium_ore",
+    "pintium:extractor_machine_block"
   ]
 }

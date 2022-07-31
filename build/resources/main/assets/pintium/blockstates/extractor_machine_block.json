@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model": "pintium:block/extractor_machine_block"},
+    "facing=east": {"model": "pintium:block/extractor_machine_block", "y": 90},
+    "facing=south": {"model": "pintium:block/extractor_machine_block", "y": 180},
+    "facing=west": {"model": "pintium:block/extractor_machine_block", "y": 270}
+  }
+}

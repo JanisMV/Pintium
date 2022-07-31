@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "pintium:polonium"
+    },
+    "X": {
+      "item": "pintium:terbium_ingot"
+    }
+  },
+  "result": {
+    "item": "pintium:extractor_machine_block"
+  }
+}

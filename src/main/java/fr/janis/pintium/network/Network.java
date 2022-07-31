@@ -67,5 +67,15 @@ public class Network {
                 .decoder(TPlayerPacket::decode)
                 .consumer(TPlayerPacket::handle)
                 .add();
+        CHANNEL.messageBuilder(TameEndermanPacket.class, 10)
+                .encoder(TameEndermanPacket::encode)
+                .decoder(TameEndermanPacket::decode)
+                .consumer(TameEndermanPacket::handle)
+                .add();
+        CHANNEL.messageBuilder(BlockEntityCooldown.class, 11)
+                .encoder(BlockEntityCooldown::encode)
+                .decoder(BlockEntityCooldown::decode)
+                .consumer(BlockEntityCooldown::handle)
+                .add();
     }
 }

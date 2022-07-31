@@ -10,7 +10,6 @@ import fr.janis.pintium.event.loot.PintiumSeedAdditionModifier;
 import fr.janis.pintium.init.PintiumEntities;
 import fr.janis.pintium.main;
 import net.minecraft.client.renderer.entity.*;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -34,6 +33,7 @@ public class ClientEventBusSubscriber {
         event.put(PintiumEntities.BANANOSAUR.get(), BananosaurEntity.setCustomAttributes().build());
         event.put(PintiumEntities.TUNA.get(), TunaEntity.setCustomAttributes().build());
         event.put(PintiumEntities.BANANOFISH.get(), BananoFishEntity.setCustomAttributes().build());
+        event.put(PintiumEntities.ENDERMAN_BODY_GUARD.get(), EndermanBodyGuardEntity.setCustomAttributes().build());
     }
 
     @SubscribeEvent
@@ -43,6 +43,7 @@ public class ClientEventBusSubscriber {
         e.registerEntityRenderer(PintiumEntities.ZOMBIE_BODY_GUARD.get(), ZombieRenderer::new);
         e.registerEntityRenderer(PintiumEntities.SKELETON_BODY_GUARD.get(), SkeletonRenderer::new);
         e.registerEntityRenderer(PintiumEntities.CREEPER_BODY_GUARD.get(), CreeperRenderer::new);
+        e.registerEntityRenderer(PintiumEntities.ENDERMAN_BODY_GUARD.get(), EndermanRenderer::new);
         e.registerEntityRenderer(PintiumEntities.TUNA.get(), TunaRenderer::new);
         e.registerEntityRenderer(PintiumEntities.BANANOSAUR.get(), BananosaurRenderer::new);
         e.registerEntityRenderer(PintiumEntities.BANANOFISH.get(), BananoFishRenderer::new);

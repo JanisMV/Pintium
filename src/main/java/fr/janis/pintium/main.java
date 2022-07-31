@@ -1,12 +1,16 @@
 package fr.janis.pintium;
 
+import fr.janis.pintium.blocks.entity.BlockEntities;
 import fr.janis.pintium.event.onEntityDeathEvent;
 import fr.janis.pintium.event.*;
+import fr.janis.pintium.gui.ExtractorMachineScreen;
+import fr.janis.pintium.gui.PintiumMenuTypes;
 import fr.janis.pintium.init.*;
 
 import fr.janis.pintium.keybind.KeyBinds;
 import fr.janis.pintium.network.Network;
 import fr.janis.pintium.utils.SoundEvents;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraftforge.common.MinecraftForge;
@@ -19,25 +23,33 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /* Prochaine Maj : Plus de Mobs Tameable
-Changelog :
-Bouclier demandé a enlever
-baisse des bananosaurs ratels (a tester)
-cannabis always eat
-fix globallootmodifers
-fix bucket item
-drop cannabis from tuna (modifier les deux descriptions)
-drop rate of getting 2 nuggets from pintium seeds
-Tp object updated
-Pintium hammer can destroy new blocks
+
+https://youtu.be/ru6Gkvy9tyU?list=PLKGarocXCE1Hut51TKKqZKqVZtKLZC48x recipe a voir
+
+JEI compatibility
+Crushers de types differents
+Crush cobble pour graine de pintium
+Achievements
+
+Changelog:
 
 Code :
 x.y.z
-X : Changement majeur (dimension)
-Y : Changement mineur (item)
-Z : Polissage des changements
+X : Ajout de fonctionnalité majeur (dimension)
+Y : Ajout de fonctionnalité mineur (item)
+Z : Modification de fonctionnalité
+
+TameAbleMobs:
+Ajouter le goal au Ratel
+XBodyGuardEntity.java
+TameXPacket
+PintiumEntities l'enregistrer
+Lajouter au LifeStick le packet
+Register les attributs
+onEntityDeathEvent
+onRegisterRenderer
 
 Succès : https://misode.github.io/advancement/
-1.18 -> 1.19 https://www.youtube.com/watch?v=tYAC5zRh12A&ab_channel=ModdingbyKaupenjoe
 */
 
 @Mod(main.MODID)
@@ -56,7 +68,9 @@ public class main
         PintiumItems.ITEMS.register(bus);
         PintiumBlocks.BLOCKS.register(bus);
         PintiumEntities.ENTITY_TYPES.register(bus);
+        BlockEntities.BLOCK_ENTITIES.register(bus);
         SoundEvents.SOUND_EVENTS.register(bus);
+        PintiumMenuTypes.register(bus);
     }
 
     private void setup(FMLCommonSetupEvent e){
@@ -75,8 +89,10 @@ public class main
         MinecraftForge.EVENT_BUS.register(new KeyBindEvent());
     }
 
-    private void clientSetup(FMLClientSetupEvent e){
+    private void clientSetup(final FMLClientSetupEvent e){
         ItemBlockRenderTypes.setRenderLayer(PintiumBlocks.PINTIUM_CROP.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(PintiumBlocks.CANNABIS_CROP.get(), RenderType.cutout());
+
+        MenuScreens.register(PintiumMenuTypes.EXTRACTOR_MACHINE_MENU.get(), ExtractorMachineScreen::new);
     }
 }

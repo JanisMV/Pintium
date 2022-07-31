@@ -3,12 +3,10 @@ package fr.janis.pintium.items;
 import fr.janis.pintium.init.PintiumEntities;
 import fr.janis.pintium.init.PintiumItems;
 import fr.janis.pintium.network.Network;
-import fr.janis.pintium.network.packet.TameCreeperPacket;
-import fr.janis.pintium.network.packet.TameRatelPacket;
-import fr.janis.pintium.network.packet.TameSkeletonPacket;
-import fr.janis.pintium.network.packet.TameZombiePacket;
+import fr.janis.pintium.network.packet.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.TooltipFlag;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.world.entity.EntityType;
@@ -108,12 +106,30 @@ public class LifeStick extends Item {
                     }
                 }
 
-            }
 
-            else {
-                String text = new TranslatableComponent("pintium.life_stick.cannot_revive").getString();
-                playerIn.displayClientMessage(Component.nullToEmpty((text)), true);
-            }
+                else if (data.equals(EntityType.ENDERMAN.getDescription().getString())){
+                    playerIn.displayClientMessage(Component.nullToEmpty("Here"), true);
+                    if (playerIn.getInventory().contains(new ItemStack(PintiumItems.HEAL_ORB.get()))){
+                        playerIn.displayClientMessage(Component.nullToEmpty("Another here"), true);
+                        playerIn.getInventory().removeItem(new ItemStack(PintiumItems.HEAL_ORB.get()));
+
+                        String text = new TranslatableComponent("pintium.life_stick.entity_revived").getString() + "beautiful enderman !";
+                        playerIn.displayClientMessage(Component.nullToEmpty((text)), true);
+
+                        Network.CHANNEL.sendToServer(new TameEndermanPacket());
+                        playerIn.getPersistentData().putString("entity_killed", "null");
+                    }
+                    else {
+                        String text = new TranslatableComponent("pintium.life_stick.no_orb").getString();
+                        playerIn.displayClientMessage(Component.nullToEmpty((text)), true);
+                    }
+                }
+        }
+
+        else {
+            String text = new TranslatableComponent("pintium.life_stick.cannot_revive").getString();
+            playerIn.displayClientMessage(Component.nullToEmpty((text)), true);
+        }
 
         return InteractionResultHolder.pass(playerIn.getMainHandItem());
     }

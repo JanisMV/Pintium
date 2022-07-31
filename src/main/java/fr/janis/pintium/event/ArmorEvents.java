@@ -1,7 +1,6 @@
 package fr.janis.pintium.event;
 
 import fr.janis.pintium.init.PintiumItems;
-import fr.janis.pintium.main;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.EquipmentSlot;

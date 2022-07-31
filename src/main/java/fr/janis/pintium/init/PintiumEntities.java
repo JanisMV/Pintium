@@ -48,6 +48,13 @@ public class PintiumEntities {
                     .build(new ResourceLocation(main.MODID, "creeper").toString())
     );
 
+    public static final RegistryObject<EntityType<EndermanBodyGuardEntity>> ENDERMAN_BODY_GUARD = ENTITY_TYPES.register(
+            "enderman_body_guard",
+            () -> EntityType.Builder.of(EndermanBodyGuardEntity::new, MobCategory.MONSTER)
+                    .sized(1.0F, 1.0F)
+                    .build(new ResourceLocation(main.MODID, "enderman").toString())
+    );
+
     public static final RegistryObject<EntityType<BananosaurEntity>> BANANOSAUR = ENTITY_TYPES.register("bananosaur",
             () -> EntityType.Builder.of(BananosaurEntity::new, MobCategory.CREATURE)
             .sized(2.0F, 2.0F)

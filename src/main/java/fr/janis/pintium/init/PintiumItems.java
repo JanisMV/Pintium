@@ -76,7 +76,7 @@ public class PintiumItems {
     public static final RegistryObject<Item> JUMP_ORB = ITEMS.register("jump_orb", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
     public static final RegistryObject<Item> SPEED_ORB = ITEMS.register("speed_orb", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
     public static final RegistryObject<Item> STRENGTH_ORB = ITEMS.register("strength_orb", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
-
+    public static final RegistryObject<Item> CRUSHER = ITEMS.register("crusher", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).durability(10).defaultDurability(10)));
     public static final RegistryObject<Item> PINTIUM_APPLE = ITEMS.register("pintium_apple", () -> new Item(new Item.Properties()
             .tab(PintiumItemGroup.PINTIUM_TAB)
             .fireResistant()
@@ -103,9 +103,8 @@ public class PintiumItems {
             new FoodProperties.Builder()
             .nutrition(1)
             .saturationMod(0.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20*10, 500), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 20*10, 0), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*10, 500), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20*5, 500), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20*5, 500), 1.0F)
             .alwaysEat().build()
     )));
 

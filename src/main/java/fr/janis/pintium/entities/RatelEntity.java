@@ -1,5 +1,6 @@
 package fr.janis.pintium.entities;
 
+import net.minecraft.world.entity.monster.*;
 import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -28,13 +29,6 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.monster.Creeper;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.monster.Pillager;
-import net.minecraft.world.entity.monster.Skeleton;
-import net.minecraft.world.entity.monster.Spider;
-import net.minecraft.world.entity.monster.Witch;
-import net.minecraft.world.entity.monster.Zombie;
 
 public class RatelEntity extends Monster {
 
@@ -71,6 +65,7 @@ public class RatelEntity extends Monster {
         this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, Zombie.class, true));
         this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, Creeper.class, true));
         this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, Spider.class, true));
+        this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, EnderMan.class, true));
         this.targetSelector.addGoal(8, new NearestAttackableTargetGoal<>(this, BananosaurEntity.class, true));
         this.targetSelector.addGoal(9, new NearestAttackableTargetGoal<>(this, Pillager.class, true));
         this.targetSelector.addGoal(10, new NearestAttackableTargetGoal<>(this, Witch.class, true));
@@ -81,6 +76,7 @@ public class RatelEntity extends Monster {
         this.targetSelector.addGoal(15, new NearestAttackableTargetGoal<>(this, CreeperBodyGuardEntity.class, true));
         this.targetSelector.addGoal(16, new NearestAttackableTargetGoal<>(this, ZombieBodyGuardEntity.class, true));
         this.targetSelector.addGoal(17, new NearestAttackableTargetGoal<>(this, SkeletonBodyGuardEntity.class, true));
+        this.targetSelector.addGoal(18, new NearestAttackableTargetGoal<>(this, EndermanBodyGuardEntity.class, true));
 
         this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1, false));
         this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.75D));

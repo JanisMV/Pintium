@@ -26,6 +26,8 @@ public class PintiumBlocks {
 
     public static final RegistryObject<Block> BANANA_BLOCK = createBlock("banana_block", BananaBlock::new);
 
+    public static final RegistryObject<Block> EXTRACTOR_MACHINE_BLOCK = createBlock("extractor_machine_block", ExtractorMachineBlock::new);
+
     public static final RegistryObject<Block> PINTIUM_OVERWORLD_ORE = createBlock("pintium_overworld_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(7f, 15f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> PINTIUM_NETHER_ORE = createBlock("pintium_nether_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f, 15f).sound(SoundType.NETHER_ORE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> PINTIUM_DEEPSLATE_ORE = createBlock("pintium_deepslate_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(10f, 15f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
@@ -45,7 +47,7 @@ public class PintiumBlocks {
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         PintiumItems.ITEMS.register(name, () -> new BlockItem(block.get(),
-                new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
+                new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB)));
     }
 
     public static void register(IEventBus eventBus) {
