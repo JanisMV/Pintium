@@ -112,7 +112,13 @@ public class ExtractorMachine extends BlockEntity implements MenuProvider {
         if (!entity.isACooldownWorkingOn) {
             entity.itemHandler.extractItem(0, 1, false);
             entity.itemHandler.getStackInSlot(1).hurt(1, new Random(), null);
-            if (entity.itemHandler.getStackInSlot(1).getDamageValue() == 10) {
+            if (entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.CRUSHER.get() && entity.itemHandler.getStackInSlot(1).getDamageValue() == 10) {
+                entity.itemHandler.extractItem(1, 1, false);
+            }
+            if (entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.TERBIUM_CRUSHER.get() && entity.itemHandler.getStackInSlot(1).getDamageValue() == 100) {
+                entity.itemHandler.extractItem(1, 1, false);
+            }
+            if (entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.PINTIUM_CRUSHER.get() && entity.itemHandler.getStackInSlot(1).getDamageValue() == 1000) {
                 entity.itemHandler.extractItem(1, 1, false);
             }
             Network.CHANNEL.sendToServer(new BlockEntityCooldown(entity.getBlockPos().getX(), entity.getBlockPos().getY(), entity.getBlockPos().getZ()));
@@ -122,7 +128,7 @@ public class ExtractorMachine extends BlockEntity implements MenuProvider {
 
     private static boolean hasRecipe(ExtractorMachine entity) {
         boolean hasItemInFirstSlot = entity.itemHandler.getStackInSlot(0).getItem() == PintiumItems.CANNABIS_FOOD.get();
-        boolean hasItemInSecondSlot = entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.CRUSHER.get();
+        boolean hasItemInSecondSlot = entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.CRUSHER.get() || entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.TERBIUM_CRUSHER.get() || entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.PINTIUM_CRUSHER.get();
 
         return hasItemInFirstSlot && hasItemInSecondSlot;
     }

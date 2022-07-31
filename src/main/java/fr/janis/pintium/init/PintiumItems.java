@@ -77,6 +77,9 @@ public class PintiumItems {
     public static final RegistryObject<Item> SPEED_ORB = ITEMS.register("speed_orb", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
     public static final RegistryObject<Item> STRENGTH_ORB = ITEMS.register("strength_orb", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).fireResistant()));
     public static final RegistryObject<Item> CRUSHER = ITEMS.register("crusher", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).durability(10).defaultDurability(10)));
+    public static final RegistryObject<Item> TERBIUM_CRUSHER = ITEMS.register("terbium_crusher", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).durability(100).defaultDurability(100)));
+    public static final RegistryObject<Item> PINTIUM_CRUSHER = ITEMS.register("pintium_crusher", () -> new Item(new Item.Properties().tab(PintiumItemGroup.PINTIUM_TAB).durability(1000).defaultDurability(1000)));
+
     public static final RegistryObject<Item> PINTIUM_APPLE = ITEMS.register("pintium_apple", () -> new Item(new Item.Properties()
             .tab(PintiumItemGroup.PINTIUM_TAB)
             .fireResistant()

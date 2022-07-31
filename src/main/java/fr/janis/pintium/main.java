@@ -24,10 +24,9 @@ import org.apache.logging.log4j.Logger;
 
 /* Prochaine Maj : Plus de Mobs Tameable
 
-https://youtu.be/ru6Gkvy9tyU?list=PLKGarocXCE1Hut51TKKqZKqVZtKLZC48x recipe a voir
+recipe a voir
 
 JEI compatibility
-Crushers de types differents
 Crush cobble pour graine de pintium
 Achievements
 

@@ -24,7 +24,7 @@ fov:0.5
 screenEffectScale:1.0
 fovEffectScale:1.0
 gamma:9.0
-renderDistance:8
+renderDistance:2
 simulationDistance:5
 entityDistanceScaling:1.0
 guiScale:2

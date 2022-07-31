@@ -188,8 +188,8 @@ public class ServerTickEvent {
                     ExtractorMachine entity = (ExtractorMachine) p.getLevel().getBlockEntity(new BlockPos(p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_x"), p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_y"), p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_z")));
 
                     Random rand = new Random();
-                    int random = rand.nextInt(11);
-                    if (random == 10) {
+                    int random = rand.nextInt(1001);
+                    if (random == 1000) {
                         entity.itemHandler.setStackInSlot(2, new ItemStack(PintiumItems.POLONIUM.get(),
                                 entity.itemHandler.getStackInSlot(2).getCount() + 1));
                     }

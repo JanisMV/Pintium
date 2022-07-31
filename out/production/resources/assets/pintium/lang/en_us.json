@@ -40,6 +40,8 @@
   "item.pintium.tp_object": "Portable Portal",
   "item.pintium.terbium_ingot": "Terbium Debris",
   "item.pintium.crusher": "Crusher",
+  "item.pintium.terbium_crusher": "Terbium Crusher",
+  "item.pintium.pintium_crusher": "Pintium Crusher",
   "itemGroup.pintium_tab": "Pintium",
   "block.pintium.pintium_block": "Pintium Block",
   "block.pintium.pintium_crop": "Pintium Seeds",
