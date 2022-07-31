@@ -188,10 +188,18 @@ public class ServerTickEvent {
                     ExtractorMachine entity = (ExtractorMachine) p.getLevel().getBlockEntity(new BlockPos(p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_x"), p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_y"), p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_z")));
 
                     Random rand = new Random();
-                    int random = rand.nextInt(1001);
-                    if (random == 1000) {
-                        entity.itemHandler.setStackInSlot(2, new ItemStack(PintiumItems.POLONIUM.get(),
-                                entity.itemHandler.getStackInSlot(2).getCount() + 1));
+                    if (p.getPersistentData().getBoolean(main.MODID + "crushing_cannabis")) {
+                        int random = rand.nextInt(1001);
+                        if (random == 1000) {
+                            entity.itemHandler.setStackInSlot(2, new ItemStack(PintiumItems.POLONIUM.get(),
+                                    entity.itemHandler.getStackInSlot(2).getCount() + 1));
+                        }
+                    }
+                    else {
+                        if (rand.nextFloat() > 0.98f){
+                            entity.itemHandler.setStackInSlot(2, new ItemStack(PintiumItems.PINTIUM_SEEDS.get(),
+                                    entity.itemHandler.getStackInSlot(2).getCount() + 1));
+                        }
                     }
                     entity.isACooldownWorkingOn = false;
                 }

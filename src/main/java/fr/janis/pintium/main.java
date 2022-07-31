@@ -27,7 +27,6 @@ import org.apache.logging.log4j.Logger;
 recipe a voir
 
 JEI compatibility
-Crush cobble pour graine de pintium
 Achievements
 
 Changelog:

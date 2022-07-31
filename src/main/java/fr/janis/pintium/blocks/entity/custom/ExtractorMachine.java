@@ -17,9 +17,11 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -121,13 +123,18 @@ public class ExtractorMachine extends BlockEntity implements MenuProvider {
             if (entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.PINTIUM_CRUSHER.get() && entity.itemHandler.getStackInSlot(1).getDamageValue() == 1000) {
                 entity.itemHandler.extractItem(1, 1, false);
             }
-            Network.CHANNEL.sendToServer(new BlockEntityCooldown(entity.getBlockPos().getX(), entity.getBlockPos().getY(), entity.getBlockPos().getZ()));
+            if (entity.itemHandler.getStackInSlot(0).getItem() == PintiumItems.CANNABIS_FOOD.get()) {
+                Network.CHANNEL.sendToServer(new BlockEntityCooldown(entity.getBlockPos().getX(), entity.getBlockPos().getY(), entity.getBlockPos().getZ(), true));
+            }
+            else {
+                Network.CHANNEL.sendToServer(new BlockEntityCooldown(entity.getBlockPos().getX(), entity.getBlockPos().getY(), entity.getBlockPos().getZ(), false));
+            }
             entity.isACooldownWorkingOn = true;
         }
     }
 
     private static boolean hasRecipe(ExtractorMachine entity) {
-        boolean hasItemInFirstSlot = entity.itemHandler.getStackInSlot(0).getItem() == PintiumItems.CANNABIS_FOOD.get();
+        boolean hasItemInFirstSlot = entity.itemHandler.getStackInSlot(0).getItem() == PintiumItems.CANNABIS_FOOD.get() || entity.itemHandler.getStackInSlot(0).getItem() == Items.COBBLESTONE || entity.itemHandler.getStackInSlot(0).getItem() == Items.DEEPSLATE;
         boolean hasItemInSecondSlot = entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.CRUSHER.get() || entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.TERBIUM_CRUSHER.get() || entity.itemHandler.getStackInSlot(1).getItem() == PintiumItems.PINTIUM_CRUSHER.get();
 
         return hasItemInFirstSlot && hasItemInSecondSlot;
