@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "pintium:extractor_machine_block"
+    },
+    "title": {
+      "translate": "advancements.pintium.extractor.title"
+    },
+    "description": {
+      "translate": "advancements.pintium.extractor.desc"
+    }
+  },
+  "parent": "pintium:main/root",
+  "criteria": {
+    "craft_pintium_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "pintium:extractor_machine_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

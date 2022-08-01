@@ -1,0 +1,15 @@
+Java Launcher: C:\Program Files\Java\jdk-17.0.4\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, C:\Users\Win10\.gradle\caches\modules-2\files-2.1\mezz.jei\jei-1.18.2\9.7.1.232\6427a57673ef4393631a4deb670ad8600196925f\jei-1.18.2-9.7.1.232-api.jar, --output, C:\Users\Win10\.gradle\caches\forge_gradle\deobf_dependencies\mezz\jei\jei-1.18.2\9.7.1.232_mapped_official_1.18.2\jei-1.18.2-9.7.1.232_mapped_official_1.18.2-api.jar, --mcp, C:\Users\Win10\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.18.2\mapping-1.18.2-mapping.zip, --strip-signatures'
+Classpath:
+ - C:\Users\Win10\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.3.0\installertools-1.3.0-fatjar.jar
+Working directory: C:\Users\Win10\Desktop\Pintium-1.16.5\build\_RenameSrg2Mcp_-891349695
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  C:\Users\Win10\.gradle\caches\modules-2\files-2.1\mezz.jei\jei-1.18.2\9.7.1.232\6427a57673ef4393631a4deb670ad8600196925f\jei-1.18.2-9.7.1.232-api.jar
+Output: C:\Users\Win10\.gradle\caches\forge_gradle\deobf_dependencies\mezz\jei\jei-1.18.2\9.7.1.232_mapped_official_1.18.2\jei-1.18.2-9.7.1.232_mapped_official_1.18.2-api.jar
+MCP:    C:\Users\Win10\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.18.2\mapping-1.18.2-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

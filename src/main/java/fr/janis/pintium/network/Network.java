@@ -72,10 +72,5 @@ public class Network {
                 .decoder(TameEndermanPacket::decode)
                 .consumer(TameEndermanPacket::handle)
                 .add();
-        CHANNEL.messageBuilder(BlockEntityCooldown.class, 11)
-                .encoder(BlockEntityCooldown::encode)
-                .decoder(BlockEntityCooldown::decode)
-                .consumer(BlockEntityCooldown::handle)
-                .add();
     }
 }

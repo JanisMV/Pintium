@@ -269,6 +269,12 @@
     },
     "done": true
   },
+  "pintium:main/extractor": {
+    "criteria": {
+      "craft_pintium_stick": "2022-08-01 10:57:44 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_porkchop_from_smoking": {
     "criteria": {
       "has_porkchop": "2022-07-31 21:56:02 +0100"

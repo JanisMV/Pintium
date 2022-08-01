@@ -1,0 +1,11 @@
+{
+  "type": "pintium:extractor",
+  "ingredients": [
+    {
+      "item": "pintium:cannabis_food"
+    }
+  ],
+  "output": {
+    "item": "pintium:polonium"
+  }
+}

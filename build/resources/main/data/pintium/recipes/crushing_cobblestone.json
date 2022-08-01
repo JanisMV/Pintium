@@ -1,0 +1,11 @@
+{
+  "type": "pintium:extractor",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "output": {
+    "item": "pintium:pintium_seeds"
+  }
+}

@@ -38,8 +38,8 @@ public class ServerTickEvent {
         MinecraftServer MServer = ServerLifecycleHooks.getCurrentServer();
         PlayerList plist = MServer.getPlayerList();
         for(ServerPlayer p : plist.getPlayers()) {
-            if (p.getPersistentData().getBoolean("is_using_cannabis")){
-                if (p.getPersistentData().getInt("is_using_cannabis_for") != 20*30){
+            if (p.getPersistentData().getBoolean("is_using_cannabis")) {
+                if (p.getPersistentData().getInt("is_using_cannabis_for") != 20 * 30) {
                     Random dice = new Random();
 
                     int posX;
@@ -55,8 +55,7 @@ public class ServerTickEvent {
                     Horse horse = new Horse(EntityType.HORSE, p.getLevel());
                     if (relative == 1) {
                         horse.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
-                    }
-                    else {
+                    } else {
                         horse.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
                     }
                     p.getLevel().addFreshEntity(horse);
@@ -70,8 +69,7 @@ public class ServerTickEvent {
                     Creeper creeper = new Creeper(EntityType.CREEPER, p.getLevel());
                     if (relative == 1) {
                         creeper.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
-                    }
-                    else {
+                    } else {
                         creeper.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
                     }
                     p.getLevel().addFreshEntity(creeper);
@@ -81,12 +79,11 @@ public class ServerTickEvent {
                     creeper.remove(Entity.RemovalReason.DISCARDED);
 
                     relative = dice.nextInt(2);
-                    
+
                     SkeletonBodyGuardEntity skeleton = new SkeletonBodyGuardEntity(EntityType.SKELETON, p.getLevel());
                     if (relative == 1) {
                         skeleton.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
-                    }
-                    else {
+                    } else {
                         skeleton.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
                     }
                     p.getLevel().addFreshEntity(skeleton);
@@ -98,8 +95,7 @@ public class ServerTickEvent {
                     BananosaurEntity b = new BananosaurEntity(PintiumEntities.BANANOSAUR.get(), p.getLevel());
                     if (relative == 1) {
                         b.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
-                    }
-                    else {
+                    } else {
                         b.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
                     }
                     p.getLevel().addFreshEntity(b);
@@ -111,8 +107,7 @@ public class ServerTickEvent {
                     BananoFishEntity bf = new BananoFishEntity(PintiumEntities.BANANOFISH.get(), p.getLevel());
                     if (relative == 1) {
                         bf.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
-                    }
-                    else {
+                    } else {
                         bf.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
                     }
                     p.getLevel().addFreshEntity(bf);
@@ -124,8 +119,7 @@ public class ServerTickEvent {
                     WitherBoss w = new WitherBoss(EntityType.WITHER, p.getLevel());
                     if (relative == 1) {
                         w.setPos(p.getX() + posX, p.getY() + posY, p.getZ() + posZ);
-                    }
-                    else {
+                    } else {
                         w.setPos(p.getX() - posX, p.getY() - posY, p.getZ() - posZ);
                     }
                     p.getLevel().addFreshEntity(w);
@@ -138,14 +132,13 @@ public class ServerTickEvent {
 
                     p.getPersistentData().putInt("is_using_cannabis_for", cannabis_used + 1);
 
-                }
-                else {
+                } else {
                     p.getPersistentData().putBoolean("is_using_cannabis", false);
                 }
             }
 
             if (p.getPersistentData().getBoolean("inertium_is_used")) {
-                if (p.getX() != p.getPersistentData().getDouble("posX") || p.getY() != p.getPersistentData().getDouble("posY") || p.getZ() != p.getPersistentData().getDouble("posZ")){
+                if (p.getX() != p.getPersistentData().getDouble("posX") || p.getY() != p.getPersistentData().getDouble("posY") || p.getZ() != p.getPersistentData().getDouble("posZ")) {
                     BlockPos pos = new BlockPos(p.getPersistentData().getDouble("posX") + 1, p.getPersistentData().getDouble("posY"), p.getPersistentData().getDouble("posZ") + 1);
                     p.getLevel().removeBlock(pos, false);
 
@@ -156,8 +149,7 @@ public class ServerTickEvent {
 
                     p.removeEffect(MobEffects.INVISIBILITY);
                     p.getPersistentData().putBoolean("inertium_is_used", false);
-                }
-                else {
+                } else {
                     p.getPersistentData().putLong("inertium_use", Instant.now().getEpochSecond());
                     if (p.getPersistentData().getLong("inertium_cooldown") <= p.getPersistentData().getLong("inertium_use")) {
                         p.getPersistentData().putBoolean("inertium_is_used", false);
@@ -175,37 +167,6 @@ public class ServerTickEvent {
                     }
                 }
             }
-
-            if (p.getPersistentData().getBoolean(main.MODID+"extractor_cooldown")){
-                if (p.getPersistentData().getInt(main.MODID+"extractor_cd") != 20*5){
-                    int cd = p.getPersistentData().getInt(main.MODID+"extractor_cd");
-                    p.getPersistentData().putInt(main.MODID+"extractor_cd", cd+1);
-                }
-                else{
-                    p.getPersistentData().putBoolean(main.MODID+"extractor_cooldown", false);
-                    p.getPersistentData().putInt(main.MODID+"extractor_cd", 0);
-
-                    ExtractorMachine entity = (ExtractorMachine) p.getLevel().getBlockEntity(new BlockPos(p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_x"), p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_y"), p.getPersistentData().getDouble(main.MODID + "extractor_cooldown_z")));
-
-                    Random rand = new Random();
-                    if (p.getPersistentData().getBoolean(main.MODID + "crushing_cannabis")) {
-                        int random = rand.nextInt(1001);
-                        if (random == 1000) {
-                            entity.itemHandler.setStackInSlot(2, new ItemStack(PintiumItems.POLONIUM.get(),
-                                    entity.itemHandler.getStackInSlot(2).getCount() + 1));
-                        }
-                    }
-                    else {
-                        if (rand.nextFloat() > 0.98f){
-                            entity.itemHandler.setStackInSlot(2, new ItemStack(PintiumItems.PINTIUM_SEEDS.get(),
-                                    entity.itemHandler.getStackInSlot(2).getCount() + 1));
-                        }
-                    }
-                    entity.isACooldownWorkingOn = false;
-                }
-            }
-
         }
-
     }
 }   

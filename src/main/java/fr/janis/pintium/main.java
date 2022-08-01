@@ -9,6 +9,7 @@ import fr.janis.pintium.init.*;
 
 import fr.janis.pintium.keybind.KeyBinds;
 import fr.janis.pintium.network.Network;
+import fr.janis.pintium.recipe.PintiumRecipes;
 import fr.janis.pintium.utils.SoundEvents;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.RenderType;
@@ -23,11 +24,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /* Prochaine Maj : Plus de Mobs Tameable
-
-recipe a voir
-
-JEI compatibility
-Achievements
 
 Changelog:
 
@@ -69,6 +65,7 @@ public class main
         BlockEntities.BLOCK_ENTITIES.register(bus);
         SoundEvents.SOUND_EVENTS.register(bus);
         PintiumMenuTypes.register(bus);
+        PintiumRecipes.register(bus);
     }
 
     private void setup(FMLCommonSetupEvent e){

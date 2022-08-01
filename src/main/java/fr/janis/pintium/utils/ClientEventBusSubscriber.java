@@ -9,8 +9,11 @@ import fr.janis.pintium.entities.*;
 import fr.janis.pintium.event.loot.PintiumSeedAdditionModifier;
 import fr.janis.pintium.init.PintiumEntities;
 import fr.janis.pintium.main;
+import fr.janis.pintium.recipe.ExtractorMachineRecipe;
 import net.minecraft.client.renderer.entity.*;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
@@ -64,5 +67,10 @@ public class ClientEventBusSubscriber {
                 new PintiumSeedAdditionModifier.Serializer().setRegistryName
                         (new ResourceLocation(main.MODID,"pintium_seed_in_grass"))
         );
+    }
+
+    @SubscribeEvent
+    public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event){
+        Registry.register(Registry.RECIPE_TYPE, ExtractorMachineRecipe.Type.ID, ExtractorMachineRecipe.Type.INSTANCE);
     }
 }
